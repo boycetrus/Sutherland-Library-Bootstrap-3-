@@ -23,6 +23,7 @@ build/*
 # Exclude Fonts
 fonts/
 
-# Exclude Codekit config
+# Exclude Codekit files
 *.codekit
+sass/.sass-cache/*
  
