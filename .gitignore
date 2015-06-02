@@ -26,4 +26,7 @@ fonts/
 # Exclude Codekit files
 *.codekit
 sass/.sass-cache/*
+
+# Exclude Espresso Project files
+*.esproj
  
