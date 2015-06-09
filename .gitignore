@@ -24,7 +24,7 @@ build/*
 fonts/
 
 # Exclude Codekit files
-*.codekit
+config.codekit
 sass/.sass-cache/*
 
 # Exclude Espresso Project files
