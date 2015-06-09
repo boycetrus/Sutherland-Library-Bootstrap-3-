@@ -1,0 +1,70 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+body {
+	background: none;
+	color: black;
+}
+.page-wrap {
+	width: 100%;
+	margin: 0; padding: 0;
+	background: none;
+}
+.alert.alert-error, header, .navbar, #breadcrumbs, .hero-image, #toggle-map, #facet-filter, .related-links, #social .socmedia-buttons, footer {
+	display: none;
+}
+#map {
+  display: block;
+  height: auto !important;
+}
+#main:before {
+  content: "Sutherland Shire Council Libraries";
+  display: block;
+  font-size: 24pt;
+  margin-bottom: 0;
+}
+#main a:after {
+	content: " [" attr(href) "] ";
+}
+
+.thumbnail,
+.thumbnail > * {
+  background-color: #ffffff !important;
+  display: block;
+  width: 100%;
+}
+.thumbnail img {
+  display: none;
+}
+.media-body {
+  width: 100% !important;
+  overflow: visible;
+  box-sizing: border-box;
+  /*margin: 0 !important;
+  padding: 0 !important;*/
+}
+.media-object {
+  display: none;
+}
+
+.tabbable .nav-tabs {
+  display: none;
+}
+.tabbable .tab-pane, .thumbnail, .collapse, .feature-item {
+  display: block;
+  border: none;
+  page-break-inside: avoid;
+}
+
+.license,
+.license .cc-license-icon,
+.license .cc-license {
+  display: block;
+  float: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+}
+#social .contact {
+  page-break-inside: avoid;
+}

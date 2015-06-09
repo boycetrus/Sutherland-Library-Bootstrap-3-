@@ -1,0 +1,119 @@
+.social {
+  background-color: $powderblue;
+  padding: 12px 0;
+  padding: 0.75rem 0;
+  
+  .contact {
+    padding-left: 9px;
+    padding-left: 0.5625rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    font-size: 1.125em;
+    line-height: 24px;
+    line-height: 1.5rem;
+    
+    span {
+      display: inline-block;
+      padding-right: 1em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    span:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.socmedia-buttons {
+  > a {
+  float: left;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-left: 0.5rem;
+  }
+  .stay-in-touch {
+    display: block;
+    padding: 0 9px 9px;
+    font-size: 18px;
+  } 
+}
+
+.socmedia-btn {
+  font-size: 36px;
+  font-size: 2.25rem;
+  
+  [data-icon]:before {  
+    padding-right: 0;
+  }
+}
+
+.facebook-btn {
+  color: $facebook-blue;
+  &:hover {
+    color: darken($facebook-blue, 10);
+  }
+}
+.pinterest-btn {
+  color: $pinterest-red;
+  &:hover {
+    color: darken($pinterest-red, 10);
+  }
+}
+.twitter-btn {
+  color: $twitter-blue;
+  &:hover {
+    color: darken($twitter-blue, 10);
+  }
+}
+.vimeo-btn {
+  color: $vimeo-green;
+  &:hover {
+    color: darken($vimeo-green, 10);
+  }
+}
+.rss-btn {
+  color: $orange;
+  &:hover {
+    color: darken($orange, 10);
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .social {
+    .btn.socmedia-btn {
+      margin-bottom: 0;
+    }
+    .contact {
+      margin-bottom: 0;
+    }
+    .stay-in-touch {
+      text-align: right;
+    }
+    
+  }
+  .socmedia-buttons > a {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  
+  .social {
+    .contact {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 30px;
+      line-height: 1.875rem;
+    }
+    .stay-in-touch {
+      display: inline;
+      font-size: 24px;
+      font-size: 1.5rem;
+      float: right;
+      line-height: 36px;
+      line-height: 2.25rem;
+    }
+  }
+}

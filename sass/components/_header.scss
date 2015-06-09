@@ -1,0 +1,56 @@
+header {
+  padding: ($padding-large-vertical*2) 0;
+}
+
+.title-logo{
+  width: 307px;
+  height: 36px;
+  background-image: url('../../img/library-logo.gif');
+  @include text-hide();
+}
+
+.ssc-link {
+  font-size: $font-size-base;
+}
+
+.catalog {
+  .catalog-search {
+    margin: ($padding-large-vertical*2) 0 0;
+    @media screen and (min-width: $screen-sm-min) {
+      float: right;
+      text-align: right;
+    }
+    input[type="text"] {
+      width: 100%;
+      @media screen and (min-width: $screen-sm-min) {
+        width: 220px;
+      }
+    }    
+    label {
+      color: $gray-light;
+      font-size: 1.25em;
+      margin: 0 0.4em;
+    }
+  }// .catalog-search
+  .catalog-extras {
+    clear: right;
+    line-height: 2em;
+    text-align: right;
+    
+    a {
+      margin-left: 16px;
+      margin-left: 1rem;
+    }
+    a:hover, a:focus, a:active {
+      text-decoration: none;
+    }
+  } // .catalog-extras
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: $gray-lighter;
+}

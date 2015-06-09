@@ -1,0 +1,42 @@
+.hero-unit {
+  padding: 16px;
+  padding: 1rem;
+  color: #ffffff;
+  background: #222;
+  @include background-image(linear-gradient(#444444, #222222));
+  border-radius: $radius;
+  
+  p {
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero-unit-inner {
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+} 
+
+.email-signup {
+  background-image: url(../img/at.svg);
+}
+
+
+  
+@media (min-width: 768px) and (max-width: 1000px) {
+  .page-spotlight{
+    h2 {
+      font-size: 24px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .hero-unit-inner {
+    background-position-x: 0%;
+  }
+}

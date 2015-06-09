@@ -1,0 +1,61 @@
+footer {
+  background: #222;
+  background-image: linear-gradient(to bottom, #222222, #010101);
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  color: #fff;
+  
+  a {
+    color: $dark-grey;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+  > .container-fluid.page-wrap {
+    padding: 0 1em;
+  }
+  .ssc-logo {
+    text-align: right;
+  }
+  .nav-tabs, .tab-pane {
+    border-color: $near-black;
+  }
+  .nav-tabs > .active > a,
+  .nav-tabs > .active > a:hover,
+  .nav-tabs > .active > a:focus {
+    background-color: transparent;
+    border-color: $near-black;
+    border-bottom-color: #222;
+    color: #fff;
+  }
+  .tab-content {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+  }
+  @media (min-width:768px) {
+    padding-top: 8px;
+    padding-top: 0.5rem;
+  }
+}
+
+.sitemap-section {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 21px;
+  line-height: 1.3125rem;
+  h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+/*  Styles for the 4 columns of featured links on the home page  */
+.home-spotlight {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+    
+  h2 {
+    color: $dark-grey;
+    font-size: 18px;
+    font-size: 1.125em;
+    line-height: 24px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+  .more .event-date {
+    display: block;
+  }
+}
+
+#creditfooter {
+  display: none;
+}
