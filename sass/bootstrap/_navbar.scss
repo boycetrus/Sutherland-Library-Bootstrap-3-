@@ -177,6 +177,7 @@
   }
 
   @media (min-width: $grid-float-breakpoint) {
+    display: none;
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;

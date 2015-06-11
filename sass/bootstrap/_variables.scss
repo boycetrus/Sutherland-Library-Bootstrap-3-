@@ -34,7 +34,7 @@ $brand-info:            $sky !default; // original #5bc0de
 $brand-warning:         $orange !default; // original #f0ad4e
 $brand-danger:          $tomato !default; // original #d9534f
 
-//## Social media colours 
+//## Social media colours
 
 $facebook-blue: #3b5998;
 $twitter-blue: #00aced;
@@ -73,7 +73,7 @@ $font-family-serif:       Georgia, Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -351,7 +351,8 @@ $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
+// original  $grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint:     863px !default;  // magic number
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
