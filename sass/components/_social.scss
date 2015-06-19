@@ -1,19 +1,13 @@
 .social {
   background-color: $powderblue;
-  padding: 12px 0;
-  padding: 0.75rem 0;
-  
+  padding: $padding-base-horizontal 0;
+
   .contact {
-    padding-left: 9px;
-    padding-left: 0.5625rem;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
-    font-size: 1.125em;
-    line-height: 24px;
-    line-height: 1.5rem;
-    
+    margin-bottom: $font-size-large;
+    font-size: $font-size-large;
+    line-height: $line-height-small;
+
     span {
-      display: inline-block;
       padding-right: 1em;
       white-space: nowrap;
       overflow: hidden;
@@ -26,27 +20,27 @@
 
 .socmedia-buttons {
   > a {
-  float: left;
   text-decoration: none;
-  margin-left: 8px;
-  margin-left: 0.5rem;
   }
   .stay-in-touch {
     display: block;
-    padding: 0 9px 9px;
-    font-size: 18px;
-  } 
+    font-size: $font-size-large;
+    line-height: $line-height-small;
+  }
 }
 
 .socmedia-btn {
-  font-size: 36px;
-  font-size: 2.25rem;
-  
-  [data-icon]:before {  
+  font-size: 40px; //magic number
+  margin-left: $padding-base-vertical;
+
+  [data-icon]:before {
     padding-right: 0;
   }
 }
 
+.email-btn {
+  margin-top: -21px; // magic number
+}
 .facebook-btn {
   color: $facebook-blue;
   &:hover {
@@ -80,40 +74,32 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-sm-min) {
   .social {
-    .btn.socmedia-btn {
-      margin-bottom: 0;
+    .btn.email-btn {
+      margin-left: $padding-base-vertical;
     }
     .contact {
       margin-bottom: 0;
     }
-    .stay-in-touch {
-      text-align: right;
-    }
-    
+
   }
-  .socmedia-buttons > a {
-    float: right;
+  .socmedia-buttons {
+    text-align: right;
+    a {
+    }
   }
 }
 
-@media screen and (min-width: 980px) {
-  
+@media screen and (min-width: $screen-md-min) {
+
   .social {
-    .contact {
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 30px;
-      line-height: 1.875rem;
-    }
     .stay-in-touch {
       display: inline;
-      font-size: 24px;
-      font-size: 1.5rem;
+      font-size: $font-size-large;
+      line-height: $font-size-large*2.75;
       float: right;
-      line-height: 36px;
-      line-height: 2.25rem;
+      margin-left: $padding-base-horizontal;
     }
   }
 }

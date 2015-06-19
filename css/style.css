@@ -52,6 +52,9 @@ b,
 strong {
   font-weight: bold; }
 
+i {
+  font-style: normal; }
+
 dfn {
   font-style: italic; }
 
@@ -5053,3 +5056,74 @@ header {
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: #eeeeee; }
+
+.social {
+  background-color: #E9F2F7;
+  padding: 12px 0; }
+  .social .contact {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5; }
+    .social .contact span {
+      padding-right: 1em;
+      white-space: nowrap;
+      overflow: hidden; }
+    .social .contact span:last-child {
+      padding-right: 0; }
+
+.socmedia-buttons > a {
+  text-decoration: none; }
+.socmedia-buttons .stay-in-touch {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5; }
+
+.socmedia-btn {
+  font-size: 40px;
+  margin-left: 6px; }
+  .socmedia-btn [data-icon]:before {
+    padding-right: 0; }
+
+.email-btn {
+  margin-top: -21px; }
+
+.facebook-btn {
+  color: #3b5998; }
+  .facebook-btn:hover {
+    color: #2d4373; }
+
+.pinterest-btn {
+  color: #cb2027; }
+  .pinterest-btn:hover {
+    color: #9f191f; }
+
+.twitter-btn {
+  color: #00aced; }
+  .twitter-btn:hover {
+    color: #0087ba; }
+
+.vimeo-btn {
+  color: #aad450; }
+  .vimeo-btn:hover {
+    color: #93c130; }
+
+.rss-btn {
+  color: #E39800; }
+  .rss-btn:hover {
+    color: #b07600; }
+
+@media screen and (min-width: 768px) {
+  .social .btn.email-btn {
+    margin-left: 6px; }
+  .social .contact {
+    margin-bottom: 0; }
+
+  .socmedia-buttons {
+    text-align: right; } }
+@media screen and (min-width: 992px) {
+  .social .stay-in-touch {
+    display: inline;
+    font-size: 20px;
+    line-height: 55px;
+    float: right;
+    margin-left: 12px; } }

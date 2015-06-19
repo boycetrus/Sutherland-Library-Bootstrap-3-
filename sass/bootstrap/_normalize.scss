@@ -120,6 +120,12 @@ strong {
 }
 
 //
+// Use em for italics and reserve i for icons - non semantic inline element
+i {
+  font-style: normal;
+}
+
+//
 // Address styling not present in Safari and Chrome.
 //
 
