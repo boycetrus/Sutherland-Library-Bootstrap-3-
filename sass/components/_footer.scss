@@ -1,17 +1,16 @@
 footer {
-  background: #222;
-  background-image: linear-gradient(to bottom, #222222, #010101);
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 16px;
-  padding-bottom: 1rem;
-  color: #fff;
-  
+  background: $gray-dark;
+  background-image: linear-gradient(to bottom, $gray-dark, $gray-darker);
+  padding-top: $padding-large-horizontal*1.5;
+  padding-bottom: $padding-large-horizontal*1.5;
+  color: $gray-lighter;
+
   a {
-    color: $dark-grey;
+    color: $lightblue;
   }
-  a:hover {
-    color: #ffffff;
+  a:hover,
+  a:focus {
+    color: $powderblue;
   }
   > .container-fluid.page-wrap {
     padding: 0 1em;
@@ -20,42 +19,28 @@ footer {
     text-align: right;
   }
   .nav-tabs, .tab-pane {
-    border-color: $near-black;
+    border-color: $gray;
+  }
+  .nav-tabs a:hover,
+  .nav-tabs a:focus {
+    background-color: $gray;
   }
   .nav-tabs > .active > a,
   .nav-tabs > .active > a:hover,
   .nav-tabs > .active > a:focus {
     background-color: transparent;
-    border-color: $near-black;
-    border-bottom-color: #222;
-    color: #fff;
+    border-color: $gray;
+    border-bottom-color: $gray-dark;
+    color: $gray-lighter;
+  }
+  .tab-pane {
+    padding: $padding-base-horizontal $padding-large-horizontal;
+    border: 1px solid $gray;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0 0 $border-radius-base $border-radius-base;
   }
   .tab-content {
     margin-bottom: 12px;
     margin-bottom: 0.75rem;
-  }
-  @media (min-width:768px) {
-    padding-top: 8px;
-    padding-top: 0.5rem;
-  }
-}
-
-.sitemap-section {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 21px;
-  line-height: 1.3125rem;
-  h3 {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 27px;
-    line-height: 1.6875rem;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 }

@@ -5000,6 +5000,43 @@ you can use the generic selector below, but it's slower:
   .breadcrumbs li.last:after,
   .breadcrumbs li.last:before {
     content: ''; } }
+footer {
+  background: #333333;
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(to bottom, #333333, #222222);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #eeeeee; }
+  footer a {
+    color: #6aade4; }
+  footer a:hover,
+  footer a:focus {
+    color: #E9F2F7; }
+  footer > .container-fluid.page-wrap {
+    padding: 0 1em; }
+  footer .ssc-logo {
+    text-align: right; }
+  footer .nav-tabs, footer .tab-pane {
+    border-color: #555555; }
+  footer .nav-tabs a:hover,
+  footer .nav-tabs a:focus {
+    background-color: #555555; }
+  footer .nav-tabs > .active > a,
+  footer .nav-tabs > .active > a:hover,
+  footer .nav-tabs > .active > a:focus {
+    background-color: transparent;
+    border-color: #555555;
+    border-bottom-color: #333333;
+    color: #eeeeee; }
+  footer .tab-pane {
+    padding: 12px 16px;
+    border: 1px solid #555555;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0 0 4px 4px; }
+  footer .tab-content {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; }
+
 header {
   padding: 20px 0; }
 
