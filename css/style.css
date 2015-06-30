@@ -5000,6 +5000,81 @@ you can use the generic selector below, but it's slower:
   .breadcrumbs li.last:after,
   .breadcrumbs li.last:before {
     content: ''; } }
+.main {
+  padding-bottom: 48px; }
+  .main a {
+    text-decoration: underline; }
+  .main a:hover, .main a:focus {
+    text-decoration: none; }
+  .main a.btn {
+    text-decoration: none; }
+
+.content > .actions {
+  margin: 30px 0; }
+
+.double-spaced {
+  margin: 22px 0; }
+
+.hero-image {
+  max-width: 450px;
+  margin: 22px auto 0; }
+
+.interruption-label,
+.interruption-date {
+  display: block; }
+  @media (min-width: 480px) {
+    .interruption-label,
+    .interruption-date {
+      display: inline-block;
+      white-space: nowrap; } }
+
+@media (min-width: 480px) {
+  .interruption-label {
+    width: 150px;
+    font-weight: 600; } }
+
+.new-items-selector {
+  margin-bottom: 11px; }
+  .new-items-selector .btn-group {
+    margin: 0 11px 11px 0; }
+
+.new-items-data,
+.new-items-fail {
+  display: none; }
+
+.page-spotlight {
+  text-align: center;
+  padding-top: 24px; }
+
+.related-links {
+  clear: left;
+  position: relative;
+  background-color: #eeeeee;
+  padding: 16px;
+  border-radius: 4px;
+  margin: 11px 0; }
+
+.table {
+  width: auto; }
+  .table th {
+    background-color: #eeeeee;
+    font-weight: 600; }
+
+.table-centered td {
+  text-align: center; }
+
+@media (min-width: 992px) {
+  .list-as-columns {
+    margin-left: 0;
+    padding-left: 0;
+    -webkit-columns: 300px 3;
+       -moz-columns: 300px 3;
+            columns: 300px 3;
+    -webkit-column-gap: 1.3333333;
+       -moz-column-gap: 1.3333333;
+            column-gap: 1.3333333;
+    list-style: none; } }
+/*  Property page type specific styles */
 footer {
   background: #333333;
   background-image: -webkit-linear-gradient(top, #333333, #222222);
