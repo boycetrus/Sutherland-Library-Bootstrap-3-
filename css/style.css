@@ -5089,7 +5089,7 @@ you can use the generic selector below, but it's slower:
 .table {
   width: auto; }
   .table th {
-    background-color: #dedede;
+    background-color: #eeeeee;
     font-weight: 600; }
 
 .table-centered td {
