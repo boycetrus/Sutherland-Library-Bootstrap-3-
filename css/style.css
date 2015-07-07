@@ -321,7 +321,7 @@ hr {
   margin-top: 22px;
   margin-bottom: 22px;
   border: 0;
-  border-top: 1px solid #eeeeee; }
+  border-top: 1px solid #dedede; }
 
 .sr-only {
   position: absolute;
@@ -532,7 +532,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 10px;
   margin: 44px 0 22px;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #dedede; }
 
 ul,
 ol {
@@ -600,7 +600,7 @@ blockquote {
   padding: 11px 22px;
   margin: 0 0 22px;
   font-size: 20px;
-  border-left: 5px solid #eeeeee; }
+  border-left: 5px solid #dedede; }
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
@@ -621,7 +621,7 @@ blockquote {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #dedede;
   border-left: 0;
   text-align: right; }
   .blockquote-reverse footer:before,
@@ -1648,7 +1648,7 @@ output {
   .form-control::-webkit-input-placeholder {
     color: #999; }
   .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-    background-color: #eeeeee;
+    background-color: #dedede;
     opacity: 1; }
   .form-control[disabled], fieldset[disabled] .form-control {
     cursor: not-allowed; }
@@ -2572,7 +2572,7 @@ tbody.collapse.in {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #dedede;
   border: 1px solid #ccc;
   border-radius: 4px; }
   .input-group-addon.input-sm,
@@ -2652,7 +2652,7 @@ tbody.collapse.in {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #eeeeee; }
+        background-color: #dedede; }
     .nav > li.disabled > a {
       color: #777777; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -2661,7 +2661,7 @@ tbody.collapse.in {
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #eeeeee;
+    background-color: #dedede;
     border-color: #0083a9; }
   .nav .nav-divider {
     height: 1px;
@@ -2682,7 +2682,7 @@ tbody.collapse.in {
       border: 1px solid transparent;
       border-radius: 4px 4px 0 0; }
       .nav-tabs > li > a:hover {
-        border-color: #eeeeee #eeeeee #ddd; }
+        border-color: #dedede #dedede #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
       background-color: #fff;
@@ -3193,7 +3193,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     color: #00485c;
-    background-color: #eeeeee;
+    background-color: #dedede;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
   .pagination > .active > span,
@@ -3263,7 +3263,7 @@ tbody.collapse.in {
     .pager li > a:hover,
     .pager li > a:focus {
       text-decoration: none;
-      background-color: #eeeeee; }
+      background-color: #dedede; }
   .pager .next > a,
   .pager .next > span {
     float: right; }
@@ -3370,7 +3370,7 @@ a.badge:hover, a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee; }
+  background-color: #dedede; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
@@ -3379,7 +3379,7 @@ a.badge:hover, a.badge:focus {
     font-size: 24px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #d5d5d5; }
+    border-top-color: #c4c4c4; }
   .container .jumbotron, .container-fluid .jumbotron {
     border-radius: 6px; }
   .jumbotron .container {
@@ -3621,7 +3621,7 @@ a.list-group-item {
     background-color: #f5f5f5; }
 
 .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
-  background-color: #eeeeee;
+  background-color: #dedede;
   color: #777777;
   cursor: not-allowed; }
   .list-group-item.disabled .list-group-item-heading, .list-group-item.disabled:hover .list-group-item-heading, .list-group-item.disabled:focus .list-group-item-heading {
@@ -5048,6 +5048,23 @@ you can use the generic selector below, but it's slower:
     width: 150px;
     font-weight: 600; } }
 
+.license {
+  margin: 22px 0 44px; }
+  @media (min-width: 480px) {
+    .license {
+      padding-left: 100px; }
+      .license .cc-license-icon {
+        float: left;
+        margin-left: -100px; } }
+
+.cc-license-icon {
+  display: block;
+  margin: 22px 0 11px;
+  text-align: center; }
+  @media (min-width: 480px) {
+    .cc-license-icon {
+      margin-top: 0; } }
+
 .new-items-selector {
   margin-bottom: 11px; }
   .new-items-selector .btn-group {
@@ -5064,7 +5081,7 @@ you can use the generic selector below, but it's slower:
 .related-links {
   clear: left;
   position: relative;
-  background-color: #eeeeee;
+  background-color: #dedede;
   padding: 16px;
   border-radius: 4px;
   margin: 11px 0; }
@@ -5072,7 +5089,7 @@ you can use the generic selector below, but it's slower:
 .table {
   width: auto; }
   .table th {
-    background-color: #eeeeee;
+    background-color: #dedede;
     font-weight: 600; }
 
 .table-centered td {
@@ -5090,13 +5107,53 @@ you can use the generic selector below, but it's slower:
             column-gap: 1.3333333;
     list-style: none; } }
 /*  Property page type specific styles */
+.expando {
+  border: 1px solid #dedede;
+  border-radius: 4px; }
+  .expando h2 {
+    border-radius: 0 0 4px 4px;
+    border-top: 1px dashed #dedede;
+    font-size: 24px;
+    line-height: 1.99999995;
+    margin: 0;
+    padding: 0 12px 0 36px; }
+    .expando h2 a {
+      text-decoration: none; }
+  .expando h2:first-child {
+    border-radius: 4px 0 0;
+    border-top: none; }
+  .expando a.toggle:before {
+    content: "\e026";
+    font-family: 'icomoon';
+    font-size: 0.5em;
+    color: #999;
+    margin-left: -24px;
+    margin-right: 12px;
+    text-decoration: none;
+    vertical-align: middle; }
+  .expando a.toggle.collapsed:before {
+    content: '\e024'; }
+  .expando .collapse.in {
+    padding: 0 12px 0 36px; }
+  .expando .collapse:last-child {
+    border-radius: 0 0 4px; }
+  .expando h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600; }
+  .expando ul.related-docs {
+    margin: 0 0 24px 0;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    list-style: none; }
+
 footer {
   background: #333333;
   background-image: -webkit-linear-gradient(top, #333333, #222222);
   background-image: linear-gradient(to bottom, #333333, #222222);
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #eeeeee; }
+  color: #dedede; }
   footer a {
     color: #6aade4; }
   footer a:hover,
@@ -5117,7 +5174,7 @@ footer {
     background-color: transparent;
     border-color: #555555;
     border-bottom-color: #333333;
-    color: #eeeeee; }
+    color: #dedede; }
   footer .tab-pane {
     padding: 12px 16px;
     border: 1px solid #555555;
@@ -5182,7 +5239,7 @@ header {
 
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #eeeeee; }
+  color: #dedede; }
 
 .social {
   background-color: #E9F2F7;
