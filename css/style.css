@@ -5084,7 +5084,7 @@ you can use the generic selector below, but it's slower:
   background-color: #dedede;
   padding: 16px;
   border-radius: 4px;
-  margin: 11px 0; }
+  margin: 33px 0 0; }
 
 .table {
   width: auto; }
@@ -5107,6 +5107,52 @@ you can use the generic selector below, but it's slower:
             column-gap: 1.3333333;
     list-style: none; } }
 /*  Property page type specific styles */
+.event-date {
+  display: block;
+  color: #333333; }
+
+.event-title {
+  display: block; }
+
+.event-action {
+  display: block; }
+
+.event-time {
+  text-transform: lowercase; }
+
+.event-detail {
+  position: relative;
+  background-color: #eeeeee;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px; }
+  @media (min-width: 480px) {
+    .event-detail .actions {
+      float: right;
+      margin-left: 16px; } }
+
+.event-when, .event-cost, .event-where {
+  margin-left: 60px; }
+
+.start, .finish, .cost, .where {
+  display: inline-block;
+  width: 60px;
+  margin-left: -60px; }
+
+.actions > .btn {
+  width: 100%; }
+  @media (min-width: 480px) {
+    .actions > .btn {
+      width: auto; } }
+
+.event-map {
+  margin-top: 12px; }
+  .event-map img {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    max-width: 100%; }
+
+/*  maybe needs to move later */
 .expando {
   border: 1px solid #dedede;
   border-radius: 4px; }

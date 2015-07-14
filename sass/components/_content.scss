@@ -125,7 +125,7 @@
   background-color: $gray-lighter;
   padding: $padding-large-horizontal;
   border-radius: $border-radius-base;
-  margin: ($line-height-computed / 2) 0;
+  margin: ($line-height-computed * 1.5) 0 0;
 }
 
 .table {
