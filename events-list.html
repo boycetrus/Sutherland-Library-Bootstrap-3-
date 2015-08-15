@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>List View - Sutherland Shire Council Libraries</title>
+    <title>Events - Sutherland Shire Council Libraries</title>
     <!-- Bootstrap -->
     <meta name="description" content="Welcome to Sutherland Shire Libraries. Search our collection for books, music, films, articles, audiobooks, ebooks, magazines and more." />
 
@@ -182,123 +182,140 @@
 
         <div id="content" class="content">
 
-          <div class="hero-unit jumbotron email-signup">
+          <div class="row thumbnails">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+              <div class="hero-unit jumbotron email-signup">
   <h2>HSC Lectures</h2>
   <p>Be the 1st to know - Get HSC Lecture updates by email</p>
   <p><a class="btn btn-success btn-lg" href="#">Sign Up</a></p>
 </div>
+            </div>
+            <!-- need to inject clearfix:
+with class visible-xs-block after every 2nd thumbnail
+with class visible-sm-block after every 3rd thumbnail
+with class visible-md-block visible-lg-block after every 4th thumbnail
+-->
+<div class="col-xs-6 col-sm-4 col-md-3">
+  <div class="thumbnail feature-item feature-event">
+    <a href="#"><img alt="placeholder" src="//lorempixel.com/600/400/people"></a>
+    <div class="caption">
+      <span class="event-date">Thursday, 16 Jul 2015 at <span class="event-time">2:00PM</span></span>
+      <h2><a href="#">Get Ready For Spring</a></h2>
+      <p>Get your garden ready for the arrival of spring!</p>
+      <p>
+        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
+        <a class="btn btn-default" href="#">Learn More</a></p>
+    </div><!-- /caption -->
+  </div><!-- /feature-event -->
+</div>
 
-          <div class="row thumbnails">
-          <!-- need to inject clearfix:
-            with class visible-xs-block after every 2nd thumbnail
-            with class visible-sm-block after every 3rd thumbnail
-            with class visible-md-block visible-lg-block after every 4th thumbnail
-          -->
+<div class="clearfix visible-xs-block"></div>
 
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/people" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">School Holiday Activities</a></h2>
-                  <p>Things to do at the library during the School Holidays - check out our school holiday calendar of events.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
+<div class="col-xs-6 col-sm-4 col-md-3">
+  <div class="thumbnail feature-item feature-event">
+    <a href="#"><img alt="Placeholder" src="//lorempixel.com/600/400/abstract"></a>
+    <div class="caption">
+      <span class="event-date">Saturday, 18 Jul 2015 at <span class="event-time">9:30AM</span></span>
+      <h2><a href="#">Upcycled Tea Cup Soy Candles</a></h2>
+      <p>Bring your vintage cup and saucer sets and upcycle one into an environmentally friendly soy candle and another into a pincushion.</p>
+      <p>
+        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
+        <a class="btn btn-default" href="#">Learn More</a></p>
+    </div><!-- /caption -->
+  </div><!-- /feature-event -->
+</div>
+
+<div class="clearfix visible-sm-block"></div>
+
+<div class="col-xs-6 col-sm-4 col-md-3">
+  <div class="thumbnail feature-item feature-event">
+    <a href="#"><img alt="Placeholder" src="//lorempixel.com/600/400/cats"></a>
+    <div class="caption">
+      <span class="event-date">Tuesday, 21 Jul 2015 at <span class="event-time">10:00AM</span></span>
+      <h2><a href="#">Toddler Behaviour and Development</a></h2>
+      <p>A child and family health expert will speak about toddler behaviour and development.</p>
+      <p>
+        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
+        <a class="btn btn-default" href="#">Learn More</a></p>
+    </div><!-- /caption -->
+  </div><!-- /feature-event -->
+</div>
+          </div><!-- /thumbnails -->
+
+          <div class="clearfix"></div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>All Events and Activities</h2>
+              <div id="all-events" class="more-events">
+                <ul class="list-group">
+                  <li class="list-group-item dlv-search">
+                    <div class="form-inline">
+                      <div class="input-group">
+                        <input id="ctl07_phBodyTop321" name="ctl07$phBodyTop321" type="text" class="form-control" placeholder="Search events">
+                        <span class="input-group-btn">
+                          <button class="btn btn-primary" type="button">GO</button>
+                        </span>
+                      </div><!-- /input-group -->
+                      <a class="btn btn-default hidden-xs" href="/$1dcdb6f6-1c5c-4d1f-95cc-8526ead6372d$/Community/Library/Whats-On#content">CLEAR</a>
+                    </div><!-- form-inline -->
+                  </li><!-- /dlv-search -->
+                  <li class="js-General list-group-item">
+  <div class="event-date">Tuesday, 11 Aug 2015 at <span class="event-time">9:30PM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Whats-On/">House History Workshop</a></div>
+  <div class="event-location">Sutherland Library</div>
+  <div class="event-action">
+    <span class="btn btn-danger btn-xs">Booked Out</span>
+  </div>
+</li>
+<li class="js-eventPattern list-group-item">
+  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">10:30AM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-Parents/Storytime/">Storytime Sylvania (Preschool)</a></div>
+  <div class="event-location">Sylvania Library</div>
+  <div class="event-action"></div>
+</li>
+<li class="js-General list-group-item">
+  <div class="event-date">Tuesday, 11 Aug 2015 at <span class="event-time">9:30PM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Whats-On/">House History Workshop</a></div>
+  <div class="event-location">Sutherland Library</div>
+  <div class="event-action">
+    <span class="btn btn-danger btn-xs">Booked Out</span>
+  </div>
+</li>
+<li class="js-eventPattern list-group-item">
+  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">10:30AM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-Parents/Storytime/">Storytime Menai (Preschool)</a></div>
+  <div class="event-location">Menai Library</div>
+  <div class="event-action"></div>
+</li>
+<li class="js-General list-group-item">
+  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">6:30PM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Books-Reading/Author-Talks/">Hilary Mantel, so much more than Wolf Hall</a></div>
+  <div class="event-location">Sutherland Library</div>
+  <div class="event-action">
+    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hilary-mantel-so-much-more-than-wolf-hallpresented-by-joanna-penglase-tickets-17560808852">Book Now</a>
+  </div>
+</li>
+<li class="js-General list-group-item">
+  <div class="event-date">Wednesday, 2 Sep 2015 at <span class="event-time">6:00PM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/HSC-Students/">HSC Lecture: Biology</a></div>
+  <div class="event-location">Sutherland Library</div>
+  <div class="event-action">
+    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hsc-biology-tickets-17667949312">Book Now</a>
+  </div>
+</li>
+<li class="js-General list-group-item">
+  <div class="event-date">Wednesday, 9 Sep 2015 at <span class="event-time">6:00PM</span></div>
+  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/HSC-Students/">HSC Lecture: English - Metropolis &amp; 1984</a></div>
+  <div class="event-location">Sutherland Library</div>
+  <div class="event-action">
+    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hsc-english-metropolis-1984-tickets-17704803544">Book Now</a>
+  </div>
+</li>
+                </ul>
               </div>
             </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/abstract" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Children's Reading Games</a></h2>
-                  <p>Have fun while developing reading, literacy and numeracy with our selection of educational online games, stories and activities.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix visible-xs-block"></div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/cats" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Storytime</a></h2>
-                  <p>Come along to storytime and hear stories read aloud, sing songs, watch a film & make some craft. Storytimes are a fun way to help your child develop their early language, aural and memory skills.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix visible-sm-block"></div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/abstract" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Rhymetime</a></h2>
-                  <p>Rhymetime is our version of Storytime for babies from 0-2 years and their fun loving carers. No bookings required, just bring along your singing voice and a sense of fun.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix visible-xs-block visible-md-block visible-lg-block"></div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/people" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Toddler Time</a></h2>
-                  <p>Toddler Time is Sutherland Shire Libraries version of Storytime for children 18m - 3yrs. No bookings required, just come along ready to participate and have fun.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/cats" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Children's Reading Guides</a></h2>
-                  <p>Find new children's authors and books to read with these resources. Search by author, book title, subject or genre.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix visible-xs-block visible-sm-block"></div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/abstract" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">National Events</a></h2>
-                  <p>Sutherland Shire Libraries support and celebrate a number of state wide and national events and programs for children and young adults.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="thumbnail">
-                <a href="#"><img src="http://lorempixel.com/600/400/cats" alt="..."></a>
-                <div class="caption">
-                  <h2><a href="#">Toddler Behaviour &amp; Development</a></h2>
-                  <p>A child and family health expert will speak about toddler behaviour and development.</p>
-                  <p><a href="#" class="btn btn-success">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-          </div><!-- /row -->
-
-          <h3>More Information</h3>
-          <address>
-            <strong>Children &amp; Young Adult Services</strong><br>
-            <strong>Phone</strong> 9710 0178<br>
-            <strong>Email</strong> <a href="mailto:library@ssc.nsw.gov.au">library@ssc.nsw.gov.au</a>
-          </address>
+          </div>
 
         </div><!-- /content -->
 

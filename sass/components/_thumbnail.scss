@@ -1,10 +1,10 @@
 .thumbnails {
   margin-bottom: 0;
-  
-  br {
-    clear: left;
-    height: 0;
-  }
+  //
+  // br {
+  //   clear: left;
+  //   height: 0;
+  // }
 }
 
 .thumbnail {
@@ -18,14 +18,14 @@
   li {
     padding: 9px;
     padding: 0.5625rem;
-    border-top: 1px dashed $light-grey;
+    border-top: 1px dashed $gray-lighter;
   }
   li:first-child {
     border-top: none;
   }
-  .more li:first-child, 
+  .more li:first-child,
   .feedburnerFeedBlock li:first-child {
-    border-top: 1px dashed $light-grey;
+    border-top: 1px dashed $gray-lighter;
   }
   .headline {
     font-size: 20px;
@@ -36,15 +36,13 @@
   .thumbnail-footer {
   padding: 9px;
   padding: 0.5625rem;
-  border-top: 1px dashed $light-grey;
+  border-top: 1px dashed $gray-lighter;
   text-align: right;
   }
   .caption {
     h2, h3, h4 {
-      font-size: 24px;
-      font-size: 1.5rem;
-      line-height: 32px;
-      line-height: 2rem;
+      font-size: $font-size-h3;
+      line-height: ($font-size-h3 * $line-height-base);
       font-weight: 400;
       margin: 0;
     }
@@ -58,36 +56,36 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $screen-xs-min) {
   .thumbnail li .actions{
     text-align: right;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $screen-sm-min) {
   .thumbnail {
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .thumbnail {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 4px;
-    padding-bottom: 0.25rem;
-    img {
-      float: left;
-      max-width: 45%;
-    }
-    .caption {
-      float: right;
-      max-width: 53%;
-      padding: 0;
-    }
-    .more, .feedburnerFeedBlock {
-      clear: both;
-    }
-  }
-}
+// @media screen and (min-width: 480px) and (max-width: 767px) {
+//   .thumbnail {
+//     float: left;
+//     width: 100%;
+//     box-sizing: border-box;
+//     padding-bottom: 4px;
+//     padding-bottom: 0.25rem;
+//     img {
+//       float: left;
+//       max-width: 45%;
+//     }
+//     .caption {
+//       float: right;
+//       max-width: 53%;
+//       padding: 0;
+//     }
+//     .more, .feedburnerFeedBlock {
+//       clear: both;
+//     }
+//   }
+// }

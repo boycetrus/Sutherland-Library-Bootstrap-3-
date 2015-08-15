@@ -3367,32 +3367,39 @@ a.badge:hover, a.badge:focus {
   cursor: pointer; }
 
 .jumbotron {
-  padding: 30px 15px;
+  padding: 15px 7.5px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #dedede; }
+  color: #eeeeee;
+  background-color: #333333;
+  text-align: center; }
   .jumbotron h1,
   .jumbotron .h1 {
     color: inherit; }
+  .jumbotron h2,
+  .jumbotron .h2 {
+    margin-top: 0; }
   .jumbotron p {
-    margin-bottom: 15px;
+    margin-bottom: 7.5px;
     font-size: 24px;
-    font-weight: 200; }
+    font-weight: 400; }
   .jumbotron > hr {
-    border-top-color: #c4c4c4; }
+    border-top-color: #1a1a1a; }
   .container .jumbotron, .container-fluid .jumbotron {
     border-radius: 6px; }
   .jumbotron .container {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
-      padding: 48px 0; }
+      padding: 24px 0; }
       .container .jumbotron, .container-fluid .jumbotron {
-        padding-left: 60px;
-        padding-right: 60px; }
+        padding-left: 30px;
+        padding-right: 30px; }
       .jumbotron h1,
       .jumbotron .h1 {
-        font-size: 72px; } }
+        font-size: 72px; }
+      .jumbotron h2,
+      .jumbotron .h2 {
+        font-size: 54px; } }
 
 .thumbnail {
   display: block;
@@ -5107,15 +5114,63 @@ you can use the generic selector below, but it's slower:
             column-gap: 1.3333333;
     list-style: none; } }
 /*  Property page type specific styles */
+.feature-event .event-time {
+  padding-right: 0.25em; }
+
 .event-date {
-  display: block;
-  color: #333333; }
+  color: #777777; }
 
-.event-title {
+.more-events .list-group-item .event-date,
+.more-events .list-group-item .event-title,
+.more-events .list-group-item .event-location,
+.more-events .list-group-item .event-action {
   display: block; }
+@media (min-width: 768px) {
+  .more-events .list-group-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+  .more-events .event-date {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 255px;
+        -ms-flex: 0 0 255px;
+            flex: 0 0 255px; }
+  .more-events .event-title {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding-right: 10px; }
+  .more-events .event-location {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 145px;
+        -ms-flex: 0 0 145px;
+            flex: 0 0 145px; }
+  .more-events .event-action {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 85px;
+        -ms-flex: 0 0 85px;
+            flex: 0 0 85px;
+    text-align: right; }
+  .more-events .dlv-search .form-inline .input-group > .form-control {
+    width: 300px; } }
 
-.event-action {
-  display: block; }
+.toggle-events {
+  padding-top: 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  text-align: right; }
 
 .event-time {
   text-transform: lowercase; }
@@ -5152,7 +5207,6 @@ you can use the generic selector below, but it's slower:
     border-radius: 4px;
     max-width: 100%; }
 
-/*  maybe needs to move later */
 .expando {
   border: 1px solid #dedede;
   border-radius: 4px; }
@@ -5357,5 +5411,51 @@ header {
     line-height: 55px;
     float: right;
     margin-left: 12px; } }
+.thumbnails {
+  margin-bottom: 0; }
+
+.thumbnail {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+  .thumbnail ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .thumbnail li {
+    padding: 9px;
+    padding: 0.5625rem;
+    border-top: 1px dashed #dedede; }
+  .thumbnail li:first-child {
+    border-top: none; }
+  .thumbnail .more li:first-child,
+  .thumbnail .feedburnerFeedBlock li:first-child {
+    border-top: 1px dashed #dedede; }
+  .thumbnail .headline {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    line-height: 1.5rem; }
+  .thumbnail .thumbnail-footer {
+    padding: 9px;
+    padding: 0.5625rem;
+    border-top: 1px dashed #dedede;
+    text-align: right; }
+  .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4 {
+    font-size: 28px;
+    line-height: 40.000000012px;
+    font-weight: 400;
+    margin: 0; }
+  .thumbnail .caption > p {
+    margin-bottom: 0; }
+  .thumbnail .caption .btn {
+    margin-top: 9px;
+    margin-top: 0.5625rem; }
+
+@media screen and (min-width: 480px) {
+  .thumbnail li .actions {
+    text-align: right; } }
+@media screen and (min-width: 768px) {
+  .thumbnail {
+    margin-bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */
