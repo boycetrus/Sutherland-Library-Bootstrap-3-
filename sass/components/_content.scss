@@ -154,11 +154,10 @@
 
 
 /*  Property page type specific styles */
-// .hours span {
-//   display: inline-block;
-//   width: 100px;
-//   width: 6.25rem;
-// }
+.opening-hours > span {
+  display: inline-block;
+  width: 100px;
+}
 //
 // .day-date {
 //   @media (min-width:360px) {

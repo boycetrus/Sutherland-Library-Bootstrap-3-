@@ -83,7 +83,8 @@ sub {
   bottom: -0.25em; }
 
 img {
-  border: 0; }
+  border: 0;
+  max-width: 100%; }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -2748,7 +2749,12 @@ tbody.collapse.in {
 .tab-content > .tab-pane {
   display: none; }
 .tab-content > .active {
-  display: block; }
+  display: block;
+  padding: 6px 12px;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px; }
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -5114,6 +5120,10 @@ you can use the generic selector below, but it's slower:
             column-gap: 1.3333333;
     list-style: none; } }
 /*  Property page type specific styles */
+.opening-hours > span {
+  display: inline-block;
+  width: 100px; }
+
 .feature-event .event-time {
   padding-right: 0.25em; }
 
