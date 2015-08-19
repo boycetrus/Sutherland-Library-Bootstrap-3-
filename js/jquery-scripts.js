@@ -1,5 +1,5 @@
 //@codekit-prepend "components/incl-alerts.js";
-//@codekit-prepend "components/incl-catalgue.js";
+//@codekit-prepend "components/incl-catalogue.js";
 //@codekit-prepend "components/incl-events.js";
 //@codekit-prepend "components/incl-expando.js";
 //@codekit-prepend "components/incl-listview.js";
@@ -12,7 +12,7 @@ $(document).ready(function() {
     var action = $(this).data('ga-action');
     var label = $(this).data('ga-label');
     var value = $(this).data('ga-value');
-   
+
     //check that analytics is installed and then send event
     if (typeof ga !== 'undefined') {
     		ga('send', 'event', category, action, label, value );
@@ -21,16 +21,25 @@ $(document).ready(function() {
       } else {
       console.log("no google analytics here bro!");
     }
-    
+
   });
 
 // init fitvids
   $('#content').fitVids();    //target the container that holds the video
 //end fitvids
 
-// init tooltips and popovers  
+// init tooltips and popovers
   $('.pop-over').popover();
   $('.tool-tip').tooltip();
 // end popover
+
+//  inject clearfix for thumbnails data list views:
+//    with class visible-xs-block after every 2nd thumbnail
+//    with class visible-sm-block after every 3rd thumbnail
+//    with class visible-md-block visible-lg-block after every 4th thumbnail
+
+  $('.thumbnails .col-md-3:nth-of-type(4n)').after('<p class="clearfix visible-md-block visible-lg-block"></p>');
+  $('.thumbnails .col-sm-4:nth-of-type(3n)').after('<p class="clearfix visible-sm-block"></p>');
+  $('.thumbnails .col-xs-6:nth-of-type(2n)').after('<p class="clearfix visible-xs-block"></p>');
 
 });

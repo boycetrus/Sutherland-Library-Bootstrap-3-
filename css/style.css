@@ -5043,6 +5043,12 @@ you can use the generic selector below, but it's slower:
 .double-spaced {
   margin: 22px 0; }
 
+.gmap {
+  height: 500px;
+  margin-bottom: 22px;
+  border: 1px solid #777777;
+  border-radius: 4px; }
+
 .hero-image {
   max-width: 450px;
   margin: 22px auto 0; }
