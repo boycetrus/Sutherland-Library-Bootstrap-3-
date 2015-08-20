@@ -1,45 +1,7 @@
-body {
-  color: $text-color;
-  padding-left: 5px;
-  padding-right: 5px;
-
-  @media (min-width: 768px) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-h1 { line-height: 52px; line-height: 3.25rem; font-weight: 400; }
-h2 { line-height: 44px; line-height: 2.75rem; font-weight: 400; }
-h3 { line-height: 36px; line-height: 2.25rem; font-weight: 400; }
-
-strong { font-weight: $bold; }
-
 /* classes to be added from WYSIWYG style menu */
 
 .appstore {
   width: 105px;
-}
-
-.full-width {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.hero-unit {
-  @include box-sizing(border-box);
-}
-
-.img-rounded, .img-polaroid, img-circle {
-  @include box-sizing(border-box);
-}
-
-.intro {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 30px;
-  line-height: 1.875rem;
-  color: lighten($text-color, 20%);
 }
 
 .loading {
@@ -48,21 +10,8 @@ strong { font-weight: $bold; }
   min-height: 128px;
 }
 
-@media (min-width:1000px) {
-  .list-as-columns.two-columns {
-    @include column-count(2);
-  }
-  .list-as-columns.three-columns {
-    @include column-count(3);
-  }
-  .list-as-columns.four-columns {
-    @include column-count(4);
-  }
-}
-
 .video-embed {
-  margin: 24px 0;
-  margin: 1.5rem 0;
+  margin: $line-height-computed 0;
 }
 
 .rss[data-icon] {

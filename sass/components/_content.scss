@@ -13,7 +13,11 @@
 
 .content {
   > .actions {
-    margin: ($padding-base-vertical*5) 0;
+    margin: ($padding-base-vertical * 5) 0;
+    line-height: ($line-height-computed * 3);
+  }
+  .alert {
+    margin: $line-height-computed 0;
   }
 }
 
@@ -140,16 +144,13 @@
   }
 }
 
-@media (min-width:$screen-md-min) {
-  .list-as-columns {
-    margin-left: 0;
-    padding-left: 0;
-    columns: 300px 3;
-    column-gap: $line-height-large;
-    list-style: none;
-  }
+.list-as-columns {
+  margin-left: 0;
+  padding-left: 0;
+  columns: 260px 3;
+  column-gap: $line-height-large;
+  list-style: none;
 }
-
 
 /*  Property page type specific styles */
 .opening-hours > span {

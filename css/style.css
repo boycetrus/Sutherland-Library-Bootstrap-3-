@@ -5038,7 +5038,10 @@ you can use the generic selector below, but it's slower:
     text-decoration: none; }
 
 .content > .actions {
-  margin: 30px 0; }
+  margin: 30px 0;
+  line-height: 66px; }
+.content .alert {
+  margin: 22px 0; }
 
 .double-spaced {
   margin: 22px 0; }
@@ -5114,17 +5117,17 @@ you can use the generic selector below, but it's slower:
 .table-centered td {
   text-align: center; }
 
-@media (min-width: 992px) {
-  .list-as-columns {
-    margin-left: 0;
-    padding-left: 0;
-    -webkit-columns: 300px 3;
-       -moz-columns: 300px 3;
-            columns: 300px 3;
-    -webkit-column-gap: 1.3333333;
-       -moz-column-gap: 1.3333333;
-            column-gap: 1.3333333;
-    list-style: none; } }
+.list-as-columns {
+  margin-left: 0;
+  padding-left: 0;
+  -webkit-columns: 260px 3;
+     -moz-columns: 260px 3;
+          columns: 260px 3;
+  -webkit-column-gap: 1.3333333;
+     -moz-column-gap: 1.3333333;
+          column-gap: 1.3333333;
+  list-style: none; }
+
 /*  Property page type specific styles */
 .opening-hours > span {
   display: inline-block;
