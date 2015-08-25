@@ -1,0 +1,47 @@
+.dlv-list-group {
+  .list-group-item {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: $font-size-h4;
+      margin: 0;
+      line-height: $line-height-base;
+    }
+    .audio-action {
+      line-height: 3em;
+    }
+  }
+  .feature-item {
+    background-color: $gray-faint;
+  }
+  .feature-item .audio-title {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .feature-item img {
+    padding-bottom: $padding-base-vertical;
+  }
+  @media (min-width:$screen-sm-min) {
+    .list-group-item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      .audio-title {
+        flex: 0 0 230px;
+      }
+      .audio-summary {
+        flex: 1 1 auto;
+        padding-right: $padding-large-horizontal;
+      }
+      .audio-action {
+        flex: 0 0 auto;
+        line-height: 1em;
+      }
+    }
+    .feature-item img {
+      padding-bottom: 0;
+      padding-right: $padding-base-horizontal;
+    }
+  }
+}

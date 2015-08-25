@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Events - Sutherland Shire Council Libraries</title>
+    <title>Audio List</title>
     <!-- Bootstrap -->
     <meta name="description" content="Welcome to Sutherland Shire Libraries. Search our collection for books, music, films, articles, audiobooks, ebooks, magazines and more." />
 
@@ -178,135 +178,97 @@
       <section id="main" class="main" role="main">
 
         <h1>Landing Page - List View</h1>
-        <p class="lead">Standard landing page list view of indeterminate number of thumbnail containers.</p>
+        <p class="lead">Standard landing page list view of indeterminate number of audio player pages, eg. oral histories.</p>
 
         <div id="content" class="content">
 
-          <div class="row thumbnails">
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="hero-unit jumbotron email-signup">
-  <h2>HSC Lectures</h2>
-  <p>Be the 1st to know - Get HSC Lecture updates by email</p>
-  <p><a class="btn btn-success btn-lg" href="#">Sign Up</a></p>
-</div>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-3">
-  <div class="thumbnail feature-item feature-event">
-    <a href="#"><img alt="placeholder" src="//lorempixel.com/600/400/people"></a>
-    <div class="caption">
-      <span class="event-date">Thursday, 16 Jul 2015 at <span class="event-time">2:00PM</span></span>
-      <h2><a href="#">Get Ready For Spring</a></h2>
-      <p>Get your garden ready for the arrival of spring!</p>
-      <p>
-        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
-        <a class="btn btn-default" href="#">Learn More</a></p>
-    </div><!-- /caption -->
-  </div><!-- /feature-event -->
-</div>
-
-<div class="col-xs-6 col-sm-4 col-md-3">
-  <div class="thumbnail feature-item feature-event">
-    <a href="#"><img alt="Placeholder" src="//lorempixel.com/600/400/abstract"></a>
-    <div class="caption">
-      <span class="event-date">Saturday, 18 Jul 2015 at <span class="event-time">9:30AM</span></span>
-      <h2><a href="#">Upcycled Tea Cup Soy Candles</a></h2>
-      <p>Bring your vintage cup and saucer sets and upcycle one into an environmentally friendly soy candle and another into a pincushion.</p>
-      <p>
-        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
-        <a class="btn btn-default" href="#">Learn More</a></p>
-    </div><!-- /caption -->
-  </div><!-- /feature-event -->
-</div>
-
-<div class="col-xs-6 col-sm-4 col-md-3">
-  <div class="thumbnail feature-item feature-event">
-    <a href="#"><img alt="Placeholder" src="//lorempixel.com/600/400/cats"></a>
-    <div class="caption">
-      <span class="event-date">Tuesday, 21 Jul 2015 at <span class="event-time">10:00AM</span></span>
-      <h2><a href="#">Toddler Behaviour and Development</a></h2>
-      <p>A child and family health expert will speak about toddler behaviour and development.</p>
-      <p>
-        <a class="btn btn-success js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="#" target="_blank">Book Now</a>
-        <a class="btn btn-default" href="#">Learn More</a></p>
-    </div><!-- /caption -->
-  </div><!-- /feature-event -->
-</div>
-          </div><!-- /thumbnails -->
-
-          <div class="clearfix"></div>
-
-          <div class="row">
-            <div class="col-xs-12">
-              <h2>All Events and Activities</h2>
-              <div id="all-events" class="more-events">
+              <h2 class="sr-only">All Oral Histories</h2>
+              <div id="oral-histories" class="dlv-list-group">
                 <ul class="list-group">
-                  <li class="list-group-item dlv-search">
-                    <div class="form-inline">
-                      <div class="input-group">
-                        <input id="ctl07_phBodyTop321" name="ctl07$phBodyTop321" type="text" class="form-control" placeholder="Search events">
-                        <span class="input-group-btn">
-                          <button class="btn btn-primary" type="button">GO</button>
-                        </span>
-                      </div><!-- /input-group -->
-                      <a class="btn btn-default hidden-xs" href="/$1dcdb6f6-1c5c-4d1f-95cc-8526ead6372d$/Community/Library/Whats-On#content">CLEAR</a>
-                    </div><!-- form-inline -->
-                  </li><!-- /dlv-search -->
-                  <li class="js-General list-group-item">
-  <div class="event-date">Tuesday, 11 Aug 2015 at <span class="event-time">9:30PM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Whats-On/">House History Workshop</a></div>
-  <div class="event-location">Sutherland Library</div>
-  <div class="event-action">
-    <span class="btn btn-danger btn-xs">Booked Out</span>
+
+                  <li class="list-group-item feature-item">
+                    <div class="audio-title">
+                      <img src="//lorempixel.com/600/400/people" />
+                    </div>
+                    <div class="audio-summary">
+                      <h3><a href="content-audio.html">William (Bill) Mondel</a></h3>
+                      <p>Born on 6 October 1910 when his family lived at Taren Rd, Miranda, Bill Mondel recollects the early days of the Shire. The Mondels were one of very few German families living here during WWI.</p>
+                      <p>
+                        <audio controls="" preload="none">
+                          <source src="http://archive.org/download/WilliamMondel/WilliamMondel.mp3">
+                          <source src="http://archive.org/download/WilliamMondel/WilliamMondel.ogg">
+                        </audio>
+                        <!--[if lt IE 9]>
+                        <object type="application/x-shockwave-flash" data="" width="200" height="20" id="dewplayer" name="dewplayer">
+                          <param name="movie" value="/files/templates/00000000-0000-0000-0000-000000000000/bd538bed-1f9c-43d7-b9f0-2c3cb29b7d41/dewplayer.swf" />
+                          <param name="flashvars" value="mp3=http://archive.org/download/WilliamMondel/WilliamMondel.mp3" />
+                          <param name="wmode" value="transparent" />
+                        </object>
+                        <![endif]-->
+                      </p>
+                    </div>
+                    <div class="audio-action">
+                      <a class="btn btn-success btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="learn more" data-icon="&#xe603;" href="content-audio.html">Learn More</a>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Phyllis-Farleigh">Phyllis Farleigh</a></h3></div>
+  <div class="audio-summary"><p>Before marrying Ray Farleigh, Phyllis Stroud was crowned 'Surf Queen' at Cronulla in 1927. Her family was heavily involved in the Cronulla and North Cronulla Surf Clubs.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Dorothy Nixon" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Phyllis-Farleigh"><span data-icon="&#xe603;"></span> Listen Now</a>
   </div>
 </li>
-<li class="js-eventPattern list-group-item">
-  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">10:30AM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-Parents/Storytime/">Storytime Sylvania (Preschool)</a></div>
-  <div class="event-location">Sylvania Library</div>
-  <div class="event-action"></div>
-</li>
-<li class="js-General list-group-item">
-  <div class="event-date">Tuesday, 11 Aug 2015 at <span class="event-time">9:30PM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Whats-On/">House History Workshop</a></div>
-  <div class="event-location">Sutherland Library</div>
-  <div class="event-action">
-    <span class="btn btn-danger btn-xs">Booked Out</span>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Edmund-Ted-Smith">Edmund (Ted) Smith</a></h3></div>
+  <div class="audio-summary"><p>In 1953 Ted Smith opened a pharmacy with his soon-to-be-wife Elsie in Raliway Crescent Jannali. What had begun as a short term enterprise in Jannali lasted until the Smiths' retirement in 1999.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Edmund Ted Smith" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Edmund-Ted-Smith"><span data-icon="&#xe603;"></span> Listen Now</a>
   </div>
 </li>
-<li class="js-eventPattern list-group-item">
-  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">10:30AM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-Parents/Storytime/">Storytime Menai (Preschool)</a></div>
-  <div class="event-location">Menai Library</div>
-  <div class="event-action"></div>
-</li>
-<li class="js-General list-group-item">
-  <div class="event-date">Wednesday, 12 Aug 2015 at <span class="event-time">6:30PM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Books-Reading/Author-Talks/">Hilary Mantel, so much more than Wolf Hall</a></div>
-  <div class="event-location">Sutherland Library</div>
-  <div class="event-action">
-    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hilary-mantel-so-much-more-than-wolf-hallpresented-by-joanna-penglase-tickets-17560808852">Book Now</a>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Alistair-Gardner">Alistair Gardner</a></h3></div>
+  <div class="audio-summary"><p>Alistair Gardner's mother came to Sutherland in the very early days in 1887. Alastair himself was born in Sutherland in June 1928. In this interview he talks of his life growing up in the area.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Alistair Gardner" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Alistair-Gardner"><span data-icon="&#xe603;"></span> Listen Now</a>
   </div>
 </li>
-<li class="js-General list-group-item">
-  <div class="event-date">Wednesday, 2 Sep 2015 at <span class="event-time">6:00PM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/HSC-Students/">HSC Lecture: Biology</a></div>
-  <div class="event-location">Sutherland Library</div>
-  <div class="event-action">
-    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hsc-biology-tickets-17667949312">Book Now</a>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Bill-Barnidge">Bill-Barnidge</a></h3></div>
+  <div class="audio-summary"><p>After WWI Bill's family moved to a house on the corner of Auburn Street and what is now the Princes Highway, when there were only 3 or 4 houses between them & the dozen or so shops at Sutherland.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Bill Barnidge" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Bill-Barnidge"><span data-icon="&#xe603;"></span> Listen Now</a>
   </div>
 </li>
-<li class="js-General list-group-item">
-  <div class="event-date">Wednesday, 9 Sep 2015 at <span class="event-time">6:00PM</span></div>
-  <div class="event-title"><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Services/HSC-Students/">HSC Lecture: English - Metropolis &amp; 1984</a></div>
-  <div class="event-location">Sutherland Library</div>
-  <div class="event-action">
-    <a class="btn btn-success btn-xs js-ga-tracking" data-ga-category="cta-button-bookevent" data-ga-action="click" data-ga-label="Book Now" href="https://www.eventbrite.com.au/e/hsc-english-metropolis-1984-tickets-17704803544">Book Now</a>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Dorothy-Nixon">Dorothy Nixon</a></h3></div>
+  <div class="audio-summary"><p>Dorothy Nixon was born in 1926 and moved to 'Bayview' in 1942, which had previously been an early hotel at Yowie Bay.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Dorothy Nixon" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Dorothy-Nixon"><span data-icon="&#xe603;"></span> Listen Now</a>
   </div>
 </li>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/John-Marjory-Crowley">John &amp; Marjory Crowley</a></h3></div>
+  <div class="audio-summary"><p>John and Marj Crowley built their house in Caringbah in the 1950s, when it was 'all bush'. "It was just heaven. When I had the children I used to have to push them through the mud up to Caringbah".</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="John Marjory Crowley" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/John-Marjory-Crowley"><span data-icon="&#xe603;"></span> Listen Now</a>
+  </div>
+</li>
+<li class="list-group-item">
+  <div class="audio-title"><h3><a href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Harold-Harry-Mondel">Harry Mondel</a></h3></div>
+  <div class="audio-summary"><p>Harry Mondel was born on 12 October 1918. In this interview Harry recollects the early days of the Shire during the depression.</p></div>
+  <div class="audio-action">
+    <a class="btn btn-default btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="Harry Mondel" href="http://www.sutherlandshire.nsw.gov.au/Community/Library/Local-Studies/Oral-Histories/Harold-Harry-Mondel"><span data-icon="&#xe603;"></span> Listen Now</a>
+  </div>
+</li>
+
+                  <li class="list-group-item bg-info">
+                    <div class="audio-title"><h3>Want More? Tell us who to add next</h3></div>
+                    <div class="audio-summary">We are in the process of digitising our Oral History Collection and you can help us decide who to add next. Look through the full list on the library catalogue and if there's an oral history you want online tell us who and why in the comments below or drop us an email. We will try to get to your suggestions first.</div>
+                    <div class="audio-action"><a href="http://encore.sutherlandshire.nsw.gov.au" class="btn btn-info btn-sm" data-icon="&#xe01c;">View the List</a></div>
+                  </li>
                 </ul>
               </div>
-            </div>
-          </div>
 
         </div><!-- /content -->
 

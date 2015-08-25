@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio List</title>
+    <!-- Bootstrap -->
+    <!-- @import components/_head-content.htm -->
+  </head>
+
+  <body>
+    <div class="container-fluid page-wrap">
+
+      <!-- @import components/_alert.htm -->
+
+      <!-- @import components/_header.htm -->
+
+      <!-- @import components/_navbar.htm -->
+
+      <!-- @import components/_breadcrumbs.htm -->
+
+      <section id="main" class="main" role="main">
+
+        <h1>Landing Page - List View</h1>
+        <p class="lead">Standard landing page list view of indeterminate number of audio player pages, eg. oral histories.</p>
+
+        <div id="content" class="content">
+
+              <h2 class="sr-only">All Oral Histories</h2>
+              <div id="oral-histories" class="dlv-list-group">
+                <ul class="list-group">
+
+                  <li class="list-group-item feature-item">
+                    <div class="audio-title">
+                      <img src="//lorempixel.com/600/400/people" />
+                    </div>
+                    <div class="audio-summary">
+                      <h3><a href="content-audio.html">William (Bill) Mondel</a></h3>
+                      <p>Born on 6 October 1910 when his family lived at Taren Rd, Miranda, Bill Mondel recollects the early days of the Shire. The Mondels were one of very few German families living here during WWI.</p>
+                      <p>
+                        <audio controls="" preload="none">
+                          <source src="http://archive.org/download/WilliamMondel/WilliamMondel.mp3">
+                          <source src="http://archive.org/download/WilliamMondel/WilliamMondel.ogg">
+                        </audio>
+                        <!--[if lt IE 9]>
+                        <object type="application/x-shockwave-flash" data="" width="200" height="20" id="dewplayer" name="dewplayer">
+                          <param name="movie" value="/files/templates/00000000-0000-0000-0000-000000000000/bd538bed-1f9c-43d7-b9f0-2c3cb29b7d41/dewplayer.swf" />
+                          <param name="flashvars" value="mp3=http://archive.org/download/WilliamMondel/WilliamMondel.mp3" />
+                          <param name="wmode" value="transparent" />
+                        </object>
+                        <![endif]-->
+                      </p>
+                    </div>
+                    <div class="audio-action">
+                      <a class="btn btn-success btn-sm js-ga-tracking" data-ga-category="oral-history-listen" data-ga-action="click" data-ga-label="learn more" data-icon="&#xe603;" href="content-audio.html">Learn More</a>
+                    </div>
+                  </li>
+
+                  <!-- @import components/_audio-item.htm -->
+
+                  <li class="list-group-item bg-info">
+                    <div class="audio-title"><h3>Want More? Tell us who to add next</h3></div>
+                    <div class="audio-summary">We are in the process of digitising our Oral History Collection and you can help us decide who to add next. Look through the full list on the library catalogue and if there's an oral history you want online tell us who and why in the comments below or drop us an email. We will try to get to your suggestions first.</div>
+                    <div class="audio-action"><a href="http://encore.sutherlandshire.nsw.gov.au" class="btn btn-info btn-sm" data-icon="&#xe01c;">View the List</a></div>
+                  </li>
+                </ul>
+              </div>
+
+        </div><!-- /content -->
+
+      </section><!--/main-->
+    </div><!--/container-->
+
+    <!-- @import components/_social.htm -->
+
+    <!-- @import components/_footer.htm -->
+
+    <script src="js/production/global-min.js"></script>
+  </body>
+</html>
