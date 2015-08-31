@@ -4024,7 +4024,8 @@ a.list-group-item-danger {
   display: block;
   height: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 4px; }
   .embed-responsive .embed-responsive-item,
   .embed-responsive iframe,
   .embed-responsive embed,
@@ -5533,5 +5534,16 @@ header {
 @media screen and (min-width: 768px) {
   .thumbnail {
     margin-bottom: 0; } }
+/* classes to be added from WYSIWYG style menu */
+.appstore {
+  width: 105px; }
+
+.loading {
+  display: none;
+  background: transparent url("../img/loading.gif") no-repeat 20px 32px;
+  min-height: 128px; }
+
+.rss[data-icon] {
+  color: #E39800; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,10 +4,5 @@
 //replace ontouchstart with disable-ontouchstart
 //see more on fix at stackoverflow.com/questions/17178606/bootstrap-dropdown-navigation-not-working-on-mobile-browsers
 
-//@codekit-prepend "jquery.fitvids.js";
 //@codekit-prepend "owl.carousel.js";
 //@codekit-prepend "jquery-scripts.js";
-
-
-
-
