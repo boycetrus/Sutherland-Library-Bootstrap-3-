@@ -24,10 +24,6 @@ $(document).ready(function() {
 
   });
 
-// init fitvids
-  $('#content').fitVids();    //target the container that holds the video
-//end fitvids
-
 // init tooltips and popovers
   $('.pop-over').popover();
   $('.tool-tip').tooltip();

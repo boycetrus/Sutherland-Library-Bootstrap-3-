@@ -4793,14 +4793,14 @@ you can use the generic selector below, but it's slower:
     opacity: 1; }
   100% {
     opacity: 0; } }
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -4893,7 +4893,7 @@ you can use the generic selector below, but it's slower:
 .no-js .owl-carousel {
   display: block; }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -4905,7 +4905,7 @@ you can use the generic selector below, but it's slower:
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
@@ -4973,14 +4973,14 @@ you can use the generic selector below, but it's slower:
   width: 10px;
   height: 10px;
   margin: 5px;
-  background: #ddd;
+  background: #dedede;
   display: block;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   border-radius: 30px; }
 
 .owl-dot.active span {
-  background: #777777; }
+  background: #333333; }
 
 @media (max-width: 480px) {
   .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
@@ -5043,8 +5043,27 @@ you can use the generic selector below, but it's slower:
 .content .alert {
   margin: 22px 0; }
 
+p.actions {
+  line-height: 3; }
+  @media (min-width: 480px) {
+    p.actions {
+      line-height: 1.428571429; } }
+
 .double-spaced {
   margin: 22px 0; }
+
+.facets li.selected {
+  padding-right: 40px;
+  position: relative; }
+.facets a {
+  cursor: pointer; }
+.facets .clr-filter {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  color: #E00034;
+  cursor: pointer;
+  font-size: 18px; }
 
 .gmap {
   height: 500px;

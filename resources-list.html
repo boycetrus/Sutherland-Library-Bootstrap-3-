@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library - Sutherland Shire Council</title>
+    <!-- Bootstrap -->
+    <meta name="description" content="Welcome to Sutherland Shire Libraries. Search our collection for books, music, films, articles, audiobooks, ebooks, magazines and more." />
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Library" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/page-name.html" />
+<meta property="og:image" content="/img/library-logo.gif" />
+<meta property="og:description" content="Sutherland Shire Libraries: summary of page content" />
+<meta property="og:site_name" content="Sutherland Shire Council Libraries" />
+<meta property="fb:admins" content="158366010881325" />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@suthlib" />
+<meta name="twitter:title" content="Library" />
+<meta name="twitter:description" content="Sutherland Shire Libraries: summary of page content" />
+<meta name="twitter:creator" content="@suthlib" />
+<meta name="twitter:url" content="/page-name.html" />
+<!-- Twitter Summary card images must be at least 120x120px -->
+<meta name="twitter:image" content="/img/library-logo.gif" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/print.css" rel="stylesheet" media="print">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script src="js/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5861779-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+
+  <body>
+    <div class="container-fluid page-wrap">
+
+      <header id="banner" class="row banner">
+  <div class="col-sm-6">
+    <p class="ssc-link">A <a href="http://www.sutherlandshire.nsw.gov.au">Sutherland Shire Council</a> Facility</p>
+    <div class="title-logo">Sutherland Shire Council - Libraries</div>
+  </div><!-- /column -->
+  <div class="col-sm-6 catalog">
+  
+    <!--<div class="catalog-search form-inline pull-right">         
+      <input type="hidden" name="ctl02$HdSearchUrl" id="ctl02_HdSearchUrl" value="http://encore.sutherlandshire.nsw.gov.au/iii/encore/search/C__S">
+      <div id="catalog-search"> 
+        <label for="ctl02_txtCatalogueSearch" id="ctl02_lblSearchCatalog"></label>
+        <input name="ctl02$txtCatalogueSearch" type="text" value="Search catalogue..." maxlength="50" id="ctl02_txtCatalogueSearch" class="search-field" onblur="if (this.value=='') this.value='Search catalogue...';" onfocus="ClearText(this,'Search catalogue...');" onkeydown="if (isKeyPressedEnter(event)) { __doPostBack('ctl02$btnSearchCatalogue',''); return false;}">
+        <input type="submit" name="ctl02$btnSearchCatalogue" value="Go" id="ctl02_btnSearchCatalogue">
+      </div>
+    </div>-->
+              
+    <form id="catalog-search" class="catalog-search form-inline">
+      <div class="form-group">
+        <label for="catalog-search-textbox" class="hidden-xs hidden-sm">Search our collection</label>
+        <div class="input-group">
+          <input id="ct103_txtCatalogueSearch" class="form-control" type="text" name="catalogue-search-textbox" placeholder="books, articles, DVDs, everything">
+          <span class="input-group-btn">
+            <input id="ct103_btnSearchCatalogue" class="btn btn-primary" type="submit" value="Go" name="ct103etc">
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /form-group -->
+      <!-- data-ga-category="catalogue" data-ga-action="click" data-ga-label="search button" -->
+    </form>
+    
+    <div class="catalog-extras">
+      <a class="account-login pop-over js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="login" href="http://webpac.sutherlandshire.nsw.gov.au/patroninfo" data-icon="&#xe019;" data-content="login to your account to renew your loans and update your details" data-placement="bottom" data-toggle="popover" data-trigger="hover focus">Login</a>
+      <a class="adv-search js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="catalogue link" href="http://encore.sutherlandshire.nsw.gov.au/" data-icon="&#xe01c;" title="Login to Your Account">Catalogue</a>
+      <a class="catalog-help js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="help" href="http://webpac.sutherlandshire.nsw.gov.au/help" data-icon="&#xe000;">Help</a>
+    </div>
+
+  </div><!-- /column -->
+</header><!-- /row -->
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a role="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a data-icon="&#xe02c;" href="http://www.sutherlandshire.nsw.gov.au/library/"><span class="sr-only">Home</span></a></li>
+        <li><a href="http://www.sutherlandshire.nsw.gov.au/library/whats_on">What's On</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Membership <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/membership/join_the_library">Join the Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/membership/conditions_of_membership">Conditions of Membership</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/membership/library_policies">Library Policies</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Libraries <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Sutherland_Library">Sutherland Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Cronulla_Library">Cronulla Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Caringbah_Library">Caringbah Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Miranda_Library">Miranda Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Sylvania_Library">Sylvania Library</a>	</li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Engadine_Library">Engadine Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Menai_Library">Menai Library</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/Bundeena_Library">Bundeena Library</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">Books &amp; Reading</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">Kids &amp; Parents</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">Seniors</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">Multicultural Communities</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">HSC Students</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/services">Computers &amp; Internet</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Digital Collections <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Audiobooks &amp; eBooks</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Freegal Music Downloads</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Zinio Digital Magazines</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Research Databases</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Learn a Language</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/community/library/digital-collections">Family History</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Local Studies <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/local-studies">Historical Photographs</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/local-studies">Local Newspapers</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/local-studies">Maps</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/local-studies">Oral Histories</a></li>
+            <li><a href="http://www.sutherlandshire.nsw.gov.au/library/community/local-studies">Historical Studies &amp; Pathfinders</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div id="breadcrumbs" class="breadcrumbs">
+  <ul class="breadcrumb-list">
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Home"><span>Home</span></a></li>
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library">Library</a></li>
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library/Online_Collections">Digital Collections</a></li>
+    <li class="last"><a href="#">Freegal - Free Music Downloads</a></li>
+  </ul>
+</div><!-- /breadcrumbs -->
+      <section id="main" class="main row" role="main">
+
+          <div id="content" class="col-xs-12 content">
+
+            <h1>Research Databases List</h1>
+            <p class="lead">Find articles from newspapers, magazines and academic journals, as well as essays, encyclopedias and reference books.</p>
+            <p class="alert alert-success"><span class="label label-success" data-icon="&#xe000;">Access Anywhere</span>&nbsp; Except where noted, library members can access these resources anywhere you have an internet connection.</p>
+            <h2>Choose a Resource</h2>
+
+            <div id="resource-list" class="row">
+
+              <div id="facet-filter" class="facets col-sm-4 col-lg-3">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3 class="panel-title">Filter Resources by Subject:</h3>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item"><a id="showNews" data-filter="Newspapers">Newspaper Articles</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showAust" data-filter="AustralianContent">Australian Content</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showRefBooks" data-filter="ReferenceBooks">Encyclopedias &amp; Reference Books</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showJournals" data-filter="AcademicContent">Peer Reviewed Journals</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showArts" data-filter="SocialScience">Arts, Humanities &amp; Social Science</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showLit" data-filter="Literature">Reading &amp; Literature</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showHealth" data-filter="Health">Health &amp; Medicine</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showEnviro" data-filter="Environment">Environment</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showScience" data-filter="Science">Science, Technology &amp; Computers</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showHistory" data-filter="WorldHistory">World History</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                    <li class="list-group-item"><a id="showWorld" data-filter="CurrentAffairs">Current Affairs, Politics &amp; World Events</a> <i class="clr-filter hidden" data-icon="&#xe028;"></i></li>
+                  </ul>
+                </div><!-- /panel -->
+
+            </div><!-- /facet-filter -->
+
+            <div id="resource-content" class="col-sm-8 col-lg-9">
+
+              <div class="panel panel-default resource-item collapse fade in"  data-tags="AcademicContent,SocialScience,Business,Environment,Health,WorldHistory,CurrentAffairs,Science,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Academic Search Premier</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/academicsearchelite-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>Academic Search Premier is a core source of scholarly information from over 4700 journals, 4000 of which are peer-reviewed, with content going as far back as 1985.<br>
+                    Subjects include: <em>Multidisciplinary - This database covers all subject areas.</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="Genealogy,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Ancestry Library Edition</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/ancestry-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p class="text-danger">
+                    <strong class="label label-danger">In-library</strong>&nbsp;
+                    Please visit your nearest library to use this resource.
+                  </p>
+                  <p>Get started on your family history research. Access the complete content from the world's largest online genealogy resource, free to library users.<br>
+                    Subjects include: <em>genealogy, family history</em>.</p>
+                  <p class="actions">
+                    <a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a>
+                  </p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="AustralianContent,AcademicContent,SocialScience,Business,Environment,CurrentAffairs,Laws,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Australian Public Affairs Full Text</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/academicsearchelite-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>APA-FT is an online collection of scanned images of articles from more than 560 journals covering Australia’s political, economic and social affairs.<br>
+                    Subjects include: <em>environment, globalisation, history, industrial relations, immigration, politics, social policy, public health and national identity</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="ReferenceBooks,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Encyclopedia Britannica</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/britannica-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>This resource contains content from Encyclopedia Britannica, the world's premier english language encyclopedia.<br>
+                    Subjects include: <em>general reference, homework help</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="ReferenceBooks,Health,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Consumer Health Complete</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/consumerhealthcomplete-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>Consumer Health Complete is a collection of health journals, books, encyclopedias and pamphlets designed to provide information for patients in plain language.<br>
+                    Subjects include: <em>health, medicine, aging, drugs &amp; alcohol, alternative therapies, fitness, nutrition.</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="Environment,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">GreenFile</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/greenfile-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>Search GreenFILE for references to scholarly research on all aspects of the environment.<br>
+                    Subjects include: <em>Climate change, green building, pollution, sustainable agriculture, renewable energy, recycling</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="Literature,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Literary Reference Center Plus</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/literary-reference-center.gif?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>Literary Reference Center provides users with information on thousands of authors and their works across literary disciplines and timeframes.<br>
+                    Subjects include: <em>reading and literature</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="AustralianContent,ReferenceBooks,Laws,Building,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">National Construction Code of Australia</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/abcb-logo.png?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p class="text-danger">
+                    <strong class="label label-danger">In-library</strong>&nbsp;
+                    Please visit your nearest library to use this resource.
+                  </p>
+                  <p>Comprising the Building Code &amp; the Plumbing Code, the National Construction Code regulates building standards throughout Australia.<br>
+                    Subjects include: <em>Building &amp; construction, design, plumbing &amp; drainage</em>.</p>
+                  <p class="actions">
+                    <a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a>
+                  </p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="AcademicContent,Environment,Science,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Science Reference Center Plus</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/sciencereferencecenter-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>Designed to meet every student's science research needs, this database contains full text for hundreds of science encyclopedias, reference books, periodicals, and other sources.<br>
+                    Subjects include: <em>biology, chemistry, earth &amp; space science, environmental science, health &amp; medicine, history of science, life science, physics and computers</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="AustralianContent,Newspapers,Genealogy,WorldHistory,">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">Sydney Morning Herald Archives</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/smh-digital-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p class="text-danger">
+                    <strong class="label label-danger">In-library</strong>&nbsp;
+                    Please visit your nearest library to use this resource.
+                  </p>
+                  <p>Search full digitised reproductions of every edition of The Sydney Morning Herald and The Sun-Herald between 1955-1995, including pictures, personal notices, advertisements and more.<br>
+                    Subjects include: <em>Australian history, genealogy</em>.</p>
+                  <p class="actions">
+                    <a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a>
+                  </p>
+                </div>
+              </div><!-- /resource-item -->
+
+              <div class="panel panel-default resource-item collapse fade in" data-tags="WorldHistory">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><a href="#">World History in Context</a></h3>
+                </div>
+                <div class="panel-body">
+                  <img src="http://www.sutherlandshire.nsw.gov.au/files/assets/website/images/subsites/library/product-logos/world-history-logo.jpg?w=80" alt="Encyclopedia Britannica" class="pull-right" />
+                  <p>This database offers students and researchers a broad collection of full-text periodicals, reference works and primary source documents.<br>
+                    Subjects include: <em>ancient history, modern history, wars, communism &amp; the cold war and British colonisation</em>.</p>
+                  <p class="actions"><a href="#" class="btn btn-sm btn-success">Get Started</a>
+                    <a href="#" class="btn btn-sm btn-default">Learn More</a></p>
+                </div>
+              </div><!-- /resource-item -->
+
+            </div><!-- /resource-content -->
+
+          </div><!-- /resources list -->
+
+
+          </div><!-- /content -->
+
+
+        </div><!-- /row -->
+
+      </section><!--/main-->
+    </div><!--/container-->
+
+        <section id="social" class="social">
+      <div class="container-fluid page-wrap">
+        <div class="row">
+          <div class="contact col-sm-6">
+            General Enquiries<br />
+            <span class="phone">p: 02 9710 0351</span>
+            <span class="email">e: <a href="mailto:library@ssc.nsw.gov.au">library@ssc.nsw.gov.au</a></span>
+          </div>
+          <div class="socmedia-buttons col-sm-6">
+            <span class="stay-in-touch">Stay in touch</span>
+            <a class="btn email-btn btn-info tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="email" href="http://eepurl.com/M09RH" data-toggle="tooltip" data-trigger="hover focus" data-placement="top" title="subscribe to our newletters"><i data-icon="&#xe02a;"></i> Email</a>
+            <a class="facebook-btn socmedia-btn tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="facebook" href="http://facebook.com/sutherlandshirelibraries" data-toggle="tooltip" data-trigger="hover focus" data-placement="top" title="Like us on Facebook"> <i data-icon="&#xe020;"></i></a>
+            <a class="rss-btn socmedia-btn tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="rss" href="/rss-list.html" data-toggle="tooltip" data-trigger="hover focus" title="view RSS feeds"><i data-icon="&#xe01b;"></i></a>
+            <a class="pinterest-btn socmedia-btn tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="pinterest" href="http://pinterest.com/suthlib" data-toggle="tooltip" data-trigger="hover focus" title="Follow us on Pinterest"><i data-icon="&#xe014;"></i></a>
+            <a class="vimeo-btn socmedia-btn tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="vimeo" href="http://vimeo.com/suthlib" data-toggle="tooltip" data-trigger="hover focus" title="Follow us on Vimeo"><i data-icon="&#xe022;"></i></a>
+            <a class="twitter-btn socmedia-btn tool-tip js-ga-tracking" data-ga-category="social-button" data-ga-action="click" data-ga-label="twitter" href="http://twitter.com/suthlib" data-toggle="tooltip" data-trigger="hover focus" title="Follow us on Twitter"><i data-icon="&#xe01f;"></i></a>
+
+          </div><!-- /socialmedia-buttons -->
+        </div>
+      </div><!-- /container -->
+    </section><!-- /social -->
+
+    <footer>
+  <div class="container-fluid page-wrap">
+    <div class="ssc-logo hidden-xs"><a href="http://www.sutherlandshire.nsw.gov.au"><img src="img/ssc-logo-reverse.png" alt="Sutherland Shire Council logo" title="Sutherland Shire Council website" /></a></div>
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments</a></li>
+      <li role="presentation"><a href="#sitemap" aria-controls="sitemap" role="tab" data-toggle="tab">Site Map</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="comments">
+        <p>Comments</p>
+        <div id="disqus_thread"></div>
+        <!--<script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'suthlib'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>-->
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div><!-- /tab-pane 1 -->
+      <div role="tabpanel" class="tab-pane fade" id="sitemap">
+        <p> This is some sitemap content <a href="bootstrap-sample.html">with a link</a>.</p>
+      </div>
+    </div><!--/@tab-content-->
+
+    <p>&copy; Sutherland Shire Council 2012</p>
+
+  </div><!-- /container.page-wrap -->
+  </footer>
+
+  <script src="js/production/global-min.js"></script>
+  <script src="js/production/resource-filter-min.js"></script>
+  </body>
+</html>

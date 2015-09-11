@@ -1,0 +1,61 @@
+{
+  "total": 4,
+  "entries": [
+    {
+      "id": "b1242429",
+      "title": "Death is a welcome guest",
+      "author": "Louise Welsh",
+      "isbn": "9781848546622",
+      "cover_img": "http://2.bp.blogspot.com/-7dr4PHT5BWw/VdqAvrBsWcI/AAAAAAAAL20/yGfj_m3RhKI/s300/death.jpg"
+    },
+    {
+      "id": "b1241223",
+      "title": "Footy dreaming",
+      "author": "Michael Hyde",
+      "isbn": "9781925000993",
+      "cover_img": "http://4.bp.blogspot.com/-E34utcFmFrQ/VdqCPqHI_0I/AAAAAAAAL3E/T1TZQboubUI/s300/Footy_Dreaming_FRONT-9_copy.jpg"
+    },
+    {
+      "id": "b1244825",
+      "title": "Surveillance",
+      "author": "Bernard Keane",
+      "isbn": "9781760113858",
+      "cover_img": "http://3.bp.blogspot.com/-94j83uuT7BI/VdqDM9ZIGdI/AAAAAAAAL3I/AVPxHcODnsE/s300/surveillance.jpg"
+    },
+    {
+      "id": "b1244488",
+      "title": "The water book",
+      "author": "Alok Jha",
+      "isbn": "9781472209559",
+      "cover_img": "http://1.bp.blogspot.com/-nstF8ENY5v4/VdqDvD6SqgI/AAAAAAAAL3Q/X25eqCKaBSs/s300/water.jpg"
+    },
+    {
+      "id": "b1243330",
+      "title": "My life in ruins: from Petra to Glenrowan my adventures and misadventures in archaeology",
+      "author": "Adam Ford",
+      "isbn": "9780733333194",
+      "cover_img": "http://1.bp.blogspot.com/-IjWHBvudFaA/VdqGDfGXzuI/AAAAAAAAL3c/XrNrEPj83Rw/s300/my%2Blife%2Bin%2Bruins.jpg"
+    },
+    {
+      "id": "b1245395",
+      "title": "The sex myth : the gap between our fantasies and reality",
+      "author": "Rachel Hills",
+      "isbn": "9780670076925",
+      "cover_img": "http://1.bp.blogspot.com/-lt7fWFqxCg8/VdqGzCrTc_I/AAAAAAAAL3k/Jxn8Go6-TuM/s300/the%2Bmyth.jpg"
+    },
+    {
+      "id": "b1245787",
+      "title": "The Bit in Between",
+      "author": "Claire Varley",
+      "isbn": "9781743535608",
+      "cover_img": "http://1.bp.blogspot.com/-pRSzAj0i1Vs/VeOdIjagUiI/AAAAAAAAL4U/w1qLCfcm7RI/s300/the%2Bbit%2Bin%2Bbetween.jpg"
+    },
+    {
+      "id": "b1248240",
+      "title": "Bergstrom's Orange",
+      "author": "Carolyn Little",
+      "isbn": "9780994231260",
+      "cover_img": "http://3.bp.blogspot.com/-wczxJiJ_Ems/VeOdJhvfQ1I/AAAAAAAAL4c/dLsgrTvyp-g/s300/berstroms%2Borange.jpg"
+    }
+  ]
+}
