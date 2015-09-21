@@ -20,12 +20,11 @@ $(document).ready(function() {
 
 // check for alert that is library closure
   if ( $('#alerts > p').hasClass('closure-notice') ) {
-    // remove class in from all .accordian-collapse
-    $('#home-library-contact .accordion-body').removeClass('in');
-    // add background color #f2dede to .accordian-heading
-    $('#home-library-contact').addClass('hours-alert');
-    // inject extra .accordian-group warning there are changes to normal hours
-    $('.accordion-group.danger').removeClass('hide');
+    $('#home-library-contact .panel-collapse').removeClass('in');
+//    $('#home-library-contact .panel-default').removeClass('panel-default').addClass('panel-danger');
+    $('#home-library-contact .closures-alert').removeClass('hide');
+    $('#home-library-contact .closures-alert .panel-collapse').addClass('in');
+
   }
 // end library closure alert
 });

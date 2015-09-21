@@ -49,19 +49,23 @@ var populateList = function(feedName, feedTitle, extUrl) {
         var $isbns = $isbn + '%7C' + $isbn10;
 
         if (item.description !== undefined) {
-          $('<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
-              $encore +
-              '">' +
-              $title +
-              '</a></h3></div><div class="panel-body">' +
-              $description +
-              '</div></div>').appendTo("#newItems");
+          $('<div class="panel panel-default" data-isbn="' +
+            $isbns +
+            '"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
+            $encore +
+            '">' +
+            $title +
+            '</a></h3></div><div class="panel-body">' +
+            $description +
+            '</div></div>').appendTo("#newItems");
         } else {
-          $('<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
-              $encore +
-              '">' +
-              $title +
-              '</a></h3></div></div>').appendTo("#newItems");
+          $('<div class="panel panel-default" data-isbn="' +
+            $isbns +
+            '"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
+            $encore +
+            '">' +
+            $title +
+            '</a></h3></div></div>').appendTo("#newItems");
         }
       });
     } else {

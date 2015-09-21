@@ -37,5 +37,6 @@ $(document).ready(function() {
   $('.col-md-3:nth-of-type(4n)').after('<p class="clearfix visible-md-block visible-lg-block"></p>');
   $('.col-sm-4:nth-of-type(3n)').after('<p class="clearfix visible-sm-block"></p>');
   $('.col-xs-6:nth-of-type(2n)').after('<p class="clearfix visible-xs-block"></p>');
+  $('.col-sm-6:nth-of-type(2n)').after('<p class="clearfix visible-sm-block"></p>');
 
 });

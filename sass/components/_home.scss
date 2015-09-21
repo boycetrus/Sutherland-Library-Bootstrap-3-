@@ -1,18 +1,24 @@
 /*  Styles for the 4 columns of featured links on the home page  */
 .home-spotlight {
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
-    
   h2 {
-    color: $dark-grey;
-    font-size: 18px;
-    font-size: 1.125em;
-    line-height: 24px;
-    line-height: 1.5em;
+    color: $gray-light;
+    font-size: $font-size-h4;
+    line-height: $line-height-base;
     margin-bottom: 0;
   }
-  .more .event-date {
+  li {
+    font-size: $font-size-h4;
+    a {
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  .event-date {
     display: block;
+    font-size: $font-size-base;
   }
 }
 

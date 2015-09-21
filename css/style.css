@@ -5150,7 +5150,7 @@ p.actions {
 /*  Property page type specific styles */
 .opening-hours > span {
   display: inline-block;
-  width: 100px; }
+  width: 95px; }
 
 .feature-event .event-time {
   padding-right: 0.25em; }
@@ -5379,6 +5379,25 @@ header {
 .navbar-inverse .nav > li > a {
   color: #dedede; }
 
+/*  Styles for the 4 columns of featured links on the home page  */
+.home-spotlight h2 {
+  color: #777777;
+  font-size: 20px;
+  line-height: 1.428571429;
+  margin-bottom: 0; }
+.home-spotlight li {
+  font-size: 20px; }
+  .home-spotlight li a {
+    text-decoration: none; }
+    .home-spotlight li a:hover, .home-spotlight li a:focus {
+      text-decoration: underline; }
+.home-spotlight .event-date {
+  display: block;
+  font-size: 16px; }
+
+#creditfooter {
+  display: none; }
+
 .social {
   background-color: #E9F2F7;
   padding: 12px 0; }
@@ -5511,8 +5530,7 @@ header {
   margin-bottom: 0; }
 
 .thumbnail {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 22px; }
   .thumbnail ul {
     list-style: none;
     margin: 0;
@@ -5520,21 +5538,16 @@ header {
   .thumbnail li {
     padding: 9px;
     padding: 0.5625rem;
-    border-top: 1px dashed #dedede; }
+    border-top: 1px solid #dedede; }
   .thumbnail li:first-child {
     border-top: none; }
   .thumbnail .more li:first-child,
   .thumbnail .feedburnerFeedBlock li:first-child {
-    border-top: 1px dashed #dedede; }
-  .thumbnail .headline {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 24px;
-    line-height: 1.5rem; }
+    border-top: 1px solid #dedede; }
   .thumbnail .thumbnail-footer {
     padding: 9px;
     padding: 0.5625rem;
-    border-top: 1px dashed #dedede;
+    border-top: 1px solid #dedede;
     text-align: right; }
   .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4 {
     font-size: 28px;
