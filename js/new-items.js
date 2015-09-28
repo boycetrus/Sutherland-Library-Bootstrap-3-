@@ -37,20 +37,19 @@ var populateList = function(feedName, feedTitle, extUrl) {
     $('#newItems').empty();
 
     //if there are items in the data generate an <li> for each
+    // the test below should be data.query.count > 0 but causing a problem if there is only 1 result
     if (data.query.results.item.length > 0) {
-      $.each(data.query.results.item, function(i, item) {
-        var $title = item.title;
-        var $webpac = item.link;
-        var $description = item.description;
-        var $bib = $webpac.substring(48,56);
+      $.each(data.query.results.item, function(i, book) {
+        var $title = book.title;
+        var $webpac = book.link;
+        var $description = book.description;
+        var $bib = $webpac.toString().substring(48,56);
         var $encore = 'http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R' + $bib;
-        var $isbn = item.guid.content.substring(0,13);
-        var $isbn10 = $isbn.substring(3,13);
-        var $isbns = $isbn + '%7C' + $isbn10;
+        var $isbn = book.guid.content.split(' ', 1);
 
-        if (item.description !== undefined) {
+        if (book.description !== undefined) {
           $('<div class="panel panel-default" data-isbn="' +
-            $isbns +
+            $isbn +
             '"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
             $encore +
             '">' +
@@ -60,7 +59,7 @@ var populateList = function(feedName, feedTitle, extUrl) {
             '</div></div>').appendTo("#newItems");
         } else {
           $('<div class="panel panel-default" data-isbn="' +
-            $isbns +
+            $isbn +
             '"><div class="panel-heading"><h3 class="panel-title"><a target="_blank" href="' +
             $encore +
             '">' +
