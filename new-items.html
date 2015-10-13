@@ -53,38 +53,29 @@
     <p class="ssc-link">A <a href="http://www.sutherlandshire.nsw.gov.au">Sutherland Shire Council</a> Facility</p>
     <div class="title-logo">Sutherland Shire Council - Libraries</div>
   </div><!-- /column -->
+
   <div class="col-sm-6 catalog">
-  
-    <!--<div class="catalog-search form-inline pull-right">         
-      <input type="hidden" name="ctl02$HdSearchUrl" id="ctl02_HdSearchUrl" value="http://encore.sutherlandshire.nsw.gov.au/iii/encore/search/C__S">
-      <div id="catalog-search"> 
-        <label for="ctl02_txtCatalogueSearch" id="ctl02_lblSearchCatalog"></label>
-        <input name="ctl02$txtCatalogueSearch" type="text" value="Search catalogue..." maxlength="50" id="ctl02_txtCatalogueSearch" class="search-field" onblur="if (this.value=='') this.value='Search catalogue...';" onfocus="ClearText(this,'Search catalogue...');" onkeydown="if (isKeyPressedEnter(event)) { __doPostBack('ctl02$btnSearchCatalogue',''); return false;}">
-        <input type="submit" name="ctl02$btnSearchCatalogue" value="Go" id="ctl02_btnSearchCatalogue">
-      </div>
-    </div>-->
-              
-    <form id="catalog-search" class="catalog-search form-inline">
+    <div id="catalog-search" class="catalog-search form-inline">
       <div class="form-group">
         <label for="catalog-search-textbox" class="hidden-xs hidden-sm">Search our collection</label>
         <div class="input-group">
-          <input id="ct103_txtCatalogueSearch" class="form-control" type="text" name="catalogue-search-textbox" placeholder="books, articles, DVDs, everything">
+          <input id="catalog-search-textbox" class="form-control" type="text" name="catalogue-search-textbox" placeholder="books, articles, DVDs, everything">
           <span class="input-group-btn">
-            <input id="ct103_btnSearchCatalogue" class="btn btn-primary" type="submit" value="Go" name="ct103etc">
+            <input id="catalog-search-btn" class="btn btn-primary" type="submit" value="Go" name="catalog-search-btn">
           </span>
         </div><!-- /input-group -->
       </div><!-- /form-group -->
       <!-- data-ga-category="catalogue" data-ga-action="click" data-ga-label="search button" -->
-    </form>
-    
-    <div class="catalog-extras">
-      <a class="account-login pop-over js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="login" href="http://webpac.sutherlandshire.nsw.gov.au/patroninfo" data-icon="&#xe019;" data-content="login to your account to renew your loans and update your details" data-placement="bottom" data-toggle="popover" data-trigger="hover focus">Login</a>
-      <a class="adv-search js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="catalogue link" href="http://encore.sutherlandshire.nsw.gov.au/" data-icon="&#xe01c;" title="Login to Your Account">Catalogue</a>
-      <a class="catalog-help js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="help" href="http://webpac.sutherlandshire.nsw.gov.au/help" data-icon="&#xe000;">Help</a>
     </div>
 
+    <div class="catalog-extras">
+      <a class="account-login pop-over js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="login" href="http://webpac.sutherlandshire.nsw.gov.au/patroninfo" data-icon="&#xe019;" data-content="login to your account to renew your loans and update your details" data-placement="bottom" data-toggle="popover" data-trigger="hover focus">Login</a>
+      <a class="adv-search js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="catalogue link" href="http://encore.sutherlandshire.nsw.gov.au/" data-icon="&#xe01c;" title="Go to the Library Catalogue">Catalogue</a>
+      <a class="catalog-help js-ga-tracking" data-ga-category="catalogue" data-ga-action="click" data-ga-label="help" href="http://webpac.sutherlandshire.nsw.gov.au/help" data-icon="&#xe000;">Help</a>
+    </div>
   </div><!-- /column -->
 </header><!-- /row -->
+
       <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -169,6 +160,7 @@
     <li class="last"><a href="#">Freegal - Free Music Downloads</a></li>
   </ul>
 </div><!-- /breadcrumbs -->
+
       <section id="main" class="main row" role="main">
 
         <div id="bookDetails" class="book-details modal fade">
