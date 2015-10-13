@@ -45,7 +45,10 @@ header {
   .catalog-extras {
     clear: right;
     line-height: 2em;
-    text-align: right;
+    text-align: center;
+    @media screen and (min-width: $screen-sm-min) {
+      text-align: right;
+    }
 
     a {
       margin-left: 16px;
