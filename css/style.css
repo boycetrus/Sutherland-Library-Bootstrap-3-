@@ -5365,7 +5365,10 @@ header {
 .catalog .catalog-extras {
   clear: right;
   line-height: 2em;
-  text-align: right; }
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .catalog .catalog-extras {
+      text-align: right; } }
   .catalog .catalog-extras a {
     margin-left: 16px;
     margin-left: 1rem; }

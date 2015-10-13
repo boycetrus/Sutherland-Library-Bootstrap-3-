@@ -1,14 +1,20 @@
+function searchCatalogue () {
+  var baseUrl = "http://encore.sutherlandshire.nsw.gov.au/iii/encore/search/C__S";
+  var searchTerm = $('#catalog-search-textbox').val();
+  var destination = baseUrl + searchTerm;
+  window.location.href = destination;
+}
+
 $(document).ready(function() {
 
-//catalog search - until srin can re-code
-  $("#catalog-search label").text("Search the Collection");
-  $('#ct103_btnSearchCatalogue').addClass('js-ga-tracking').attr(
-      'data-ga-category','catalogue'
-    ).attr(
-      'data-ga-action','submit'
-    ).attr(
-      'data-ga-label','search'
-    );
-// end catalogue
+  $('#catalog-search-btn').on('click', function() {
+    searchCatalogue();
+  });
+
+  $('#catalog-search-textbox').keydown(function(){
+    if (event.which == 13) {
+      searchCatalogue();
+    }
+  });
 
 });
