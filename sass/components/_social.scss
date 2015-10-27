@@ -71,6 +71,12 @@
     color: darken($orange, 10);
   }
 }
+.instagram-btn {
+  color: $instagram-blue;
+  &:hover {
+    color: darken($instagram-blue, 10);
+  }
+}
 
 
 
