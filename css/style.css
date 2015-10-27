@@ -4835,7 +4835,6 @@ you can use the generic selector below, but it's slower:
   cursor: pointer;
   cursor: hand;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
@@ -5126,6 +5125,11 @@ p.actions {
   padding: 16px;
   border-radius: 4px;
   margin: 33px 0 0; }
+  .related-links h2 {
+    font-size: 20px;
+    margin-top: 0; }
+  .related-links li {
+    margin: 0 0 11px; }
 
 .table {
   width: auto; }
@@ -5597,5 +5601,3 @@ header {
 
 .rss[data-icon] {
   color: #E39800; }
-
-/*# sourceMappingURL=style.css.map */
