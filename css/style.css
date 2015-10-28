@@ -5016,7 +5016,7 @@ you can use the generic selector below, but it's slower:
   .breadcrumbs a {
     color: #777777; }
 
-@media all and (min-width: 32em) {
+@media all and (min-width: 768px) {
   .breadcrumbs li {
     display: inline; }
   .breadcrumbs li:after {
@@ -5024,8 +5024,8 @@ you can use the generic selector below, but it's slower:
     padding: 0 0.25em 0 0.5em;
     color: #777777; }
   .breadcrumbs li:nth-last-child(2):before,
-  .breadcrumbs li.last:after,
-  .breadcrumbs li.last:before {
+  .breadcrumbs li:last-child:after,
+  .breadcrumbs li:last-child:before {
     content: ''; } }
 .main {
   padding-bottom: 48px; }
