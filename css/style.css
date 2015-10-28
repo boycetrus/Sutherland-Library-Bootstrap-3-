@@ -4835,7 +4835,6 @@ you can use the generic selector below, but it's slower:
   cursor: pointer;
   cursor: hand;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
@@ -5017,7 +5016,7 @@ you can use the generic selector below, but it's slower:
   .breadcrumbs a {
     color: #777777; }
 
-@media all and (min-width: 32em) {
+@media all and (min-width: 768px) {
   .breadcrumbs li {
     display: inline; }
   .breadcrumbs li:after {
@@ -5025,8 +5024,8 @@ you can use the generic selector below, but it's slower:
     padding: 0 0.25em 0 0.5em;
     color: #777777; }
   .breadcrumbs li:nth-last-child(2):before,
-  .breadcrumbs li.last:after,
-  .breadcrumbs li.last:before {
+  .breadcrumbs li:last-child:after,
+  .breadcrumbs li:last-child:before {
     content: ''; } }
 .main {
   padding-bottom: 48px; }
@@ -5126,6 +5125,11 @@ p.actions {
   padding: 16px;
   border-radius: 4px;
   margin: 33px 0 0; }
+  .related-links h2 {
+    font-size: 20px;
+    margin-top: 0; }
+  .related-links li {
+    margin: 0 0 11px; }
 
 .table {
   width: auto; }
@@ -5473,6 +5477,11 @@ header {
   .rss-btn:hover {
     color: #b07600; }
 
+.instagram-btn {
+  color: #03508f; }
+  .instagram-btn:hover {
+    color: #02345d; }
+
 @media screen and (min-width: 768px) {
   .social .btn.email-btn {
     margin-left: 6px; }
@@ -5597,5 +5606,3 @@ header {
 
 .rss[data-icon] {
   color: #E39800; }
-
-/*# sourceMappingURL=style.css.map */
