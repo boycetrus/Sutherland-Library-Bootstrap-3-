@@ -7,12 +7,14 @@ function searchCatalogue() {
 
 $(document).ready(function() {
 
-  $('#catalog-search-btn').on('click', function() {
+  $('#catalog-search-btn').on('click', function(event) {
+    event.preventDefault();
     searchCatalogue();
   });
 
-  $('#catalog-search-textbox').keydown(function(){
+  $('#catalog-search-textbox').keydown(function(event){
     if (event.which == 13) {
+      event.preventDefault();
       searchCatalogue();
     }
   });
