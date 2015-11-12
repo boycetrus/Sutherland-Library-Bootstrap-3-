@@ -5254,7 +5254,7 @@ p.actions {
   border-radius: 4px; }
   .expando h2 {
     border-radius: 0 0 4px 4px;
-    border-top: 1px dashed #dedede;
+    border-top: 1px solid #dedede;
     font-size: 24px;
     line-height: 1.428571429;
     margin: 0;
