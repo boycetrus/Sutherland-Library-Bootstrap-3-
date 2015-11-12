@@ -4,11 +4,11 @@
 
   h2 {
     border-radius: 0 0 $border-radius-base $border-radius-base;
-    border-top: 1px dashed $gray-lighter;
+    border-top: 1px solid $gray-lighter;
     font-size: ($font-size-base * 1.5);
-    line-height: ($line-height-large * 1.5);
+    line-height: $line-height-base;
     margin: 0;
-    padding: 0 $padding-base-horizontal 0 ($padding-base-horizontal * 3);
+    padding: $padding-base-horizontal $padding-base-horizontal $padding-base-horizontal ($padding-base-horizontal * 3);
     a {
       text-decoration: none;
     }
