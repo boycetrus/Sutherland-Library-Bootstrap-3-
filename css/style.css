@@ -3385,7 +3385,7 @@ a.badge:hover, a.badge:focus {
   .jumbotron .h2 {
     margin-top: 0; }
   .jumbotron p {
-    margin-bottom: 7.5px;
+    margin-bottom: 0 auto 7.5px;
     font-size: 24px;
     font-weight: 400; }
   .jumbotron > hr {
@@ -5231,6 +5231,14 @@ p.actions {
 .event-when, .event-cost, .event-where {
   margin-left: 60px; }
 
+.event-where .btn {
+  display: table; }
+  @media (min-width: 480px) {
+    .event-where .btn {
+      display: inline;
+      position: absolute;
+      right: 1em; } }
+
 .start, .finish, .cost, .where {
   display: inline-block;
   width: 60px;
@@ -5579,8 +5587,8 @@ header {
     border-top: 1px solid #dedede;
     text-align: right; }
   .thumbnail .caption h2, .thumbnail .caption h3, .thumbnail .caption h4 {
-    font-size: 28px;
-    line-height: 40.000000012px;
+    font-size: 20px;
+    line-height: 28.57142858px;
     font-weight: 400;
     margin: 0; }
   .thumbnail .caption > p {
