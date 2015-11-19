@@ -28,10 +28,11 @@
   border-top: 1px solid $gray-lighter;
   text-align: right;
   }
+
   .caption {
     h2, h3, h4 {
-      font-size: $font-size-h3;
-      line-height: ($font-size-h3 * $line-height-base);
+      font-size: $font-size-h4;
+      line-height: ($font-size-h4 * $line-height-base);
       font-weight: 400;
       margin: 0;
     }
