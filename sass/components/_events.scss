@@ -74,6 +74,14 @@
 .event-when, .event-cost, .event-where {
   margin-left: 60px;
 }
+.event-where .btn {
+  display: table;
+  @media (min-width: $screen-xs-min) {
+    display: inline;
+    position: absolute;
+    right: 1em;
+  }
+}
 
 .start, .finish, .cost, .where {
   display: inline-block;
