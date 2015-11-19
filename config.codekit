@@ -101,15 +101,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/event-detail.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1215,22 +1206,6 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/sass\/bootstrap\/_jumbotron.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/bootstrap\/_jumbotron.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_jumbotron.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 0
-		},
 	"\/sass\/bootstrap\/_labels.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2143,22 +2118,6 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/sass\/components\/_events.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/components\/_events.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_events.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 0
-		},
 	"\/sass\/components\/_expando.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2296,22 +2255,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/components\/_text-listview.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_text-listview.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": 0
-		},
-	"\/sass\/components\/_thumbnail.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/components\/_thumbnail.scss",
-		"outputAbbreviatedPath": "\/sass\/css\/_thumbnail.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
