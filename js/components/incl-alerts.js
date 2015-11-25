@@ -13,6 +13,10 @@ $(document).ready(function() {
   });
 // end compare event dates
 
+//check for alert on property page and shift it to the top of the screen
+//use appendTo()
+  $('#hours > #alerts').insertBefore('#banner');
+
 // fade in alert-block
 // with no delay  $("#alerts").addClass("in"); or use setTimeout to pause
   setTimeout(function(){ $("#alerts").addClass("in"); }, 200);
@@ -24,7 +28,7 @@ $(document).ready(function() {
 //    $('#home-library-contact .panel-default').removeClass('panel-default').addClass('panel-danger');
     $('#home-library-contact .closures-alert').removeClass('hide');
     $('#home-library-contact .closures-alert .panel-collapse').addClass('in');
-
   }
 // end library closure alert
+
 });
