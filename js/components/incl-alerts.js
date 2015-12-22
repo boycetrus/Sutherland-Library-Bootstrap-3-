@@ -1,3 +1,15 @@
+//check for alert on property page and shift it to the top of the screen
+function checkForAlerts () {
+  var isAlerts = $('.page-wrap > #alerts');
+  if (isAlerts) {
+    //grab the paragraph from the alert in the hours tab and append it to the main alert
+    console.log("isAlerts equals true");
+  } else {
+    $('#hours > #alerts').insertBefore('#banner');
+  }
+};
+
+
 $(document).ready(function() {
 // compare event dates for alerts
   $(".alert-error > p").each(function() {
@@ -13,9 +25,7 @@ $(document).ready(function() {
   });
 // end compare event dates
 
-//check for alert on property page and shift it to the top of the screen
-//use appendTo()
-  $('#hours > #alerts').insertBefore('#banner');
+  checkForAlerts();
 
 // fade in alert-block
 // with no delay  $("#alerts").addClass("in"); or use setTimeout to pause
