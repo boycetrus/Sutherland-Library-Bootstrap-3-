@@ -4107,7 +4107,9 @@ button.close {
     -ms-transform: translate(0, -25%);
     transform: translate(0, -25%);
     -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out; }
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
@@ -4950,7 +4952,6 @@ you can use the generic selector below, but it's slower:
 
 /* custom owl carousel overrides */
 .owl-carousel .owl-item img {
-  height: 100%;
   width: auto;
   margin: 0 auto; }
 
