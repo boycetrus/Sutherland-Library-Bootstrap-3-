@@ -174,8 +174,22 @@
 
             <h1>Resource Page - APA-FT</h1>
             <p class="lead">APA-FT is an online collection of scanned images of articles from more than 500 Australian journals.</p>
+            <p class="text-danger">
+            	<strong class="label label-danger">In-library</strong>&nbsp;
+            	Please visit your nearest library to use this resource.
+            </p>
             <p class="actions">
-              <a class="btn btn-lg btn-success" target="_blank" title="click here to begin" href="http://search.informit.com.au/search;res=APAFT;barcode=true;org=znswnet82">Get Started</a>
+              <div class="btn-group">
+                <a class="btn btn-success btn-lg" title="click here to begin" href="http://search.informit.com.au/search;res=APAFT;barcode=true;org=znswnet82">Get Started</a>
+                <a class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <!-- <span data-icon="&#xe02b;"></span> -->
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://search.informit.com.au/search;res=APAFT;barcode=true;org=znswnet82" target="_blank">Open in new window</a></li>
+                </ul>
+              </div>
               <a class="btn btn-lg btn-default" href="">Publication List</a>
             </p>
             <p>This collection contains many peer reviewed and academic sources covering australian issues. It is highly recommended for university and upper high school students studying Australian topics, as well as professionals looking for in depth analysis and quality content.</p>
@@ -204,8 +218,6 @@
               <li>Literacy &amp; Numeracy Studies</li>
               <li>Oceania</li>
             </ul>
-          <p class="alert alert-info"><span class="label label-info" data-icon="&#xe602;">In-library</span> Please visit your nearest library to use this resource.</p>
-
 
 
             <div class="related-links">
@@ -287,3 +299,19 @@
   <script src="js/production/global-min.js"></script>
   </body>
 </html>
+
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
