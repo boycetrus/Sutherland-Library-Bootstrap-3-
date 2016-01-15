@@ -21,12 +21,13 @@ $(document).ready(function() {
 
 //show mulitple upcoming dates for recurring events
   //hide dates 2+ and show the toggle
-  $('.entry+.entry').addClass('hidden');
-  $('#multi-date-toggle').removeClass('hidden');
-
+  var $recurringDateEntry = $('.recurring-dates > .entry');
+  var $firstDate = $recurringDateEntry.filter(':first');
+  $('.entry + .entry').addClass('hidden');
+  $('#multi-date-toggle').css('margin-left','0.5em').appendTo($firstDate).removeClass('hidden');
   //bind click to toggle
   $('#multi-date-toggle').on('click', function() {
-    $('.recurring-dates > .entry').not(':first').toggleClass('hidden');
+    $recurringDateEntry.not(':first').toggleClass('hidden');
   });
 //end multi-date-toggle
 
