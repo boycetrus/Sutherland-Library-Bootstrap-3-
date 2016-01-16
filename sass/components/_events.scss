@@ -71,9 +71,17 @@
   }
 }
 
-.event-when, .event-cost, .event-where {
+.event-when, .event-cost, .event-where, .recurring-dates {
   margin-left: 60px;
 }
+
+.recurring-dates {
+  .entry::after {
+    display: table;
+    content: '';
+  }
+}
+
 .event-where .btn {
   display: table;
   @media (min-width: $screen-xs-min) {
