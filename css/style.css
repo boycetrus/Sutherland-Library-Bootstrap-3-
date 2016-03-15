@@ -5132,9 +5132,9 @@ p.actions {
   .related-links li {
     margin: 0 0 11px; }
 
-.table {
+.table.table-bordered {
   width: auto; }
-  .table th {
+  .table.table-bordered th {
     background-color: #eeeeee;
     font-weight: 600; }
 
