@@ -65,6 +65,16 @@ body {
   padding-left: 0 !important;
   text-align: left !important;
 }
-#social .contact {
+
+#social .contact,
+.form-group,
+pre,
+blockquote {
   page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+  break-after: avoid;
 }
