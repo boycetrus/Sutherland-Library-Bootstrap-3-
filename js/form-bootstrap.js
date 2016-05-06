@@ -20,4 +20,12 @@ $(document).ready(function() {
     $.cookie('warning-modal', 'shown');
   }
 
+  $('#studentWarning').on ('hidden.bs.modal', function() {
+    $('#showWarning').removeClass('hidden');
+  });
+
+  $('#showWarning > .btn').on('click', function() {
+    $('#studentWarning').modal();
+  });
+
 });
