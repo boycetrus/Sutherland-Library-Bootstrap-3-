@@ -4104,7 +4104,6 @@ button.close {
   outline: 0; }
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, -25%);
-    -ms-transform: translate(0, -25%);
     transform: translate(0, -25%);
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
@@ -4112,7 +4111,6 @@ button.close {
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -5601,6 +5599,13 @@ header {
   .thumbnail .caption .btn {
     margin-top: 9px;
     margin-top: 0.5625rem; }
+
+.thumbnail.email-signup {
+  background-color: #222222; }
+  .thumbnail.email-signup .caption {
+    color: #eeeeee; }
+  .thumbnail.email-signup a {
+    color: #ffffff; }
 
 @media screen and (min-width: 480px) {
   .thumbnail li .actions {

@@ -46,6 +46,16 @@
   }
 }
 
+.thumbnail.email-signup {
+  background-color: $gray-darker;
+  .caption {
+    color: $gray-faint;
+  }
+  a {
+    color: #ffffff;
+  }
+}
+
 @media screen and (min-width: $screen-xs-min) {
   .thumbnail li .actions{
     text-align: right;
