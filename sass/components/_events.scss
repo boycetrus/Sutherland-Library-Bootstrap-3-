@@ -77,7 +77,7 @@
 
 .recurring-dates {
   .entry::after {
-    display: table;
+    display: block;
     content: '';
   }
 }

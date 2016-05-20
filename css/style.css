@@ -5231,7 +5231,7 @@ p.actions {
   margin-left: 60px; }
 
 .recurring-dates .entry::after {
-  display: table;
+  display: block;
   content: ''; }
 
 .event-where .btn {
