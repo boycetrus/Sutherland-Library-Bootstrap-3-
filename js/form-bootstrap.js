@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.form-bootstrap .form-group label').addClass('control-label col-sm-3');
   $('.form-bootstrap .form-group input').addClass('form-control');
+  $('.form-bootstrap .form-group textarea').addClass('form-control');
   $('.form-bootstrap .form-group select').addClass('form-control');
   $('.form-bootstrap label > .se-form-required-text').addClass('sr-only');
   $('.form-bootstrap .button-group input[type=submit]').addClass('btn btn-default hidden-print');
