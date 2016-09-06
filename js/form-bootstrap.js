@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('.form-bootstrap .form-group textarea').addClass('form-control');
   $('.form-bootstrap .form-group select').addClass('form-control');
   $('.form-bootstrap label > .se-form-required-text').addClass('sr-only');
-  $('.form-bootstrap .button-group input[type=submit]').addClass('btn btn-default hidden-print');
+  $('.form-bootstrap .button-group input[type=submit]').addClass('btn btn-default');
   $('.form-bootstrap .form-error > a').addClass('text-danger');
 
    $('.form-error').each(function(i) {
