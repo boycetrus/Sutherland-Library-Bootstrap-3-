@@ -10,7 +10,7 @@ $(document).ready(function() {
   $('#ctl05_rpControls_ctl15_fiControl_se_form').attr('disabled','disabled');
   $('#ctl05_rpControls_ctl18_fiControl_se_form').attr('disabled','disabled');
   $('#ctl05_rpControls_ctl21_fiControl_se_form').attr('disabled','disabled');
-  $('.form-bootstrap .button-group input[type=submit]').addClass('btn btn-default');
+  $('.form-bootstrap .button-group input[type=submit]').addClass('btn-default');
   $('<a id="printBtn" class="btn btn-primary" href="javascript:window.print();" role="button">Print</a> ').prependTo('.form-bootstrap .button-group');
   $('.form-bootstrap .form-error > a').addClass('text-danger');
 
