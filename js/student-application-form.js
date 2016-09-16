@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   $('.form-bootstrap .form-group label').addClass('control-label col-sm-3');
-  $('.form-bootstrap .form-group input').addClass('form-control');
+  $('.form-bootstrap .form-group input[type="text"]').addClass('form-control');
   $('.form-bootstrap .form-group select').addClass('form-control');
   $('.form-bootstrap label > .se-form-required-text').addClass('sr-only');
   $('#ctl05_rpControls_ctl06_fiControl_se_form').attr('type','email').attr('placeholder','eg. my.username@education.nsw.gov.au');
