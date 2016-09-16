@@ -7,7 +7,12 @@ $(document).ready(function() {
   $('.form-bootstrap .checkbox-list input').each(function(){
     $(this).prependTo($(this).next('label'));
   });
-
+  $('.radio-matrix > table').addClass('table table-condensed table-striped');
+  $('.radio-matrix > table tr:first-child').remove();
+  $('.radio-matrix > table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
+  $('.form-bootstrap .radio-matrix input').each(function(){
+    $(this).prependTo($(this).next('label'));
+  });
   $('.form-bootstrap .se-form-required-text').addClass('sr-only');
   $('.form-bootstrap .button-group input[type=submit]').addClass('btn btn-primary');
   $('.form-bootstrap .form-error > a').addClass('text-danger');
