@@ -5300,6 +5300,12 @@ p.actions {
     padding: 0;
     list-style: none; }
 
+.radio-group .table td {
+  border-top-style: none; }
+
+td.radio {
+  display: inline-block; }
+
 .book-details .modal-body {
   display: -webkit-box;
   display: -webkit-flex;
