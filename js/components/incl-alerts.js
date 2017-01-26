@@ -7,7 +7,7 @@ function checkForAlerts () {
   } else {
     $('#hours > #alerts').insertBefore('#banner');
   }
-};
+}
 
 
 $(document).ready(function() {

@@ -13,7 +13,7 @@ $(document).ready(function() {
   });
 
   $('#catalog-search-textbox').keydown(function(event){
-    if (event.which == 13) {
+    if (event.which === 13) {
       event.preventDefault();
       searchCatalogue();
     }
