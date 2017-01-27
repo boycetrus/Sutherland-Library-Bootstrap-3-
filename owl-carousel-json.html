@@ -47,19 +47,18 @@
 
   <body>
 
-    <script type="text/x-handlebars-template" id="bookTemplate">
-    	{{#each data.feed.entry}}
-        <div class="item">
-          <a target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}">
-            <img src="{{gsx$cover.$t}}" alt="{{gsx$title.$t}}" />
-            <div class="sr-only">
-              <h4>{{gsx$title.$t}}</h4>
-              <p>{{{gsx$review.$t}}}</p>
-            </div>
-          </a>
-        </div>
-      {{/each}}
-    </script>
+<script type="text/x-handlebars-template" id="bookTemplate">
+	{{#each data.feed.entry}}
+    <div class="item">
+      <img src="{{gsx$cover.$t}}" alt="{{gsx$title.$t}}" />
+      <div class="sr-only">
+        <h4>{{gsx$title.$t}}</h4>
+        <p>{{{gsx$review.$t}}}</p>
+        <p><a target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}">Check Availability</a></p>
+      </div>
+    </div>
+  {{/each}}
+</script>
 
 
     <div class="container-fluid page-wrap">
