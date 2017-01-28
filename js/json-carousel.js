@@ -29,6 +29,7 @@ $('document').ready(function() {
       //generate the carousel
       $carousel.owlCarousel({
         margin:10,
+        stagePadding: 60,
         nav:true,
         navText: ['<i data-icon="&#xe027;"></i>','<i data-icon="&#xe025;"></i>'],
         dots: false,

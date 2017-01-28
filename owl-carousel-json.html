@@ -49,17 +49,18 @@
 
 <script type="text/x-handlebars-template" id="bookTemplate">
 	{{#each data.feed.entry}}
-    <div class="item">
-      <img src="{{gsx$cover.$t}}" alt="{{gsx$title.$t}}" />
-      <div class="sr-only">
+    <article class="book item">
+      <a href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}">
+        <img src="{{gsx$cover.$t}}" alt="{{gsx$title.$t}}" />
+      </a>
+      <div class="book-detail sr-only">
         <h4>{{gsx$title.$t}}</h4>
         <p>{{{gsx$review.$t}}}</p>
-        <p><a target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}">Check Availability</a></p>
+        <p><a class="btn btn-success" target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}">Get it!</a></p>
       </div>
-    </div>
+    </article>
   {{/each}}
 </script>
-
 
     <div class="container-fluid page-wrap">
 
@@ -189,6 +190,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus lobortis nisi, ac egestas lectus faucibus vel. Suspendisse rutrum lorem tempor congue bibendum. Nam sagittis congue enim id suscipit. Donec rutrum, dolor ac egestas faucibus, lorem diam commodo sem, nec pretium ipsum leo egestas massa. Aenean non elit nunc. Integer ut porttitor nulla, ac ultricies libero. Nullam tortor enim, blandit quis iaculis quis, porttitor a arcu. Aenean feugiat facilisis porttitor. Ut tincidunt mi magna, ac lacinia nisl tincidunt eget. Praesent faucibus eget quam quis molestie. Aliquam convallis nec nulla ac elementum. Nunc eu tellus purus. Sed accumsan rutrum tempus. Cras sem arcu, volutpat quis sodales et, tincidunt et purus.</p>
 
             <div id="bookCarousel" class="book-carousel owl-carousel">
+            </div>
+            <div id="bookDetail" class="book-data">
+              <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="info">
+                <h4>The Girl from Venice by Martin Cruz Smith</h4>
+                <p></p><p>Venice, 1945. The war may be waning, but the city known as La Serenissima is still occupied and the people of Italy fear the power of the Third Reich. One night, under a canopy of stars, a fisherman named Cenzo comes across a young woman’s body floating in the lagoon and soon discovers that she is still alive and in trouble.  Born to a wealthy Jewish family, Giulia is on the run from the Wehrmacht SS. Cenzo chooses to protect Giulia rather than hand her over to the Nazis. This act of kindness leads them into the world of Partisans, random executions, the arts of forgery and high explosives, Mussolini’s broken promises, the black market and gold, and, everywhere, the enigmatic maze of the Venice Lagoon.</p><p>The Girl from Venice is a thriller, a mystery, and a retelling of Italian history that will take your breath away. Most of all it is a love story.</p><p></p>
+                <p><a class="btn btn-success" target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__Rb1268258">Get it!</a></p>
+              </div>
             </div>
 
           </div><!-- /content -->
