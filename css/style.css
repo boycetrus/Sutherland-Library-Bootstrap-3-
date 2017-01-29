@@ -4982,7 +4982,7 @@ you can use the generic selector below, but it's slower:
 
 .book-carousel.owl-carousel {
   margin-top: 1em;
-  padding-top: 10px;
+  padding: 10px 0;
   background-color: #dedede;
   border-radius: 4px 4px 0 0; }
   .book-carousel.owl-carousel .owl-item img {
@@ -4994,9 +4994,7 @@ you can use the generic selector below, but it's slower:
   .book-carousel.owl-carousel .owl-next {
     position: absolute;
     top: 130px;
-    font-size: 2em;
-    margin: 0;
-    color: #fff;
+    width: 48px;
     opacity: 0.8; }
   .book-carousel.owl-carousel .owl-prev {
     left: 12px; }
@@ -5005,8 +5003,17 @@ you can use the generic selector below, but it's slower:
 
 .book-data {
   background-color: #dedede;
-  padding: 12px 60px;
-  border-radius: 0 0 4px 4px; }
+  padding: 0 10px;
+  border-radius: 0 0 4px 4px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease; }
+
+.book-data.active {
+  padding: 1em;
+  height: auto;
+  overflow: auto; }
 
 .book.selected:after {
   content: '';
@@ -5014,7 +5021,7 @@ you can use the generic selector below, but it's slower:
   height: 0;
   position: absolute;
   bottom: 0px;
-  left: 70px;
+  left: calc(50% - 20px);
   z-index: 100;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;

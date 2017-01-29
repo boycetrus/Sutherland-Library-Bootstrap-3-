@@ -31,18 +31,35 @@ $('document').ready(function() {
         margin:10,
         stagePadding: 60,
         nav:true,
-        navText: ['<i data-icon="&#xe027;"></i>','<i data-icon="&#xe025;"></i>'],
+        navText: ['<svg viewBox="0 0 32 32"><path fill="#fff" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13z"></path><path fill="#fff" d="M20.914 9.914l-2.829-2.829-8.914 8.914 8.914 8.914 2.828-2.828-6.086-6.086z"></path></svg>','<svg viewBox="0 0 32 32"><path fill="#fff" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path><path fill="#fff" d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path></svg>'],
+        //navText: ['<i data-icon="&#xe027;"></i>','<i data-icon="&#xe025;"></i>'],
         dots: false,
         responsive:{
           0   : {items:1},
-          400 : {items:2},
-          600 : {items:3},
-          800 : {items:4},
-          1000: {items:5},
-          1200: {items:6},
-          1400: {items:7},
-          1600: {items:8}
+          520 : {items:2},
+          720 : {items:3},
+          920 : {items:4},
+          1120: {items:5},
+          1320: {items:6},
+          1520: {items:7},
+          1720: {items:8}
         }
+      });
+      $('.book').on('click', function(e) {
+        $('.book').removeClass('selected');
+        $(this).addClass('selected');
+        $('.book-data > .info').empty();
+        $('.book-data').removeClass('active');
+        $(this).children('.book-detail').clone(true).appendTo('.book-data .info');
+        $('.book-data .info .book-detail').removeClass('sr-only');
+        $('.book-data').addClass('active');
+        e.preventDefault();
+      });
+
+      $('.book-data .close').on('click', function() {
+        $(this).next('.info').empty();
+        $(this).parents('.book-data').removeClass('active');
+        $('.book').removeClass('selected');
       });
     }
   })

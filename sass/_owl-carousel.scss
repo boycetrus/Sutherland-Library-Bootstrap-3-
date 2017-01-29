@@ -259,7 +259,7 @@
 
 .book-carousel.owl-carousel {
   margin-top: 1em;
-  padding-top: 10px;
+  padding: 10px 0;
   background-color: $gray-lighter;
   border-radius: $border-radius-base $border-radius-base 0 0;
   .owl-item img {
@@ -273,9 +273,7 @@
   .owl-next {
     position: absolute;
     top: 130px;
-    font-size: 2em;
-    margin: 0;
-    color: #fff;
+    width: 48px;
     opacity: 0.8;
   }
   .owl-prev {
@@ -288,8 +286,17 @@
 
 .book-data {
   background-color: $gray-lighter;
-  padding: 12px 60px;
+  padding: 0 10px;
   border-radius: 0 0 $border-radius-base $border-radius-base;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.book-data.active {
+  padding: 1em;
+  height: auto;
+  overflow: auto;
 }
 
 .book.selected {
@@ -301,7 +308,7 @@
   height: 0;
   position: absolute;
   bottom: 0px;
-  left: 70px;
+  left: calc(50% - 20px);
   z-index: 100;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
