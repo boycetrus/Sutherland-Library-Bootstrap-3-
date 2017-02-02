@@ -256,3 +256,61 @@
 .owl-dot.active span {
   background: $gray-dark;
 }
+
+.book-carousel.owl-carousel {
+  margin-top: 1em;
+  padding: 10px 0;
+  background-color: $gray-lighter;
+  border-radius: $border-radius-base $border-radius-base 0 0;
+  .owl-item img {
+    width: 200px;
+    height: 300px;
+  }
+  .owl-controls {
+    margin: 0;
+  }
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 130px;
+    width: 48px;
+    opacity: 0.8;
+  }
+  .owl-prev {
+    left: 12px;
+  }
+  .owl-next {
+    right: 4px;
+  }
+}
+
+.book-data {
+  background-color: $gray-lighter;
+  padding: 0 10px;
+  border-radius: 0 0 $border-radius-base $border-radius-base;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.book-data.active {
+  padding: 1em;
+  height: auto;
+  overflow: auto;
+}
+
+.book.selected {
+  // TEXT-SHADOW?
+}
+.book.selected:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 20px);
+  z-index: 100;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid $gray-lighter;
+}
