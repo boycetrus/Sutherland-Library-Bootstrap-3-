@@ -1,3 +1,9 @@
+var emptyBookInfo = function() {
+  $('#bookData .info').empty();
+  $('#bookData').removeClass('active');
+  $('.book').removeClass('selected');
+};
+
 $('document').ready(function() {
 
   var $carousel = $('#bookCarousel');
@@ -57,9 +63,10 @@ $('document').ready(function() {
       });
 
       $('.book-data .close').on('click', function() {
-        $(this).next('.info').empty();
-        $(this).parents('.book-data').removeClass('active');
-        $('.book').removeClass('selected');
+        emptyBookInfo();
+      });
+      $('.owl-nav > div').on('click', function() {
+        emptyBookInfo();
       });
     }
   })

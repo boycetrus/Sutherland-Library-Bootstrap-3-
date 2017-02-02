@@ -5007,8 +5007,8 @@ you can use the generic selector below, but it's slower:
   border-radius: 0 0 4px 4px;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.3s ease;
-  transition: height 0.3s ease; }
+  -webkit-transition: height 2s ease;
+  transition: height 2s ease; }
 
 .book-data.active {
   padding: 1em;
