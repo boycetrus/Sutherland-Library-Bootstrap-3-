@@ -300,7 +300,7 @@
 		},
 	"\/js\/jquery-1.11.3.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery-1.11.3.js",
 		"outputAbbreviatedPath": "\/js\/production\/jquery-1.11.3-min.js",
@@ -377,7 +377,7 @@
 		},
 	"\/js\/owl.carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/owl.carousel.js",
 		"outputAbbreviatedPath": "\/js\/production\/owl.carousel-min.js",
