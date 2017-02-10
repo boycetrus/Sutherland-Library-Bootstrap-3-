@@ -263,8 +263,8 @@
   background-color: $gray-lighter;
   border-radius: $border-radius-base $border-radius-base 0 0;
   .owl-item img {
-    width: 200px;
-    height: 300px;
+    width: 170px;
+    height: 255px;
   }
   .owl-controls {
     margin: 0;
@@ -272,7 +272,7 @@
   .owl-prev,
   .owl-next {
     position: absolute;
-    top: 130px;
+    top: 112px;
     width: 48px;
     opacity: 0.8;
   }
