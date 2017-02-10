@@ -42,13 +42,15 @@ $('document').ready(function() {
         dots: false,
         responsive:{
           0   : {items:1},
-          520 : {items:2},
-          720 : {items:3},
-          920 : {items:4},
-          1120: {items:5},
-          1320: {items:6},
-          1520: {items:7},
-          1720: {items:8}
+          480 : {items:2},
+          660 : {items:3},
+          840 : {items:4},
+          1020: {items:5},
+          1200: {items:6},
+          1380: {items:7},
+          1560: {items:8},
+          1740: {items:9},
+          1920: {items:10},
         }
       });
       $('.book').on('click', function(e) {
