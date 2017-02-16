@@ -1,3 +1,5 @@
+//@codekit-prepend "owl.carousel.js";
+
   $(document).ready(function() {
 
   $('.owl-carousel').owlCarousel({

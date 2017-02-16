@@ -1,3 +1,6 @@
+//@codekit-prepend "handlebars-v4.0.5.js";
+//@codekit-prepend "owl.carousel.js";
+
 var emptyBookInfo = function() {
   $('#bookData .info').empty();
   $('#bookData').removeClass('active');
