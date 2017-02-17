@@ -10,7 +10,7 @@ var emptyBookInfo = function() {
 $('document').ready(function() {
 
   var $carousel = $('#bookCarousel');
-  var jsonSource = "https://spreadsheets.google.com/feeds/list/1emCiiEC9NIWPwG1Fb1Tgv3qKkE2nfzwQp8lD332AhnM/od6/public/values?alt=json";
+  var jsonSource = "https://spreadsheets.google.com/feeds/list/" + gDocId + "/od6/public/values?alt=json";
 
   //fetch the json feed
   $.getJSON( jsonSource, function() {
