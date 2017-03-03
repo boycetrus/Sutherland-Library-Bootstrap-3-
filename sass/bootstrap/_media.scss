@@ -14,7 +14,7 @@
 }
 
 .media-body {
-  width: 10000px;
+  width: 80%; //orig  width: 10000px
 }
 
 .media-object {
@@ -24,11 +24,13 @@
 .media-right,
 .media > .pull-right {
   padding-left: 10px;
+  width: 20%;
 }
 
 .media-left,
 .media > .pull-left {
   padding-right: 10px;
+  width: 20%;
 }
 
 .media-left,
