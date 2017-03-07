@@ -3572,7 +3572,7 @@ a.thumbnail.active {
   overflow: hidden; }
 
 .media-body {
-  width: 80%; }
+  width: auto; }
 
 .media-object {
   display: block; }
@@ -3580,12 +3580,12 @@ a.thumbnail.active {
 .media-right,
 .media > .pull-right {
   padding-left: 10px;
-  width: 20%; }
+  width: 150px; }
 
 .media-left,
 .media > .pull-left {
   padding-right: 10px;
-  width: 20%; }
+  width: 150px; }
 
 .media-left,
 .media-right,
