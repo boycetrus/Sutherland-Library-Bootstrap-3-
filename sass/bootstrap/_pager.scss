@@ -29,14 +29,16 @@
 
   .next {
     > a,
-    > span {
+    > span,
+    > input {
       float: right;
     }
   }
 
   .previous {
     > a,
-    > span {
+    > span,
+    > input {
       float: left;
     }
   }
