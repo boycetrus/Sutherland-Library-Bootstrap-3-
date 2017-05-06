@@ -3271,10 +3271,12 @@ tbody.collapse.in {
       text-decoration: none;
       background-color: #dedede; }
   .pager .next > a,
-  .pager .next > span {
+  .pager .next > span,
+  .pager .next > input {
     float: right; }
   .pager .previous > a,
-  .pager .previous > span {
+  .pager .previous > span,
+  .pager .previous > input {
     float: left; }
   .pager .disabled > a,
   .pager .disabled > a:hover,
@@ -3572,18 +3574,20 @@ a.thumbnail.active {
   overflow: hidden; }
 
 .media-body {
-  width: 10000px; }
+  width: auto; }
 
 .media-object {
   display: block; }
 
 .media-right,
 .media > .pull-right {
-  padding-left: 10px; }
+  padding-left: 10px;
+  width: 150px; }
 
 .media-left,
 .media > .pull-left {
-  padding-right: 10px; }
+  padding-right: 10px;
+  width: 150px; }
 
 .media-left,
 .media-right,
