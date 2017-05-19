@@ -11,10 +11,10 @@ $(document).ready(function() {
   $('.form-bootstrap .radio-list input').each(function(){
     $(this).prependTo($(this).next('label'));
   });
-  $('.radio-matrix > table').addClass('table table-condensed table-striped');
-  $('.radio-matrix > table tr:first-child').remove();
-  $('.radio-matrix > table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
-  $('.form-bootstrap .radio-matrix input').each(function(){
+  $('.form-bootstrap .matrix table').addClass('table table-condensed table-striped');
+  $('.form-bootstrap .matrix table tr:first-child').remove();
+  $('.form-bootstrap .matrix table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
+  $('.form-bootstrap .matrix input').each(function(){
     $(this).prependTo($(this).next('label'));
   });
   $('.form-bootstrap .se-form-required-text').addClass('sr-only');
