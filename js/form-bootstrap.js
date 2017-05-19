@@ -13,7 +13,8 @@ $(document).ready(function() {
   });
   $('.form-bootstrap .matrix table').addClass('table table-condensed table-striped');
   $('.form-bootstrap .matrix table tr:first-child').remove();
-  $('.form-bootstrap .matrix table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
+  $('.form-bootstrap .checkbox-group .matrix table td').not(':first-child').addClass('checkbox');
+  $('.form-bootstrap .radio-group .matrix table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
   $('.form-bootstrap .matrix input').each(function(){
     $(this).prependTo($(this).next('label'));
   });
