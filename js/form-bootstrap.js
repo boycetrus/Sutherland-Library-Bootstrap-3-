@@ -11,7 +11,6 @@ $(document).ready(function() {
   $('.form-bootstrap .radio-list input').each(function(){
     $(this).prependTo($(this).next('label'));
   });
-  $('.form-bootstrap .matrix table').addClass('table table-condensed table-striped');
   $('.form-bootstrap .matrix table tr:first-child').remove();
   $('.form-bootstrap .checkbox-group .matrix table td').not(':first-child').addClass('checkbox');
   $('.form-bootstrap .radio-group .matrix table td').not(':first-child').addClass('radio'); //.css('display','table-cell')
