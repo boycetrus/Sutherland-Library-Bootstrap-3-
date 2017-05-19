@@ -5353,9 +5353,17 @@ p.actions {
 
 .radio-group .table td {
   border-top-style: none; }
-
-td.radio {
+.radio-group td.radio {
   display: inline-block; }
+.radio-group .matrix td.radio {
+  display: table-cell; }
+
+.checkbox-group .table td {
+  border-top-style: none; }
+.checkbox-group td.checkbox {
+  display: inline-block; }
+.checkbox-group .matrix td.checkbox {
+  display: table-cell; }
 
 .book-details .modal-body {
   display: -webkit-box;

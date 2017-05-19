@@ -1,7 +1,23 @@
-.radio-group .table td {
-  border-top-style: none;
+.radio-group {
+  .table td {
+    border-top-style: none;
+  }
+  td.radio {
+    display: inline-block;
+  }
+  .matrix td.radio {
+    display: table-cell;
+  }
 }
 
-td.radio {
-  display: inline-block;
+.checkbox-group {
+  .table td {
+    border-top-style: none;
+  }
+  td.checkbox {
+    display: inline-block;
+  }
+  .matrix td.checkbox {
+    display: table-cell;
+  }
 }
