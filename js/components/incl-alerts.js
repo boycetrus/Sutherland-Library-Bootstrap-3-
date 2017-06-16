@@ -1,5 +1,5 @@
 //check for alert on property page and shift it to the top of the screen
-function checkForAlerts () {
+function checkForAlerts() {
   var isAlerts = $('.page-wrap > #alerts');
   if (isAlerts) {
     //grab the paragraph from the alert in the hours tab and append it to the main alert
@@ -7,6 +7,15 @@ function checkForAlerts () {
   } else {
     $('#hours > #alerts').insertBefore('#banner');
   }
+}
+
+// check for notices with no end dates and update end date text
+function untilFurtherNotice() {
+  var isEndDate = $('.event-detail .interruption-date.end-date');
+	  var endDateLength = isEndDate.text().length;
+	  if (endDateLength === 7) {
+	  	isEndDate.text('further notice');
+	  }
 }
 
 
@@ -26,6 +35,7 @@ $(document).ready(function() {
 // end compare event dates
 
   checkForAlerts();
+  untilFurtherNotice();
 
 // fade in alert-block
 // with no delay  $("#alerts").addClass("in"); or use setTimeout to pause
@@ -40,5 +50,7 @@ $(document).ready(function() {
     $('#home-library-contact .closures-alert .panel-collapse').addClass('in');
   }
 // end library closure alert
+
+
 
 });
