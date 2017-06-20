@@ -31,7 +31,11 @@
             <h2>Upcoming Storytimes</h2>
             <div class="more-events">
               <ul class="list-group storytime-list">
-                <li class="list-group-item list-group-item-info">Sort by:</li>
+                <li class="list-group-item list-group-item-info sort-controls">Sort by:
+                  <a class="btn btn-primary btn-xs" data-sort="location:asc">Library</a>
+                  <a class="btn btn-primary btn-xs" data-sort="day:asc">Day/Time</a>
+                  <a class="btn btn-primary btn-xs" data-sort="age:asc">Age/Type</a>
+                </li>
                 <li class="list-group-item mix" data-location="Miranda Library" data-day="Monday" data-age="storytime">
                   <div class="event-location"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Miranda">Storytime Miranda</a></div>
                   <div class="event-title">Monday at 10:30am</div>
@@ -96,5 +100,6 @@
     <!-- @import components/_footer.htm -->
 
     <script src="js/production/global-min.js"></script>
+    
   </body>
 </html>
