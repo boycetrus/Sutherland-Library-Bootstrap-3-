@@ -186,9 +186,11 @@
             <div class="more-events">
               <ul class="list-group storytime-list">
                 <li class="list-group-item list-group-item-info sort-controls">Sort by:
-                  <a class="btn btn-primary btn-xs" data-sort="location:asc">Library</a>
-                  <a class="btn btn-primary btn-xs" data-sort="day:asc">Day/Time</a>
-                  <a class="btn btn-primary btn-xs" data-sort="age:asc">Age/Type</a>
+                  <div class="btn-group" role="group" aria-label="sort buttons">
+                    <a class="btn btn-primary btn-xs" data-sort="location:asc" role="button">Library</a>
+                    <a class="btn btn-primary btn-xs" data-sort="day:asc" role="button">Day/Time</a>
+                    <a class="btn btn-primary btn-xs" data-sort="age:asc" role="button">Age/Type</a>
+                  </div>
                 </li>
                 <li class="list-group-item mix" data-location="Miranda Library" data-day="Monday" data-age="storytime">
                   <div class="event-location"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Miranda">Storytime Miranda</a></div>
@@ -316,6 +318,6 @@
   </footer>
 
     <script src="js/production/global-min.js"></script>
-    
+
   </body>
 </html>
