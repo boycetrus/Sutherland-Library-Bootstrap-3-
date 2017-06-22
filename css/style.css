@@ -5232,26 +5232,40 @@ p.actions {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; }
   .more-events .event-date {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 255px;
-        -ms-flex: 0 0 255px;
-            flex: 0 0 255px; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    padding-right: 10px; }
   .more-events .event-title {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -webkit-flex: 1 1 45%;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%;
     padding-right: 10px; }
   .more-events .event-location {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 145px;
-        -ms-flex: 0 0 145px;
-            flex: 0 0 145px; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    padding-right: 10px; }
+  .more-events .event-recurrence {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    padding-right: 10px; }
+  .more-events .event-storytime {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+    padding-right: 10px; }
   .more-events .event-action {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 85px;
-        -ms-flex: 0 0 85px;
-            flex: 0 0 85px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 10%;
+        -ms-flex: 1 1 10%;
+            flex: 1 1 10%;
     text-align: right; }
   .more-events .dlv-search .form-inline .input-group > .form-control {
     width: 300px; } }
