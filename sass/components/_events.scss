@@ -23,17 +23,27 @@
       flex-wrap: nowrap;
     }
     .event-date {
-      flex: 0 0 255px;
+      flex: 1 1 25%;
+      padding-right: $padding-small-horizontal;
     }
     .event-title{
-      flex: 1 1 auto;
-      padding-right: 10px;
+      flex: 1 1 45%;
+      padding-right: $padding-small-horizontal;
     }
     .event-location {
-      flex: 0 0 145px;
+      flex: 1 1 25%;
+      padding-right: $padding-small-horizontal;
+    }
+    .event-recurrence {
+      flex: 1 1 25%;
+      padding-right: $padding-small-horizontal;
+    }
+    .event-storytime {
+      flex: 1 1 25%;
+      padding-right: $padding-small-horizontal;
     }
     .event-action {
-      flex: 0 0 85px;
+      flex: 1 1 10%;
       text-align: right;
     }
     .dlv-search .form-inline .input-group > .form-control {
