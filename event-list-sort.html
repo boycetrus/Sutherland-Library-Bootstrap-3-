@@ -181,14 +181,52 @@
 
             <h1>Event List with Sort and Filter using MixItUp.js</h1>
             <p class="lead">Sort the Storytime list by library, day of the week or age group.</h2>
-            <p>Storytime is for ages 3+. Toddler Time is for ages 18 months to 3 years. Rhymetime is for babies from 0 to 2 years.</p>
+
+            <p><a id="sessionChooser" class="btn btn-primary" role="button" href="#sessionType" aria-controls="sessionType">
+              <span data-icon="&#XE005;">&nbsp;</span> Storytime, Toddler Time or Rhymetime?</a></p>
+
+            <div id="sessionType" class="collapse" aria-labelledby="sessionChooser" aria-expanded="false">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Storytime</h2>
+                    </div>
+                    <div class="panel-body">
+                      <p>Although these sessions are intended for ages 3 years and up, younger siblings are most welcome to come along and enjoy stories, films and craft activities.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Toddler Time</h2>
+                    </div>
+                    <div class="panel-body">
+                      <p>Toddler Time is Sutherland Shire Libraries version of Storytime for children 18m - 3yrs.&nbsp;Toddler Time sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h2 class="panel-title">Rhymetime</h2>
+                    </div>
+                    <div class="panel-body">
+                      <p>Rhymetime is our version of Storytime for babies from 0-2 years. Join in with your child reading simple stories, singing, rhymes and finger puppet play. Rhymetime sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <h2>Upcoming Storytimes</h2>
             <div class="more-events">
               <ul class="list-group storytime-list">
                 <li class="list-group-item list-group-item-info sort-controls">Sort by:&nbsp;
                   <div class="btn-group" role="group" aria-label="sort buttons">
                     <a class="btn btn-primary btn-xs" data-sort="location:asc" role="button">Library</a>
-                    <a class="btn btn-primary btn-xs" data-sort="day:asc" role="button">Day of Week</a>
+                    <a class="btn btn-primary btn-xs" data-sort="day:asc" role="button">Weekday</a>
                     <a class="btn btn-primary btn-xs" data-sort="age:asc" role="button">Age</a>
                   </div>
                 </li>
@@ -327,7 +365,7 @@
   </footer>
 
     <script src="js/production/global-min.js"></script>
-    <script src="js/production/mixitup.min.js"></script>
+    <script src="js/mixitup.js"></script>
     <script>
       $(document).ready(function() {
         $('.storytime-list .mix').each(function () {
@@ -336,7 +374,12 @@
           var dayIndex = eventDate.getDay();
           $(this).attr('data-day', dayIndex);
         });
+
+        $('#sessionChooser').on('click', function () {
+          $('#sessionType').collapse('toggle');
+        });
       });
+
       var mixer = mixitup('.storytime-list');
     </script>
 
