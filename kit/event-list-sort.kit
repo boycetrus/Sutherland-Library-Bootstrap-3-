@@ -28,39 +28,28 @@
             <h1>Event List with Sort and Filter using MixItUp.js</h1>
             <p class="lead">Sort the Storytime list by library, day of the week or age group.</h2>
 
-            <p><a id="sessionChooser" class="btn btn-primary" role="button" href="#sessionType" aria-controls="sessionType">
+            <!-- Button trigger modal -->
+            <p><a id="sessionChooser" class="btn btn-primary" role="button" aria-controls="sessionType"> <!-- data-toggle="modal" data-target="#sessionType" -->
               <span data-icon="&#XE005;">&nbsp;</span> Storytime, Toddler Time or Rhymetime?</a></p>
 
-            <div id="sessionType" class="collapse" aria-labelledby="sessionChooser" aria-expanded="false">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h2 class="panel-title">Storytime</h2>
-                    </div>
-                    <div class="panel-body">
-                      <p>Although these sessions are intended for ages 3 years and up, younger siblings are most welcome to come along and enjoy stories, films and craft activities.</p>
-                    </div>
+            <!-- Modal -->
+            <div class="modal fade" id="sessionType" tabindex="-1" role="dialog" aria-labelledby="sessionChooser">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                    <h2 class="modal-title" id="myModalLabel">Which session should you attend?</h2>
                   </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h2 class="panel-title">Toddler Time</h2>
-                    </div>
-                    <div class="panel-body">
-                      <p>Toddler Time is Sutherland Shire Libraries version of Storytime for children 18m - 3yrs.&nbsp;Toddler Time sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
-                    </div>
+                  <div class="modal-body">
+                    <h3>Storytime</h3>
+                    <p>Although these sessions are intended for ages 3 years and up, younger siblings are most welcome to come along and enjoy stories, films and craft activities.</p>
+                    <h3>Toddler Time</h3>
+                    <p>Toddler Time is Sutherland Shire Libraries version of Storytime for children 18m - 3yrs.&nbsp;Toddler Time sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
+                    <h3>Rhymetime</h3>
+                    <p>Rhymetime is our version of Storytime for babies from 0-2 years. Join in with your child reading simple stories, singing, rhymes and finger puppet play. Rhymetime sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
                   </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h2 class="panel-title">Rhymetime</h2>
-                    </div>
-                    <div class="panel-body">
-                      <p>Rhymetime is our version of Storytime for babies from 0-2 years. Join in with your child reading simple stories, singing, rhymes and finger puppet play. Rhymetime sessions run for up to 30 minutes, depending on the engagement level of the children.</p>
-                    </div>
+                  <div class="modal-footer">
+                    <p class="text-right"><a class="btn btn-primary hide-modal" data-dismiss="modal">Close</a></p>
                   </div>
                 </div>
               </div>
@@ -73,58 +62,58 @@
                   <div class="btn-group" role="group" aria-label="sort buttons">
                     <a class="btn btn-primary btn-xs" data-sort="location:asc" role="button">Library</a>
                     <a class="btn btn-primary btn-xs" data-sort="day:asc" role="button">Weekday</a>
-                    <a class="btn btn-primary btn-xs" data-sort="age:asc" role="button">Age</a>
+                    <a class="btn btn-primary btn-xs" data-sort="age:asc" role="button">Session Type</a>
                   </div>
                 </li>
-                <li class="list-group-item mix" data-location="Miranda Library" data-day="" data-age="storytime">
+                <li class="list-group-item mix" data-location="Miranda Library" data-day="" data-age="">
                   <div class="event-location">Miranda Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Miranda">Storytime</a></div>
                   <div class="event-recurrence">Mondays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Mon, 26 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Cronulla Library" data-day="" data-age="toddlertime">
+                <li class="list-group-item mix" data-location="Cronulla Library" data-day="" data-age="">
                   <div class="event-location">Cronulla Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Cronulla">Toddler Time</a></div>
                   <div class="event-recurrence">Tuesdays at 4:00pm &amp; Fridays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Tue, 20 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Caringbah Library" data-day="" data-age="storytime">
+                <li class="list-group-item mix" data-location="Caringbah Library" data-day="" data-age="">
                   <div class="event-location">Caringbah Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Caringbah">Storytime</a></div>
                   <div class="event-recurrence">Tuesdays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Tue, 20 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Sutherland Library" data-day="" data-age="rhymetime">
+                <li class="list-group-item mix" data-location="Sutherland Library" data-day="" data-age="">
                   <div class="event-location">Sutherland Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Sutherland">Rhymetime</a></div>
                   <div class="event-recurrence">Wednesdays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Wed, 21 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Menai Library" data-day="" data-age="rhymetime">
+                <li class="list-group-item mix" data-location="Menai Library" data-day="" data-age="">
                   <div class="event-location">Menai Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Menai">Rhymetime</a></div>
                   <div class="event-recurrence">Wednesdays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Wed, 21 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Sylvania Library" data-day="" data-age="toddlertme">
+                <li class="list-group-item mix" data-location="Sylvania Library" data-day="" data-age="">
                   <div class="event-location">Sylvania Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Sylvania">Toddler Time</a></div>
                   <div class="event-recurrence">Wednesdays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Wed, 21 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Engadine Library" data-day="" data-age="storytime">
+                <li class="list-group-item mix" data-location="Engadine Library" data-day="" data-age="">
                   <div class="event-location">Engadine Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/Storytime-Engadine">Storytime</a></div>
                   <div class="event-recurrence">Fridays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Fri, 23 Jun 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Cronulla Library" data-day="" data-age="rhymetime">
+                <li class="list-group-item mix" data-location="Cronulla Library" data-day="" data-age="">
                   <div class="event-location">Cronulla Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/">Rhymetime</a></div>
                   <div class="event-recurrence">Tuesdays at 10:30am</div>
                   <div class="event-date">Next: <span class="entry">Tue, 25 Jul 2017</span></div>
                 </li>
-                <li class="list-group-item mix" data-location="Sutherland Library" data-day="" data-age="storytime">
+                <li class="list-group-item mix" data-location="Sutherland Library" data-day="" data-age="">
                   <div class="event-location">Sutherland Library</div>
                   <div class="event-storytime"><a href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Services/Kids-amp-Parents/Storytime/">Storytime</a></div>
                   <div class="event-recurrence">Tuesdays at 10:30am</div>
@@ -149,23 +138,7 @@
     <!-- @import components/_footer.htm -->
 
     <script src="js/production/global-min.js"></script>
-    <script src="js/mixitup.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('.storytime-list .mix').each(function () {
-          var entryDate = $(this).find('.event-date > .entry').text();
-          var eventDate = new Date(entryDate);
-          var dayIndex = eventDate.getDay();
-          $(this).attr('data-day', dayIndex);
-        });
-
-        $('#sessionChooser').on('click', function () {
-          $('#sessionType').collapse('toggle');
-        });
-      });
-
-      var mixer = mixitup('.storytime-list');
-    </script>
+    <script src="js/production/storytime-min.js"></script>
 
   </body>
 </html>
