@@ -257,6 +257,26 @@
   background: $gray-dark;
 }
 
+// instruction carousel
+
+.instruction-carousel > .owl-carousel {
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 148px;
+    width: 48px;
+    opacity: 0.8;
+  }
+  .owl-prev {
+    left: 22px;
+  }
+  .owl-next {
+    right: 18px;
+  }
+}
+
+// book carousel with json data
+
 .book-carousel.owl-carousel {
   margin-top: 1em;
   padding: 10px 0;
