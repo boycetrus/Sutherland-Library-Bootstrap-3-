@@ -174,7 +174,7 @@ $(document).ready(function() {
     var $feedId = $(this).data('feed');
     var $feedTitle =  $(this).text();
     var $extUrl = 'http://webpac.sutherlandshire.nsw.gov.au/screens/' + $feedId + '.html';
-    
+
     //call the function that generates the list
     populateList($feedId, $feedTitle, $extUrl);
     //prevent the default action on the link in the btn
@@ -194,6 +194,6 @@ $(document).ready(function() {
   });
 
   //pre-populate the page with data from the new fiction list
-  populateList('newadultfiction', 'New Fiction');
+  populateList('newadultfiction', 'New Fiction', 'http://webpac.sutherlandshire.nsw.gov.au/screens/newadultfiction.xml');
 
 });
