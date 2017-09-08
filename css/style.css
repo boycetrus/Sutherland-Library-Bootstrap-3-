@@ -5001,8 +5001,8 @@ you can use the generic selector below, but it's slower:
   background-color: #dedede;
   border-radius: 4px 4px 0 0; }
   .book-carousel.owl-carousel .owl-item img {
-    width: 170px;
-    height: 255px; }
+    width: 120px;
+    height: 196px; }
   .book-carousel.owl-carousel .owl-controls {
     margin: 0; }
   .book-carousel.owl-carousel .owl-prev,
