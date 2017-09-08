@@ -45,21 +45,21 @@ $('document').ready(function() {
         dots: false,
         responsive:{
           0   : {items:1},
-          360 : {items:2},
-          500 : {items:3},
-          630 : {items:4},
-          760 : {items:5},
-          900 : {items:6},
+          430 : {items:2},
+          550 : {items:3},
+          680 : {items:4},
+          810 : {items:5},
+          940 : {items:6},
           992 : {items:4},
-          1020: {items:5},
-          1160: {items:6},
-          1200: {items:3},
-          1340: {items:4},
-          1470: {items:5},
-          1600: {items:6},
-          1740: {items:7},
-          1870: {items:8},
-          2000: {items:9}
+          1000: {items:5},
+          1140: {items:6},
+          1200: {items:4},
+          1330: {items:5},
+          1470: {items:6},
+          1600: {items:7},
+          1730: {items:8},
+          1860: {items:9},
+          2000: {items:10}
         }
       });
       $('.book').on('click', function(e) {
