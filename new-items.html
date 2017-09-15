@@ -48,6 +48,25 @@
   <body>
     <div class="container-fluid page-wrap">
 
+    <script type="text/x-handlebars-template" id="bookTemplate">
+      {{#each data.items}}
+      <article class="media page-header" data-isbn="{{guid}}">
+        <div class="media-left hidden-xs">
+          <img class="media-object thumbnail" />
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">
+            <a href="{{link}}">{{{title}}}</a>
+          </h4>
+          <p class="feed-content">{{{content}}}</p>
+          <p><a class="btn btn-success btn-xs" href="{{link}}">Get it!</a></p>
+        </div>
+      </article>
+      {{/each}}
+    </script>
+
+
+
       <header id="banner" class="row banner">
   <div class="col-sm-6">
     <p class="ssc-link">A <a href="http://www.sutherlandshire.nsw.gov.au">Sutherland Shire Council</a> Facility</p>
@@ -183,7 +202,7 @@
 
         <div class="col-xs-12">
           <h1>RSS to HTML via JSON</h1>
-          <p class="lead">New Items Lists generated from RSS feeds that are fetched through Yahoo Query Language (YQL) to provide a JSON feed.</p>
+          <p class="lead">New Items Lists generated from RSS feeds that are fetched through the rss2json API to provide a JSON feed.</p>
         </div>
 
         <div id="sidebar" class="col-md-3 page-spotlight">
