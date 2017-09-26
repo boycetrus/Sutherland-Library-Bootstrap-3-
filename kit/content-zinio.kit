@@ -23,9 +23,9 @@
 
           <div id="content" class="col-md-9 col-lg-6 content">
 
-            <h1>Zinio Digital Magazines</h1>
+            <h1>RB Digital Magazines</h1>
             <p class="lead">Download digital editions of popular magazines and read them on any device - PC, Mac, iPad or Android tablet.</p>
-            <p>Zinio is a platform offering access to thousands of popular magazines. While anyone can register for a Zinio account and purchase their own digital magazine collection, Sutherland Shire Library has partnered with RB Digital to provide access to a collection of over 100 magazine titles that library members can download for FREE.</p>
+            <p>Sutherland Shire Libraries have partnered with RB Digital to provide access to a collection of over 100 magazine titles that library members can download for FREE.</p>
             <p class="actions">
               <a href="https://www.rbdigital.com/sutherland/zinio" class="btn btn-success btn-lg js-ga-tracking" data-ga-category="cta-button-resource" data-ga-action="click" data-ga-label="Search Zinio" target="_blank">Get Digital Magazines</a>
             </p>
@@ -59,7 +59,11 @@
 
   <script src="js/production/global-min.js"></script>
   <script>
-    $(document).ready(function() { $('#switchToDesktop').on('click', function() { $('#zinioTabs a[href="#desktop"]').tab('show'); }); });
+    $(document).ready(function() {
+      $('#rbSideBySide').on('click', function() {
+        $('.embed-responsive').toggleClass('hidden');
+      });
+    });
   </script>
   </body>
 </html>
