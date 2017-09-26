@@ -74,6 +74,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/content-zinio.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/content-zinio.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/content.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -233,7 +242,7 @@
 	"\/js\/components\/incl-events.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/components\/incl-events.js",
 		"outputAbbreviatedPath": "\/js\/components\/production\/incl-events-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -255,7 +264,7 @@
 	"\/js\/components\/incl-listview.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/components\/incl-listview.js",
 		"outputAbbreviatedPath": "\/js\/components\/production\/incl-listview-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -281,8 +290,8 @@
 		"inputAbbreviatedPath": "\/js\/global.js",
 		"outputAbbreviatedPath": "\/js\/production\/global-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/gmaps.js": {
@@ -320,7 +329,7 @@
 		},
 	"\/js\/instructions-carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/instructions-carousel.js",
 		"outputAbbreviatedPath": "\/js\/production\/instructions-carousel-min.js",
@@ -831,6 +840,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/components\/_tabs.htm": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/components\/_tabs.htm",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/content-audio.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -873,6 +891,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/content-video-embed.kit",
 		"outputAbbreviatedPath": "\/content-video-embed.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kit\/content-zinio.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/content-zinio.kit",
+		"outputAbbreviatedPath": "\/content-zinio.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
