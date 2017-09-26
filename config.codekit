@@ -329,7 +329,7 @@
 		},
 	"\/js\/instructions-carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/instructions-carousel.js",
 		"outputAbbreviatedPath": "\/js\/production\/instructions-carousel-min.js",
