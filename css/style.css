@@ -5722,7 +5722,7 @@ header {
       grid-template-columns: 2fr 1fr 1fr;
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
-  grid-gap: 30px;
+  grid-gap: 15px;
   margin-bottom: 2em; }
 
 .opac-tile {
