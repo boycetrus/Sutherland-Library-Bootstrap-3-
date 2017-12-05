@@ -1,0 +1,23 @@
+.opac-landing-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-gap: 30px;
+  margin-bottom: 2em;
+}
+
+.opac-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+a.opac-tile {
+  background-color: #093569;
+  color: #ddd;
+  text-decoration: none;
+  &:hover {
+    background-color: #4075b2;
+  }
+}
