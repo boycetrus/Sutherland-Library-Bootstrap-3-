@@ -47,6 +47,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/content-opac-landing.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/content-opac-landing.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/content-starter.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -786,6 +795,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/components\/_opac-tiles.htm": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/components\/_opac-tiles.htm",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/components\/_opening-hours-home.htm": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -864,6 +882,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/content-expando.kit",
 		"outputAbbreviatedPath": "\/content-expando.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kit\/content-opac-landing.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/content-opac-landing.kit",
+		"outputAbbreviatedPath": "\/content-opac-landing.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -2538,6 +2565,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/components\/_modals.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_modals.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/sass\/components\/_opac-tiles.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_opac-tiles.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_opac-tiles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
