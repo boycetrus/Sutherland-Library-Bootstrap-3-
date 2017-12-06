@@ -3,18 +3,9 @@
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 300px 300px;
   grid-gap: 15px;
+  -ms-grid-columns: 2fr 15px 1fr 15px 1fr;
+  -ms-grid-rows: 300px 15px 300px;
   margin-bottom: 2em;
-}
-
-.opac-tile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-
-  .icon {
-    font-size: $font-size-h1;
-  }
 }
 
 a.opac-tile {
@@ -23,5 +14,37 @@ a.opac-tile {
   text-decoration: none;
   &:hover {
     background-color: #000;
+  }
+}
+
+.opac-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  &.search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  &.join {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  &.events {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  &.login {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  &.email {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  &.website {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
 }
