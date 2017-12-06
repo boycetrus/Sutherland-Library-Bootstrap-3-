@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 300px 300px;
-  grid-gap: 30px;
+  grid-gap: 15px;
   margin-bottom: 2em;
 }
 
@@ -11,13 +11,17 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
+
+  .icon {
+    font-size: $font-size-h1;
+  }
 }
 
 a.opac-tile {
   background-color: #093569;
-  color: #ddd;
+  color: #d2d8e3;
   text-decoration: none;
   &:hover {
-    background-color: #4075b2;
+    background-color: #000;
   }
 }
