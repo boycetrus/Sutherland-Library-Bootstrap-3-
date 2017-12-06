@@ -5723,7 +5723,16 @@ header {
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
   grid-gap: 15px;
+  -ms-grid-columns: 2fr 15px 1fr 15px 1fr;
+  -ms-grid-rows: 300px 15px 300px;
   margin-bottom: 2em; }
+
+a.opac-tile {
+  background-color: #093569;
+  color: #d2d8e3;
+  text-decoration: none; }
+  a.opac-tile:hover {
+    background-color: #000; }
 
 .opac-tile {
   display: -webkit-box;
@@ -5739,12 +5748,21 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px; }
-  .opac-tile .icon {
-    font-size: 41px; }
-
-a.opac-tile {
-  background-color: #093569;
-  color: #d2d8e3;
-  text-decoration: none; }
-  a.opac-tile:hover {
-    background-color: #000; }
+  .opac-tile.search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .opac-tile.join {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3; }
+  .opac-tile.events {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5; }
+  .opac-tile.login {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .opac-tile.email {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3; }
+  .opac-tile.website {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5; }
