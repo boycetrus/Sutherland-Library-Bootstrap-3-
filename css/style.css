@@ -5747,7 +5747,7 @@ a.opac-tile {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px; }
+  padding: 30px 60px; }
   .opac-tile.search {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
