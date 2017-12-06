@@ -11,6 +11,10 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
+
+  .icon {
+    font-size: $font-size-h1;
+  }
 }
 
 a.opac-tile {

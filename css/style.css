@@ -5739,6 +5739,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px; }
+  .opac-tile .icon {
+    font-size: 41px; }
 
 a.opac-tile {
   background-color: #093569;
