@@ -1,0 +1,20 @@
+.book-club-list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.book-club {
+  flex: 1 0 160px;
+  // border: 1px solid #aaa;
+  // background-color: #ddd;
+  margin: 1em;
+  // padding: 0 1em;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    flex: 1 1 25%;
+  }
+}

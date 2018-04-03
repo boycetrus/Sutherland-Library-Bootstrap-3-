@@ -5057,6 +5057,35 @@ you can use the generic selector below, but it's slower:
   .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     float: none;
     width: 100%; } }
+.book-club-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+
+.book-club {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 160px;
+      -ms-flex: 1 0 160px;
+          flex: 1 0 160px;
+  margin: 1em;
+  text-align: center; }
+  .book-club img {
+    max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .book-club {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 25%;
+          -ms-flex: 1 1 25%;
+              flex: 1 1 25%; } }
+
 .breadcrumbs {
   padding: 6px;
   margin-bottom: 0; }
@@ -5390,23 +5419,6 @@ p.actions {
 .checkbox-group .matrix td.checkbox {
   display: table-cell; }
 
-.book-details .modal-body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .book-details .modal-body .gbks-cover {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 140px;
-        -ms-flex: 0 0 140px;
-            flex: 0 0 140px; }
-  .book-details .modal-body .gbks-summary {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    padding-left: 1em; }
-
 footer {
   background: #333333;
   background-image: -webkit-linear-gradient(top, #333333, #222222);
@@ -5522,6 +5534,23 @@ header {
 
 #creditfooter {
   display: none; }
+
+.book-details .modal-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .book-details .modal-body .gbks-cover {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 140px;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px; }
+  .book-details .modal-body .gbks-summary {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding-left: 1em; }
 
 .social {
   background-color: #E9F2F7;
