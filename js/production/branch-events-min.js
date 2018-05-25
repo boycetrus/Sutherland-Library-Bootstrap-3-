@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("h1").text();$("#events .list-group-item").each(function(){$(this).children(".event-location").text()!==e&&$(this).remove()}),$("#events").removeClass("hidden")});
