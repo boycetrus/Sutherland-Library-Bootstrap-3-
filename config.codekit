@@ -182,6 +182,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/1_SS_libraries_blue_Web.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9086,
+		"inputAbbreviatedPath": "\/img\/1_SS_libraries_blue_Web.png",
+		"outputAbbreviatedPath": "\/img\/1_SS_libraries_blue_Web.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/1_SS_libraries_white_Web.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10058,
+		"inputAbbreviatedPath": "\/img\/1_SS_libraries_white_Web.png",
+		"outputAbbreviatedPath": "\/img\/1_SS_libraries_white_Web.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/no-cover.png": {
 		"fileType": 32768,
 		"ignore": 0,
