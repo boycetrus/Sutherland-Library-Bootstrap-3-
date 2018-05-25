@@ -5,7 +5,7 @@ header {
 .title-logo{
   width: 307px;
   height: 36px;
-  background-image: url('../../img/library-logo.gif');
+  background-image: url('../img/library-logo.gif');
   @include text-hide();
   margin: 0 auto $font-size-base;
   @media screen and (min-width: $screen-sm-min) {
