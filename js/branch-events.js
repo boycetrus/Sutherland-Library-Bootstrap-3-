@@ -12,15 +12,15 @@ $(document).ready(function() {
   });
 
   if ( $('#all-events .list-group-item').length ===0 ) {
-    // if the list of events is empty show a message
+    // if the list of events is empty show a message instead of the list
     $('<p>There are no upcoming events at this branch</p>').appendTo('#events');
-    $('#events > .row').remove();
   } else {
-    // clean up the DOM around the event list
     $('#all-events .list-group').insertAfter('#events > h2');
-    $('#events > .row').remove();
-    //unhide the list of Events
-    $('#events').removeClass('hidden');
   }
+
+  // clean up the DOM around the event list
+  $('#events > .row').remove();
+  //unhide the list of Events
+  $('#events').removeClass('hidden');
 
 });
