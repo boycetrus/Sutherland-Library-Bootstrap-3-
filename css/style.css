@@ -5079,12 +5079,12 @@ you can use the generic selector below, but it's slower:
   text-align: center; }
   .book-club img {
     max-width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 623px) {
     .book-club {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 25%;
-          -ms-flex: 1 1 25%;
-              flex: 1 1 25%; } }
+      -webkit-flex: 1 1 19%;
+          -ms-flex: 1 1 19%;
+              flex: 1 1 19%; } }
 
 .breadcrumbs {
   padding: 6px;
