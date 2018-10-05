@@ -4,21 +4,152 @@
   <p>When you are ready, click the Start Troubleshooting button below. Read the instructions
     carefully and follow the process described. When you have completed each step return here
     and answer the question for the next troubleshooting step.</p>
-  <p><span id="startTS" class="btn btn-success">Start Troubleshooting</span></p>
+  <p><span id="startTS" class="btn btn-primary">Start Troubleshooting</span></p>
 
-  <div id="step1" class="question hidden fade">
-    <div class="well">
+<!-- ***** LEVEL 1 ***** -->
+
+  <div id="tryLogin" class="question hidden">
+    <div class="well fade">
       <p><a href="https://fe.bolindadigital.com/wldcs_bol_fo/b2i/login.html?b2bSite=4314&targetSite=mainPage.html&fromPage=1" target="_blank">Open Borrowbox in a web browser</a>
-        (<span data-icon="&#xe023;">not the App</span>) and try to login using your barcode
+        (<span data-icon="&#xe023;">not the App</span>) and try to login using the barcode
           number from your library card as the Library ID and the last 4 digits of the barcode
-          as your PIN.</p>
-        <p>Were you successful?</p>
+          as your PIN. When you have tried this come back to this window and answer the question below.</p>
+        <p>Did you get an error message?</p>
         <p>
-          <span class="btn btn-success">Yes</span>
-          <span class="btn btn-danger">No</span>
+          <span role="button" class="btn btn-success">Yes</span>
+          <span role="button" class="btn btn-danger">No</span>
         </p>
     </div>
   </div>
-  <!-- /step1 -->
+  <!-- /tryLogin -->
+
+<!-- ***** LEVEL 2 ***** -->
+
+  <!-- if YES answered in level 1 -->
+  <div id="loginError" class="question hidden">
+    <div class="well fade">
+      <p>Did you receive the following login error?</p>
+      <p class="text-danger">Your Library ID / Barcode could not be found or your password was incorrect. Please re-enter.</p>
+      <p>
+        <span role="button" class="btn btn-success">Yes</span>
+        <span role="button" class="btn btn-danger">No</span>
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+  <!-- /loginError -->
+
+  <!-- if NO answered in level 1 -->
+  <div id="newUser" class="question hidden">
+    <div class="well fade">
+      <p>Were you prompted to complete your account details by adding your email address and name, and confirming that you agree to the terms and conditions?</p>
+      <p>
+        <span role="button" class="btn btn-success">Yes</span>
+        <span role="button" class="btn btn-danger">No</span>
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+<!-- ***** LEVEL 3 ***** -->
+
+  <!-- answered yes to loginError in Level 2 -->
+  <div id="resetPassword" class="question hidden">
+    <div class="well fade">
+      <p>Your Library Card No. has previously been used to create a Borrowbox account and
+        the default Borrowbox PIN/password has been changed. Try resetting your PIN/Password.</p>
+      <p>Return to the Borrowbox login form and click on the <em>Forgot your Password</em> link.
+        Enter your Library card no. and email address and click <em>Send</em>. Check your email
+        for a message from Borrowbox and follow the instructions to update your PIN/password,
+        then try to login again.</p>
+      <p>Did this solve the problem?</p>
+      <p>
+        <span role="button" class="btn btn-success">Yes</span>
+        <span role="button" class="btn btn-danger">No</span>
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- answered no to loginError in Level 2 -->
+  <div id="serverError" class="question hidden">
+    <div class="well fade">
+      <p>There could be a temporary problem with the Borrowbox service itself.
+        If that is the case it is likely you are seeing an error message that suggests the server
+        or service is unavailable. Try again in an hour or two, or even tomorrow to see if the
+        problem is fixed.</p>
+      <p>If the problem persists for more than a day then it is most likely something else,
+        however, we are unable to determine what the problem might be. For further assistance
+        please visit the library with your device if possible, or telephone us on the number
+        below.</p>
+      <p class="resetTS">
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- answered yes to newUser in Level 2 -->
+  <div id="finishSetup" class="question hidden">
+    <div class="well fade">
+      <p>This is the 1st time this library card has been used to login to Borrowbox.
+        Finish setting up your account by adding your name, email address and the
+        other information requested in the form. When complete you can login to the app
+        on your mobile devices with this combination of card number and PIN.</p>
+      <p>We recommend that users change their PIN to something more secure and memorable
+        Once their account is set up. This can be done from the <strong>My Account</strong>
+        link on the website or the <strong>Settings</strong> option in the Borrowbox app.</p>
+      <p>Did this solve the problem?</p>
+      <p>
+        <span role="button" class="btn btn-success">Yes</span>
+        <span role="button" class="btn btn-danger">No</span>
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- answered no to newUser in Level 2 -->
+  <div id="tryApp" class="question hidden">
+    <div class="well fade">
+      <p>It appears you have successfully logged in on the website. Try to login to the app
+      on your mobile devices with this combination of card number and PIN.</p>
+      <p>Did this solve the problem?</p>
+      <p>
+        <span role="button" class="btn btn-success">Yes</span>
+        <span role="button" class="btn btn-danger">No</span>
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+<!-- ***** LEVEL 4 ***** -->
+
+  <!-- if answered yes to problem solved -->
+  <div id="solved" class="question hidden">
+    <div class="well fade">
+      <p>Great news! We hope you enjoy the ebooks and audiobooks available through Borrowbox.</p>
+      <p class="resetTS">
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- if no to problem solved -->
+  <div id="deadEnd" class="question hidden">
+    <div class="well fade">
+      <p>We are unable to determine the issue at this time. We require further investigation
+        to determine what the problem might be. For further assistance please visit
+        the library with your device if possible, or telephone us on the number below.</p>
+      <p class="resetTS">
+        <span role="button" class="btn btn-primary">Start Over</span>
+      </p>
+    </div>
+  </div>
 
 </div>
+
+<!-- <p>If you still cannot login to the Borrowbox app on your device using these credentials
+  we require further investigation to determine what the problem might be. For further
+  assistance please visit the library with your device if possible, or telephone us on the number below.</p>
+<p class="resetTS">
+  <span role="button" class="btn btn-primary">Start Over</span>
+</p> -->
