@@ -15,32 +15,14 @@ footer {
   > .container-fluid.page-wrap {
     padding: 0 1em;
   }
-  .ssc-logo {
-    text-align: right;
+  .ssc {
+    margin-top: $padding-large-vertical;
+    .logo {
+      text-align: right;
+    }
   }
-  .nav-tabs, .tab-pane {
-    border-color: $gray;
-  }
-  .nav-tabs a:hover,
-  .nav-tabs a:focus {
-    background-color: $gray;
-  }
-  .nav-tabs > .active > a,
-  .nav-tabs > .active > a:hover,
-  .nav-tabs > .active > a:focus {
-    background-color: transparent;
-    border-color: $gray;
-    border-bottom-color: $gray-dark;
-    color: $gray-lighter;
-  }
-  .tab-pane {
-    padding: $padding-base-horizontal $padding-large-horizontal;
-    border: 1px solid $gray;
-    border-width: 0px 1px 1px 1px;
-    border-radius: 0 0 $border-radius-base $border-radius-base;
-  }
-  .tab-content {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem;
+
+  .ssc .logo svg {
+    height: 80px;
   }
 }
