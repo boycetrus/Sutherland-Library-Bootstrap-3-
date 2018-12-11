@@ -2,15 +2,8 @@ header {
   padding: ($padding-large-vertical*2) 0;
 }
 
-.title-logo{
-  width: 307px;
-  height: 36px;
-  background-image: url('../img/library-logo.gif');
-  @include text-hide();
-  margin: 0 auto $font-size-base;
-  @media screen and (min-width: $screen-sm-min) {
-    margin: 0;
-  }
+svg.logo {
+    padding: 0.5em 0 1.5em;
 }
 
 .ssc-link {
@@ -27,9 +20,9 @@ header {
       float: right;
       text-align: right;
     }
-    @media screen and (min-width: $screen-lg-min) {
-      margin: ($padding-large-vertical*2) 0 0;
-    }
+    // @media screen and (min-width: $screen-lg-min) {
+    //   margin: ($padding-large-vertical*2) 0 0;
+    // }
     input[type="text"] {
       width: 100%;
       @media screen and (min-width: $screen-sm-min) {
