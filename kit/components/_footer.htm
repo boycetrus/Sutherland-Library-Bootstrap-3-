@@ -1,37 +1,55 @@
 <footer>
   <div class="container-fluid page-wrap">
-    <div class="ssc-logo hidden-xs"><a href="http://www.sutherlandshire.nsw.gov.au"><img src="img/ssc-logo-reverse.png" alt="Sutherland Shire Council logo" title="Sutherland Shire Council website" /></a></div>
 
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments</a></li>
-      <li role="presentation"><a href="#sitemap" aria-controls="sitemap" role="tab" data-toggle="tab">Site Map</a></li>
-    </ul>
+    <div id="comments">
+      <h2>Feedback</h2>
+      <p>Leave a comment, but be nice.  What you say here is public and we reserve the right to remove inappropriate or offensive comments.</p>
+      <div id="disqus_thread"></div>
+      <!--<script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'suthlib'; // required: replace example with your forum shortname
 
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade in active" id="comments">
-        <p>Comments</p>
-        <div id="disqus_thread"></div>
-        <!--<script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'suthlib'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>-->
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>-->
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div><!-- /#comments -->
 
-      </div><!-- /tab-pane 1 -->
-      <div role="tabpanel" class="tab-pane fade" id="sitemap">
-        <p> This is some sitemap content <a href="bootstrap-sample.html">with a link</a>.</p>
+    <div class="row ssc">
+      <div class="col-xs-3">
+        <p><a href="/community/library/membership/library-policies">Privacy</a></p>
       </div>
-    </div><!--/@tab-content-->
-
-    <p>&copy; Sutherland Shire Council 2012</p>
+      <div class="logo col-xs-9">
+        <p>A facility of <a href="https://www.sutherlandshire.nsw.gov.au/">Sutherland Shire Council</a>.</p>
+        <p><a href="https://www.sutherlandshire.nsw.gov.au/library">
+          <svg id="library-logo-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.2 46.4">
+            <title>Sutherland Shire Libraries</title>
+            <path fill="#00bfdf" d="M17.5,10.5l-6.7,9.3a1.6,1.6,0,0,1-2.3.4l-1.4-1a1.6,1.6,0,0,1-.4-2.2l6.7-9.3a.3.3,0,0,1,.4-.1l.9.6a.3.3,0,0,1,.1.4L8.4,17.5a.4.4,0,0,0,.1.6l.5.4a.4.4,0,0,0,.6-.1l6.4-8.9a.3.3,0,0,1,.5-.1l.9.6a.3.3,0,0,1,.1.4" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M15.5,24a.3.3,0,0,1-.2-.4l4.4-10.4-1.1-.5a.3.3,0,0,1-.2-.4l.4-1a.3.3,0,0,1,.4-.2l3.9,1.6a.3.3,0,0,1,.2.4l-.4,1a.3.3,0,0,1-.4.2l-1.1-.5L16.9,24.2a.3.3,0,0,1-.4.2Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M29.7,14.5,27.5,27a.3.3,0,0,1-.4.3l-1.1-.2a.3.3,0,0,1-.3-.4l1-5.4L25.4,21l-1,5.4a.3.3,0,0,1-.4.3l-1.1-.2a.3.3,0,0,1-.3-.4l2.2-12.5a.3.3,0,0,1,.4-.3l1.1.2a.3.3,0,0,1,.2.4l-1,5.4,1.4.2,1-5.4a.3.3,0,0,1,.4-.3l1.1.2a.3.3,0,0,1,.2.4" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M33.5,21.7l.2,4.1H36a.3.3,0,0,1,.3.3v1a.3.3,0,0,1-.3.3l-3.7.2a.3.3,0,0,1-.3-.3l-.6-12.7a.3.3,0,0,1,.3-.3l3.7-.2a.3.3,0,0,1,.3.3v1a.3.3,0,0,1-.3.3H33.3l.2,4.2h2.1a.3.3,0,0,1,.3.3v1a.3.3,0,0,1-.3.3Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M41.2,14.9a.4.4,0,0,0-.5-.3l-1.1.3,1.2,4,1.1-.3a.4.4,0,0,0,.3-.5Zm-3.7-.8a.3.3,0,0,1,.2-.4l3-.9a1.6,1.6,0,0,1,2,1.1L44,18a1.5,1.5,0,0,1-.5,1.7l3.3,5a.2.2,0,0,1-.1.4l-1.2.3a.5.5,0,0,1-.5-.2l-3.1-4.8-.6.2,1.5,5.3a.3.3,0,0,1-.2.4l-1,.3a.3.3,0,0,1-.4-.2Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M44,12.1a.3.3,0,0,1,.1-.4l.9-.5a.3.3,0,0,1,.4.1L51,21.2l1.9-1a.3.3,0,0,1,.4.1l.5.9a.3.3,0,0,1-.1.4l-3.1,1.7a.3.3,0,0,1-.4-.1Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M9.1,7.5c.6-.5,1.4-.9.7-1.7s-1.3,0-1.9.6S7.2,9.4,7,10.6s-1.9,2.9-3.1,3.8-2,.2-2.8-.6S-.4,12.2.2,11.1A8.3,8.3,0,0,1,2,9.4c.2-.2.4-.5.6-.6s.7.3,1,.6-.4,1.2-1,1.7-1.1,1.1-.1,1.7,1.8-.9,2.3-1.5a2.3,2.3,0,0,0,.5-1.5c.2-1.8.1-3.4,1.4-4.7S8.4,3.4,9.4,3.5s1.7,1.2,2.2,1.8,0,2.2-.9,3-.5.6-1,.4-1-.9-.6-1.2" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M55.6,15l-2.8-3.4h0l2,4Zm4.2,2.3a.3.3,0,0,1,0,.4l-1,.6a.4.4,0,0,1-.5-.1l-1.7-2-1.2.7,1.2,2.3a.4.4,0,0,1-.1.5l-.9.6a.3.3,0,0,1-.4-.1L49.7,8.7a.3.3,0,0,1,.1-.4l1.3-.9a.3.3,0,0,1,.4.1Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M61.6,16.4a.3.3,0,0,1-.4-.2L55.9,4.7a.3.3,0,0,1,.2-.4l.9-.4c.2-.1.3,0,.4.2L62,9.9h0L60.8,7.4,59,3.4a.3.3,0,0,1,.2-.4l.9-.4a.3.3,0,0,1,.4.2l5.2,11.6a.3.3,0,0,1-.2.4l-.9.4a.3.3,0,0,1-.5-.2L59.7,9.1h0l1.2,2.5,1.8,4a.3.3,0,0,1-.2.4Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M68.5,2.5a.4.4,0,0,0-.5-.3l-1.1.2,1.7,9.8,1.1-.2a.4.4,0,0,0,.3-.5ZM64.9,1.3a.3.3,0,0,1,.3-.4L68.3.4a1.6,1.6,0,0,1,1.9,1.3l1.7,10a1.6,1.6,0,0,1-1.3,1.9l-3.1.5a.3.3,0,0,1-.4-.3Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M77.3,3.4c0-.8.3-1.6-.7-1.7s-.9.9-.9,1.8S77.4,6,78.1,7s.7,3.5.4,5-1.4,1.4-2.5,1.3-2.2-.1-2.5-1.4a10.1,10.1,0,0,1,.1-2.4,2.7,2.7,0,0,1,0-.8c.2-.4.8-.4,1.2-.3s.4.1.5.5a7,7,0,0,1-.1,1.5c0,.2-.1.7,0,.9a1.3,1.3,0,0,0,1.2.2c.6-.3.5-2,.5-2.6a2.7,2.7,0,0,0-.8-1.6C75.1,6.1,73.9,5.1,74,3.3s-.1-2.3.7-3,2-.4,2.9-.2,1.5,1.5,1.5,2.7.1.8-.5,1-1.3,0-1.3-.4" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M87.8,2.4,84.4,14.6a.3.3,0,0,1-.4.2L83,14.6a.3.3,0,0,1-.2-.4l1.4-5.3-1.4-.4-1.4,5.3a.3.3,0,0,1-.4.2l-1.1-.3a.3.3,0,0,1-.2-.4L83,1.1a.3.3,0,0,1,.4-.2l1.1.3a.3.3,0,0,1,.2.4L83.3,6.9l1.4.4L86.1,2a.3.3,0,0,1,.4-.2l1.1.3a.3.3,0,0,1,.2.4" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M91.3,3.8a.3.3,0,0,1,.4-.2l1,.5a.3.3,0,0,1,.1.4L87.6,16.1a.3.3,0,0,1-.4.2l-1-.5a.3.3,0,0,1-.2-.4Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M98.1,9.7a.4.4,0,0,0-.1-.6l-.9-.7-2.4,3.4.9.7a.4.4,0,0,0,.6-.1ZM96.4,6.4a.3.3,0,0,1,.5-.1l2.6,1.8a1.6,1.6,0,0,1,.4,2.2l-2.4,3.5a1.5,1.5,0,0,1-1.7.7l-1.8,5.6a.2.2,0,0,1-.4.1l-1-.7a.4.4,0,0,1-.2-.5l1.8-5.4-.5-.4-3.2,4.5a.3.3,0,0,1-.5.1l-.9-.6a.3.3,0,0,1-.1-.5Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M100,18.5l-3.1,2.8L98.4,23a.3.3,0,0,1,0,.4l-.8.7a.3.3,0,0,1-.5,0l-2.5-2.7a.3.3,0,0,1,0-.5l9.4-8.6a.3.3,0,0,1,.5,0l2.5,2.7a.3.3,0,0,1,0,.4l-.8.7a.3.3,0,0,1-.5,0l-1.5-1.6-3.1,2.8,1.4,1.5a.3.3,0,0,1,0,.4l-.8.7a.3.3,0,0,1-.5,0Z" transform="translate(0 0)"/>
+            <path fill="#00bfdf" d="M83.4,46.3c1.6,0,2.8-.7,2.8-2.1s-1.7-2.1-2.6-2.5-1.2-.4-1.2-.7.2-.5.9-.5a1,1,0,0,1,1,.6.3.3,0,0,0,.3.2h1.3a.2.2,0,0,0,.2-.3C86,39.9,84.9,39,83.2,39s-2.8.8-2.8,2.2,1.5,2,2.6,2.4,1.2.5,1.2.8-.2.4-.9.4a1.2,1.2,0,0,1-1.1-.5c-.1-.2-.2-.2-.4-.2H80.7a.2.2,0,0,0-.2.3c.1,1.3,1.4,2,3,2m-3.8-.1a.2.2,0,0,0,.2-.2V44.7a.2.2,0,0,0-.2-.2H76.4a.2.2,0,0,1-.2-.2v-.5a.2.2,0,0,1,.2-.2H79a.2.2,0,0,0,.2-.2V42.1a.2.2,0,0,0-.2-.2H76.4l-.2-.2v-.7l.2-.2h3.2a.2.2,0,0,0,.2-.2V39.4a.2.2,0,0,0-.2-.2h-5a.2.2,0,0,0-.2.2V46a.2.2,0,0,0,.2.2ZM71.5,46a.2.2,0,0,0,.2.2h1.4a.2.2,0,0,0,.2-.2V39.4a.2.2,0,0,0-.2-.2H71.7a.2.2,0,0,0-.2.2Zm-2.6-4.2a.9.9,0,0,1-1,.9H66.6l-.2-.2V41l.2-.2h1.4a.9.9,0,0,1,1,1M64.6,46a.2.2,0,0,0,.2.2h1.4a.2.2,0,0,0,.2-.2V44.5l.2-.2h.8L68.5,46l.3.2h1.7a.1.1,0,0,0,.1-.2l-1.3-1.8a.2.2,0,0,1,.1-.2,2.5,2.5,0,0,0,1.2-2.3A2.4,2.4,0,0,0,68,39.1H64.8a.2.2,0,0,0-.2.2Zm-4.9-2.4a.1.1,0,0,1-.1-.2l.7-1.7h.1l.6,1.7a.1.1,0,0,1-.1.2ZM56.6,46a.1.1,0,0,0,.1.2h1.5l.3-.2.3-.7.2-.2h2.4l.2.2.3.7.3.2h1.5A.1.1,0,0,0,64,46l-2.7-6.7-.3-.2H59.6l-.3.2Zm-2-4.3a.9.9,0,0,1-1,.9H52.3l-.2-.2V41l.2-.2h1.4a.9.9,0,0,1,1,1M50.3,46a.2.2,0,0,0,.2.2h1.4a.2.2,0,0,0,.2-.2V44.5l.2-.2h.8L54.2,46l.3.2h1.7a.1.1,0,0,0,.1-.2l-1.3-1.8a.2.2,0,0,1,.1-.2,2.5,2.5,0,0,0,1.2-2.3,2.4,2.4,0,0,0-2.6-2.6H50.5a.2.2,0,0,0-.2.2Zm-2.9-4.6c0,.3-.2.6-.7.6H45.4l-.2-.2V41l.2-.2h1.4a.5.5,0,0,1,.6.6m.3,2.6c0,.4-.2.6-.7.6H45.4l-.2-.2v-.9l.2-.2H47c.5,0,.7.2.7.6m-.5,2.3a2,2,0,0,0,2.3-2,1.6,1.6,0,0,0-1-1.6.1.1,0,0,1,0-.2,1.6,1.6,0,0,0,.7-1.4c0-1.1-.8-1.9-2.3-1.9H43.6a.2.2,0,0,0-.2.2V46a.2.2,0,0,0,.2.2ZM40.5,46a.2.2,0,0,0,.2.2h1.4a.2.2,0,0,0,.2-.2V39.4a.2.2,0,0,0-.2-.2H40.7a.2.2,0,0,0-.2.2Zm-.9.2a.2.2,0,0,0,.2-.2V44.7a.2.2,0,0,0-.2-.2h-3a.2.2,0,0,1-.2-.2V39.4a.2.2,0,0,0-.2-.2H34.9a.2.2,0,0,0-.2.2V46a.2.2,0,0,0,.2.2Z" transform="translate(0 0)"/>
+          </svg></a>
+        </p>
+      </div>
+    </div>
 
   </div><!-- /container.page-wrap -->
   </footer>

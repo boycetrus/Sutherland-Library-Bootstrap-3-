@@ -8,10 +8,9 @@
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: $headings-color;
+  text-transform: uppercase;
 
   small,
   .small {
@@ -19,6 +18,16 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1;
     color: $headings-small-color;
   }
+}
+
+h1, .h1,
+h2, .h2 {
+  //font-family: $headings-font-family;
+}
+
+h1, .h1 {
+  font-family: $headings-font-family;
+  // color: $headings-color;
 }
 
 h1, .h1,
