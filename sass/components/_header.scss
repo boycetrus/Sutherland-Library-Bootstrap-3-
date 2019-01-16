@@ -4,6 +4,10 @@ header {
 
 svg.logo {
     padding: 0.5em 0 1.5em;
+    width: 100%;
+    max-height: 77px; //magic number, required for IE10, 11
+    // to get a better result than this requires a containing div with an
+    // aspect ratio padding-bottom hack. See https://css-tricks.com/scale-svg/
 }
 
 .ssc-link {

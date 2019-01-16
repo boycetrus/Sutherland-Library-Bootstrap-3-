@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6,
     color: #777777; }
 
 h1, .h1 {
-  font-family: montserrat, Arial, Helvetica, sans-serif; }
+  font-family: montserrat, "Arial Black", Helvetica, sans-serif; }
 
 h1, .h1,
 h2, .h2,
@@ -5434,13 +5434,16 @@ footer {
     footer .ssc .logo {
       text-align: right; }
   footer .ssc .logo svg {
-    height: 80px; }
+    height: 80px;
+    width: calc(107.15 / 46.33 * 80px); }
 
 header {
   padding: 20px 0; }
 
 svg.logo {
-  padding: 0.5em 0 1.5em; }
+  padding: 0.5em 0 1.5em;
+  width: 100%;
+  max-height: 77px; }
 
 .ssc-link {
   font-size: 16px;
