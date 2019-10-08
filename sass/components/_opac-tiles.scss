@@ -1,9 +1,9 @@
 .opac-landing-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px 300px;
   grid-gap: 15px;
-  -ms-grid-columns: 2fr 15px 1fr 15px 1fr;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
   -ms-grid-rows: 300px 15px 300px;
   margin-bottom: 2em;
 }
@@ -17,6 +17,10 @@ a.opac-tile {
   }
 }
 
+.opac-tile h2 {
+  text-transform: uppercase;
+}
+
 .opac-tile {
   display: flex;
   align-items: center;
@@ -26,25 +30,34 @@ a.opac-tile {
   &.search {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 3;
+    grid-row: 1;
   }
   &.join {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 5;
   }
   &.events {
     -ms-grid-row: 1;
-    -ms-grid-column: 5;
+    -ms-grid-column: 7;
   }
   &.login {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
-  &.email {
+  &.survey {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
+    background-color: #f68b32;
+    color: #ffffff;
+  }
+  &.email {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
   &.website {
     -ms-grid-row: 3;
-    -ms-grid-column: 5;
+    -ms-grid-column: 7;
   }
 }
