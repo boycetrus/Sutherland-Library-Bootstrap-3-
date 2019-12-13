@@ -1094,6 +1094,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit\/content-carousel-instructions.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit\/content-carousel-instructions.kit",
+		"outputAbbreviatedPath": "\/content-carousel-instructions.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit\/content-expando.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -1235,15 +1244,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit\/new-items.kit",
 		"outputAbbreviatedPath": "\/new-items.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/kit\/owl-carousel-instructions.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit\/owl-carousel-instructions.kit",
-		"outputAbbreviatedPath": "\/owl-carousel-instructions.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
