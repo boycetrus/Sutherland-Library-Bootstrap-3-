@@ -145,22 +145,24 @@
   }
   .icon-prev,
   .icon-next {
-    width:  20px;
-    height: 20px;
-    margin-top: -10px;
+    width:  30px;
+    height: 30px;
+    margin-top: -40px;
     line-height: 1;
+    font-size: 30px;
     font-family: serif;
+    font-weight: $bold;
   }
 
 
   .icon-prev {
     &:before {
-      content: '\2039';// SINGLE LEFT-POINTING ANGLE QUOTATION MARK (U+2039)
+      content: '\3008';
     }
   }
   .icon-next {
     &:before {
-      content: '\203a';// SINGLE RIGHT-POINTING ANGLE QUOTATION MARK (U+203A)
+      content: '\3009';
     }
   }
 }
@@ -172,7 +174,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -216,13 +218,13 @@
 // Hidden by default for smaller viewports
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   color: $carousel-caption-color;
+  background: $carousel-caption-bg;
   text-align: center;
   text-shadow: $carousel-text-shadow;
   & .btn {
@@ -232,6 +234,22 @@
 
 
 // Scale up controls for tablets and up
+@media screen and (min-width: $screen-xs-min) {
+
+  // Scale up the controls a smidge
+  .carousel-control {
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right,
+    .icon-prev,
+    .icon-next {
+      width: 60px;
+      height: 60px;
+      margin-top: -15px;
+      font-size: 60px;
+    }
+  }
+}
+
 @media screen and (min-width: $screen-sm-min) {
 
   // Scale up the controls a smidge
@@ -240,10 +258,10 @@
     .glyphicon-chevron-right,
     .icon-prev,
     .icon-next {
-      width: 30px;
-      height: 30px;
+      width: 60px;
+      height: 60px;
       margin-top: -15px;
-      font-size: 30px;
+      font-size: 60px;
     }
     .glyphicon-chevron-left,
     .icon-prev {
@@ -256,14 +274,16 @@
   }
 
   // Show and left align the captions
-  .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
-  }
+  // .carousel-caption {
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   padding-bottom: 30px;
+  //   background-color: rgba(0,0,0,0.8);
+  // }
 
   // Move up the indicators
-  .carousel-indicators {
-    bottom: 20px;
-  }
+  // .carousel-indicators {
+  //   bottom: 0;
+  // }
 }

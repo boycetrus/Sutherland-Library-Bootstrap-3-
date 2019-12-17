@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library - Sutherland Shire Council</title>
+    <!-- Bootstrap -->
+    <!-- @import components/_head-content.htm -->
+  </head>
+
+  <body>
+
+    <div class="container-fluid page-wrap">
+
+      <!-- @import components/_header.htm -->
+
+      <!-- @import components/_navbar.htm -->
+
+      <!-- @import components/_breadcrumbs.htm -->
+
+      <script type="text/x-handlebars-template" id="bookTemplate">
+          <div class="carousel carousel-nav">
+            {{#each data.feed.entry}}
+              <img src="https://content.chilifresh.com/?isbn={{gsx$isbn.$t}}&amp;size=M" alt="{{gsx$title.$t}}" />
+            {{/each}}
+          </div>
+
+          <div class="carousel carousel-main">
+            {{#each data.feed.entry}}
+            <div class="carousel-cell book-detail">
+              <h4>{{gsx$title.$t}}</h4>
+              <p>{{{gsx$review.$t}}}</p>
+              <p><a class="btn btn-success" target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}?utm_source=blog&utm_medium=online&utm_campaign=[post-title]">Get it!</a></p>
+            </div>
+            <!-- /carousel-cell -->
+            {{/each}}
+          </div>
+          <!-- /carousel-main -->
+      </script>
+
+      <script type="text/javascript">
+        var gDocId = '15l74AAI5yAWo81zwZT9tSrPr1zrQ_ewD0W6HyhqXvLQ';
+      </script>
+
+      <section id="main" class="main row" role="main">
+
+          <div id="content" class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 content">
+
+            <h1>Book List Carousel</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dictum enim, et dapibus est semper ac. Nunc sit amet fringilla felis, eu feugiat augue.</p>
+
+            <!-- #book-list is the container that the handlebars result will be inserted into -->
+            <div id="book-list" class="book-list"></div>
+            <!-- /book-list -->
+
+          </div><!-- /content -->
+
+
+        </div><!-- /row -->
+
+      </section><!--/main-->
+    </div><!--/container-->
+
+    <!-- @import components/_social.htm -->
+
+    <!-- @import components/_footer.htm -->
+
+  <script src="js/production/global-min.js"></script>
+  <script src="js/production/json-carousel-min.js"></script>
+
+  </body>
+</html>
