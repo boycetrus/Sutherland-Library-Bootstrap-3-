@@ -24,6 +24,9 @@ $(document).ready(function() {
 
   });
 
+// init autoModal - modal shows on page load for alerts
+  $('#autoModal').modal('show');
+
 // init tooltips and popovers
   $('.pop-over').popover();
   $('.tool-tip').tooltip();
