@@ -11,13 +11,11 @@ $(document).ready(function() {
 
     if (session === 'Storytime') {
       $(this).attr('data-age', '3');
-    } else if (session === 'Toddler Time') {
+    } else if (session === 'Together Time') {
       $(this).attr('data-age', '2');
     } else if (session === 'Rhymetime') {
       $(this).attr('data-age', '1');
-    } else {
-      return false;
-    }
+    } 
   });
 
   $('#sessionChooser').on('click', function () {
