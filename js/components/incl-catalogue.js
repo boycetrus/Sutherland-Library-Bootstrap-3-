@@ -1,5 +1,5 @@
 function searchCatalogue() {
-  var baseUrl = "http://encore.sutherlandshire.nsw.gov.au/iii/encore/search/C__S";
+  var baseUrl = "https://encore.sutherlandshire.nsw.gov.au/iii/encore/search/C__S";
   var searchTerm = $('#catalog-search-textbox').val();
   var destination = baseUrl + searchTerm;
   window.location.href = destination;
