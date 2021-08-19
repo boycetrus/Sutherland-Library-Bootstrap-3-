@@ -16,28 +16,9 @@
 
       <!-- @import components/_breadcrumbs.htm -->
 
-      <script type="text/x-handlebars-template" id="bookTemplate">
-          <div class="carousel carousel-nav">
-            {{#each data.feed.entry}}
-              <img src="https://content.chilifresh.com/?isbn={{gsx$isbn.$t}}&amp;size=M" alt="{{gsx$title.$t}}" />
-            {{/each}}
-          </div>
-
-          <div class="carousel carousel-main">
-            {{#each data.feed.entry}}
-            <div class="carousel-cell book-detail">
-              <h4>{{gsx$title.$t}}</h4>
-              <p>{{{gsx$review.$t}}}</p>
-              <p><a class="btn btn-success" target="_blank" href="http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R{{gsx$bib.$t}}?utm_source=blog&utm_medium=online&utm_campaign=[post-title]">Get it!</a></p>
-            </div>
-            <!-- /carousel-cell -->
-            {{/each}}
-          </div>
-          <!-- /carousel-main -->
-      </script>
-
       <script type="text/javascript">
-        var gDocId = '15l74AAI5yAWo81zwZT9tSrPr1zrQ_ewD0W6HyhqXvLQ';
+        var gDocId = "15l74AAI5yAWo81zwZT9tSrPr1zrQ_ewD0W6HyhqXvLQ";
+        var postTitle = "post title"
       </script>
 
       <section id="main" class="main row" role="main">
@@ -47,8 +28,11 @@
             <h1>Book List Carousel</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dictum enim, et dapibus est semper ac. Nunc sit amet fringilla felis, eu feugiat augue.</p>
 
-            <!-- #book-list is the container that the handlebars result will be inserted into -->
-            <div id="book-list" class="book-list"></div>
+            <!-- #book-list will be populated by the ajax request to the Google Sheet -->
+            <div id="book-list" class="book-list">
+              <div id="carouselNav" class="carousel carousel-nav"></div>
+              <div id="carouselInfo" class="carousel carousel-main"></div>
+            </div>
             <!-- /book-list -->
 
           </div><!-- /content -->
