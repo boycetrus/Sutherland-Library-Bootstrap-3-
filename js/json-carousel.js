@@ -4,7 +4,7 @@ $('document').ready(function() {
 
   // gDocId  and postTitle are entered as part of the page template because the values for the
   // Google spreadsheet ID and post title are taken from the page metadata in the CMS
-  var API_KEY = "AIzaSyC6qXfznwVtAy9KZDUGZL9esxi76bBx7RE";
+  var API_KEY = "[GOOGLE SHEETS API KEY]";
   var jsonSource = "https://sheets.googleapis.com/v4/spreadsheets/" + gDocId + "/values/Sheet1?key=" + API_KEY;
   var $booklist = $("#book-list");
   var $carouselnav = $("#carouselNav");
