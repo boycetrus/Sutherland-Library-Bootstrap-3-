@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
-  var jsonSource = "https://spreadsheets.google.com/feeds/list/1oXeAey3ltefipz9H4puuTjIybzU3VxSJeiIeoK8Ln2o/od6/public/values?alt=json";
+  // gDocId  and postTitle are entered as part of the page template because the values for the
+  // Google spreadsheet ID and post title are taken from the page metadata in the CMS
+  var API_KEY = "AIzaSyC6qXfznwVtAy9KZDUGZL9esxi76bBx7RE"; // [GOOGLE SHEETS API KEY]
+  var DOC_ID = "1oXeAey3ltefipz9H4puuTjIybzU3VxSJeiIeoK8Ln2o";
+  var RANGE = "Live";
+  var jsonSource = "https://sheets.googleapis.com/v4/spreadsheets/" + DOC_ID + "/values/" + RANGE + "?key=" + API_KEY;
+  var $element = $("#loans tbody");
     
     //fetch the json feed
     $.getJSON( jsonSource, function() {
@@ -8,32 +14,42 @@ $(document).ready(function() {
     })
   
     .done(function(data) { 
-      if (data.feed.entry.length > 0) {
-        $.each( data.feed.entry, function( i, item ) {
-          var $language = item.gsx$language.$t;
-          var $branch = item.gsx$branchlocation.$t;
-          var $retDate = item.gsx$returndate.$t;
-          var $subject = item.gsx$weaskedfor.$t;
-          var $titleList = item.gsx$titlelistdocument.$t;
-          var $titleListURL = item.gsx$titlelisturl.$t;
-          var $docLink;
-          if ($titleListURL !== "") {
-            $docLink = "<a href='" + $titleListURL + "' target='_blank'>" + $titleList + "</a>";
-          } else {
-            $docLink = $titleList;
+      console.log(data);
+      if (data.values.length < 2) {
+        // if the json request is successful but there are no items
+        $("<p class='text-danger'>JSON request succeeded but no data returned.</p>").prependTo($);
+      } else {
+        var $language, $branch, $retDate, $subject, $titleList, $titleListURL, $docLink;
+        var rows = data.values;
+        var numberOfRows = rows.length, i;
+
+        // loop through each row of the spreadsheet but skip row 1 (i=0) as it contains the column headings
+        for (i = 1; i < numberOfRows; i++) {
+          var row = rows[i];
+          var fields = row.length, k;
+          for (k = 0; k < fields; k++) {
+            // Assign the values from each column to a variable
+            $language = row[0];
+            $titleList = row[1];
+            $titleListURL = row[2];
+            $branch = row[3];
+            $retDate = row[4];
+            $subject = row[5];
+            if ($titleListURL !== "") {
+              $docLink = "<a href='" + $titleListURL + "' target='_blank'>" + $titleList + "</a>";
+            } else {
+              $docLink = $titleList;
+            }
+
           }
-          
+          // create the html for each row and append it to table#loans
           $("<tr><td>" + $language + 
               "</td><td>" + $branch + 
-              //"</td><td>" + $titleListURL + 
               "</td><td>" + $docLink + 
               "</td><td>" + $retDate + 
               "</td><td>" + $subject + 
-              "</td></tr>").appendTo("#loans");
-        });
-      } else {
-        // if the json request is successful but there are no items
-        console.log("JSON request succeeded but no data returned");
+              "</td></tr>").appendTo($element);
+        }
       }
     })
     
