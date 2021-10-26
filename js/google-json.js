@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  // gDocId  and postTitle are entered as part of the page template because the values for the
-  // Google spreadsheet ID and post title are taken from the page metadata in the CMS
-  var API_KEY = "AIzaSyC6qXfznwVtAy9KZDUGZL9esxi76bBx7RE"; // [GOOGLE SHEETS API KEY]
+  // gDocId and postTitle are entered as part of the page template because the values for the
+  // Google spreadsheet ID and post title are taken from the page metadata in the CMS 
+  var API_KEY = ""; // [INSERT GOOGLE SHEETS API KEY HERE]
   var DOC_ID = "1oXeAey3ltefipz9H4puuTjIybzU3VxSJeiIeoK8Ln2o";
   var RANGE = "Live";
   var jsonSource = "https://sheets.googleapis.com/v4/spreadsheets/" + DOC_ID + "/values/" + RANGE + "?key=" + API_KEY;
