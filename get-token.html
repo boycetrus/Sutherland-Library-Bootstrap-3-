@@ -125,57 +125,119 @@
   </div><!-- /column -->
 </header><!-- /row -->
 
-      <section id="main" class="main" role="main">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a role="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a data-icon="&#xe02c;" href="index.html"><span class="sr-only">Home</span></a></li>
+        <li><a href="events-list.html">What's On</a></li>
+        <li class="dropdown">
+          <a href="listview.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Membership <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="content.html">Join the Library</a></li>
+            <li><a href="content.html">Conditions of Membership</a></li>
+            <li><a href="content-expando.html">Library Policies</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="property-list.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Libraries <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="property.html">Sutherland Library</a></li>
+            <li><a href="property.html">Cronulla Library</a></li>
+            <li><a href="property.html">Caringbah Library</a></li>
+            <li><a href="property.html">Miranda Library</a></li>
+            <li><a href="property.html">Sylvania Library</a>	</li>
+            <li><a href="property.html">Engadine Library</a></li>
+            <li><a href="property.html">Menai Library</a></li>
+            <li><a href="property.html">Bundeena Library</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="new-items.html">New Items</a></li>
+            <li><a href="listview.html">Kids &amp; Parents</a></li>
+            <li><a href="listview.html">Seniors</a></li>
+            <li><a href="content-tables.html">Multicultural Communities</a></li>
+            <li><a href="listview.html">HSC Students</a></li>
+            <li><a href="listview.html">Computers &amp; Internet</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Digital Collections <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="content-video-embed.html">Audiobooks &amp; eBooks</a></li>
+            <li><a href="content.html">Freegal Music Downloads</a></li>
+            <li><a href="resource-detail.html">Zinio Digital Magazines</a></li>
+            <li><a href="resources-list.html">Research Databases</a></li>
+            <li><a href="resource-detail.html">Learn a Language</a></li>
+            <li><a href="resources-list.html">Family History</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Local Studies <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="content-audio.html">Historical Photographs</a></li>
+            <li><a href="content-audio.html">Local Newspapers</a></li>
+            <li><a href="content-audio.html">Maps</a></li>
+            <li><a href="audio-list.html">Oral Histories</a></li>
+            <li><a href="content-audio.html">Historical Studies &amp; Pathfinders</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
+      <div id="breadcrumbs" class="breadcrumbs">
+  <ul class="breadcrumb-list">
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Home"><span>Home</span></a></li>
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library">Library</a></li>
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library/Online_Collections">Digital Collections</a></li>
+    <li class="last"><a href="#">Freegal - Free Music Downloads</a></li>
+  </ul>
+</div><!-- /breadcrumbs -->
 
-          <div id="content" class="content">
+      <section id="main" class="main row" role="main">
 
+          <div id="sidebar" class="col-md-3 col-lg-3 col-lg-offset-1 page-spotlight">
+            <div class="hero-image">
+  <img class="img-thumbnail" title="image title" alt="image alt" src="http://loremflickr.com/600/400">
+</div><!-- /hero-image -->          </div><!-- /sidebar -->
 
-            <div class="opac-landing-grid">
-    <a class="opac-tile search" href="https://encore.sutherlandshire.nsw.gov.au/">
-      <div class="text">
-        <h2><i class="icon h1" data-icon="&#xe01c;"></i> Search the Catalogue</h2>
-        <p>Find books, DVDs, magazines, music and more in our collection&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile join" href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Membership/Join-the-Library">
-      <div class="text">
-        <h2 class="h3"><i class="icon h2" data-icon="&#xe024;"></i> Join the Library</h2>
-        <p>Become a member of Sutherland Shire Libraries&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile events" href="https://www.sutherlandshire.nsw.gov.au/Community/Library/Whats-On">
-      <div class="text">
-        <h2 class="h3"><i class="icon h2" data-icon="&#xe602;"></i> Library Events</h2>
-        <p>See What's on at the Library reserve your place&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile login" href="https://encore.sutherlandshire.nsw.gov.au/iii/encore/myaccount">
-      <div class="text">
-        <h2 class="h3"><i class="icon h1" data-icon="&#xe019;"></i> Login to My Account</h2>
-        <p>Renew your loans, request items, update your details and more&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile survey" href="https://jointheconversation.sutherlandshire.nsw.gov.au/library-customersurvey2019">
-      <div class="text">
-        <h2 class="h3"><i class="icon h2" data-icon="&#xe605;"></i> Customer Survey</h2>
-        <p>Tell us what you think of your libraries and library services and go in the draw to win a $50 Event Cinemas voucher&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile email" href="http://eepurl.com/M09RH">
-      <div class="text">
-        <h2 class="h3"><i class="icon h2" data-icon="&#xe02a;"></i> Email Newsletters</h2>
-        <p>Subscribe to receive email updates from the Library&hellip;</p>
-      </div>
-    </a>
-    <a class="opac-tile website" href="https://www.sutherlandshire.nsw.gov.au/Community/Library">
-      <div class="text">
-        <h2 class="h3"><i class="icon h2" data-icon="&#xe02c;"></i> Library Website</h2>
-        <p>Services and Programs, digital collections and more&hellip;</p>
-      </div>
-    </a>
-  </div>
+          <div id="content" class="col-md-9 col-lg-6 content">
+
+            <h1>Content Page - Freegal</h1>
+            <p class="lead">Using Freegal, library members can download up to 3 free MP3 songs per week from the Sony Music catalogue. Choose from thousands of artists and hundreds of thousands of songs, all free and legal.</p>
+            <h2>3 Simple Steps to Get Started</h2>
+            <ol>
+              <li>Login to Freegal with your library card number</li>
+              <li>Search the collection and preview songs</li>
+              <li>Click on <em>Download Now</em> - the song is yours to keep, forever!</li>
+            </ol>
+            <p><a class="btn btn-success btn-large" href="http://sutherlandshire.freegalmusic.com">Download Free Songs</a></p>
+            <p>These files do not expire and can be transferred to iPods and MP3 players or burnt to CD.
+            (did we mention It's legal too!)</p>
+
+            <div class="related-links">
+  <h2>Related Content&hellip;</h2>
+  <ul class="list-unstyled">
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library/Online_Collections/Research_Databases/Australia-NZ_Reference_Centre">Australia-NZ Reference Centre</a></li>
+    <li><a href="http://www.sutherlandshire.nsw.gov.au/Library/Research_Collections/Online_Databases/Points_of_View_Reference_Centre">Points of View Reference Centre</a></li>
+  </ul>
+</div>
 
           </div><!-- /content -->
 
@@ -263,6 +325,7 @@
   </div><!-- /container.page-wrap -->
   </footer>
 
-  <script src="js/production/global-min.js"></script>
+    <script src="js/production/global-min.js"></script>
+    <script src="js/production/get-api-token-min.js"></script>
   </body>
 </html>

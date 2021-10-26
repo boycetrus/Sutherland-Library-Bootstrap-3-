@@ -1,3 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opac-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .opac-landing-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

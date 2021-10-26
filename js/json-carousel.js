@@ -1,38 +1,45 @@
-//@codekit-prepend "handlebars-v4.0.5.js";
 //@codekit-prepend "flickity.pkgd.js";
-
 
 $('document').ready(function() {
 
-  // gDocId is entered as part of the page template because the value for the
-  // Google spreadsheet ID is taken from the page metadata in the CMS
-  
-  var jsonSource = "https://spreadsheets.google.com/feeds/list/" + gDocId + "/od6/public/values?alt=json";
-  var $booklist = $('#book-list');
+  // gDocId  and postTitle are entered as part of the page template because the values for the
+  // Google spreadsheet ID and post title are taken from the page metadata in the CMS
+  var API_KEY = "[GOOGLE SHEETS API KEY]";
+  var jsonSource = "https://sheets.googleapis.com/v4/spreadsheets/" + gDocId + "/values/Sheet1?key=" + API_KEY;
+  var $booklist = $("#book-list");
+  var $carouselnav = $("#carouselNav");
+  var $carouselinfo = $("#carouselInfo");
 
   //fetch the json feed
     $.getJSON( jsonSource, function() {
       console.log("json request success");
     })
     .done(function(data) {
-      if (data.feed.entry.length === 0) {
-        //if the json request is successful but there are no items
+      if (data.values.length < 2) {
+        // if the json request is successful but there are no items
         $("<p class='text-danger'>JSON request succeeded but no data returned.</p>").prependTo($booklist);
       } else {
         console.log(data);
-        // Handlebars compiles the template into a callable function
-        var template = $("#bookTemplate").html();
-        // call the compiled function with the template data
-        var renderer = Handlebars.compile(template);
-        //data from the ajax call as an array
-        var context = data;
-        //wrap the context array in an object and create html
-        //this is the bit that goes wrong depending on whether the json is an object or an array
-        var result = renderer({data:context});
+        var isbn, title, description, bib;
+        var rows = data.values;
+        var numberOfRows = rows.length, i;
 
-        //populate the #book-list with the resulting html
-        $("#book-list").html(result);
-
+        // loop through each row of the spreadsheet but skip row 1 (i=0) as it contains the column headings
+        for (i = 1; i < numberOfRows; i++) {
+          var row = rows[i];
+          var fields = row.length, k;
+          for (k = 0; k < fields; k++) {
+            title = row[0]; 
+            description = row[1];
+            bib = row[2];
+            isbn = row[3];
+          }
+          var $bookcover = "<img src='https://content.chilifresh.com/?isbn=" + isbn + "&amp;size=M' alt='" + title + "' />";
+          var $bookinfo = "<div class='carousel-cell book-detail'><h4>" + title + "</h4><p>" + description + "</p><p><a class='btn btn-success' target='_blank' href='http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R" + bib + "?utm_source=blog&utm_medium=online&utm_campaign=" + postTitle + "'>Get It</a></p></div>";
+          $carouselnav.append($bookcover);
+          $carouselinfo.append($bookinfo);   
+        }
+        
         $('.carousel-nav').flickity({
           asNavFor: ".carousel-main",
           contain: true,

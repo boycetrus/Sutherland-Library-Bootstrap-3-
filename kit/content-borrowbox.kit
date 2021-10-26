@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Library - Sutherland Shire Council</title>
-    <!-- Bootstrap -->
-    <!-- @import components/_head-content.htm -->
-  </head>
 
-  <body>
-    <div class="container-fluid page-wrap">
+<head>
+  <title>Library - Sutherland Shire Council</title>
+  <!-- Bootstrap -->
+  <!-- @import components/_head-content.htm -->
+</head>
 
-      <!-- @import components/_header.htm -->
+<body>
+  <div class="container-fluid page-wrap">
 
-      <!-- @import components/_navbar.htm -->
+    <!-- @import components/_header.htm -->
 
-      <!-- @import components/_breadcrumbs.htm -->
+    <!-- @import components/_navbar.htm -->
 
-      <section id="main" class="main row" role="main">
+    <!-- @import components/_breadcrumbs.htm -->
 
-          <div id="sidebar" class="col-md-3 col-lg-3 col-lg-offset-1 page-spotlight">
-            <!-- @import components/_hero-img.htm -->
-          </div><!-- /sidebar -->
+    <section id="main" class="main row" role="main">
 
-          <div id="content" class="col-md-9 col-lg-6 content">
+      <div id="sidebar" class="col-md-3 col-lg-3 col-lg-offset-1 page-spotlight">
+        <!-- @import components/_hero-img.htm -->
+      </div><!-- /sidebar -->
 
-            <h1>RB Digital Magazines</h1>
-            <p class="lead">Download digital editions of popular magazines and read them on any device - PC, Mac, iPad or Android tablet.</p>
-            <p>Sutherland Shire Libraries have partnered with RB Digital to provide access to a collection of over 100 magazine titles that library members can download for FREE.</p>
-            <p class="actions">
-              <a href="https://www.rbdigital.com/sutherland/zinio" class="btn btn-success btn-lg js-ga-tracking" data-ga-category="cta-button-resource" data-ga-action="click" data-ga-label="Search Zinio" target="_blank">Get Digital Magazines</a>
-            </p>
+      <div id="content" class="col-md-9 col-lg-6 content">
 
-            <h2>Tutorials - Getting Started</h2>
+        <h1>RB Digital Magazines</h1>
+        <p class="lead">Download digital editions of popular magazines and read them on any device - PC, Mac, iPad or
+          Android tablet.</p>
+        <p>Sutherland Shire Libraries have partnered with RB Digital to provide access to a collection of over 100
+          magazine titles that library members can download for FREE.</p>
+        <p class="actions">
+          <a href="https://www.rbdigital.com/sutherland/zinio" class="btn btn-success btn-lg js-ga-tracking"
+            data-ga-category="cta-button-resource" data-ga-action="click" data-ga-label="Search Zinio"
+            target="_blank">Get Digital Magazines</a>
+        </p>
 
-            <!-- @import components/_tabs.htm -->
+        <h2>Tutorials - Getting Started</h2>
 
-            <h2>Troubleshooting</h2>
-            <!-- @import components/_troubleshooting.htm -->
+        <!-- @import components/_tabs.htm -->
 
-            <h3>More Information</h3>
-            <address>
-              <strong>Reference Services, Sutherland Library</strong><br>
-              <strong>phone</strong> 9710 0351<br>
-              <strong>email</strong> <a href="mailto:library@ssc.nsw.gov.au">library@ssc.nsw.gov.au</a>
-            </address>
+        <h2>Troubleshooting</h2>
+        <!-- @import components/_troubleshooting.htm -->
 
-          </div><!-- /content -->
+        <h3>More Information</h3>
+        <address>
+          <strong>Reference Services, Sutherland Library</strong><br>
+          <strong>phone</strong> 9710 0351<br>
+          <strong>email</strong> <a href="mailto:library@ssc.nsw.gov.au">library@ssc.nsw.gov.au</a>
+        </address>
+
+      </div><!-- /content -->
 
 
-        </div><!-- /row -->
+  </div><!-- /row -->
 
-      </section><!--/main-->
-    </div><!--/container-->
+  </section>
+  <!--/main-->
+  </div>
+  <!--/container-->
 
-    <!-- @import components/_social.htm -->
+  <!-- @import components/_social.htm -->
 
-    <!-- @import components/_footer.htm -->
+  <!-- @import components/_footer.htm -->
 
   <script src="js/production/global-min.js"></script>
   <script>
-    $(document).ready(function() {
-      $('#rbSideBySide').on('click', function() {
+    $(document).ready(function () {
+      $('#rbSideBySide').on('click', function () {
         $('.embed-responsive').toggleClass('hidden');
       });
     });
   </script>
+  <script src="js/production/gale-powersearch-min.js"></script>
   <script src="js/production/bb-troubleshooting-min.js"></script>
 
-  </body>
+</body>
+
 </html>
