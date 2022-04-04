@@ -31,11 +31,12 @@ $('document').ready(function() {
           for (k = 0; k < fields; k++) {
             title = row[0]; 
             description = row[1];
-            bib = row[2];
+            oldBib = row[2];
+            bib = oldBib.slice(1, 8); //split string to remove b prefix
             isbn = row[3];
           }
-          var $bookcover = "<img src='https://content.chilifresh.com/?isbn=" + isbn + "&amp;size=M' alt='" + title + "' />";
-          var $bookinfo = "<div class='carousel-cell book-detail'><h4>" + title + "</h4><p>" + description + "</p><p><a class='btn btn-success' target='_blank' href='http://encore.sutherlandshire.nsw.gov.au/iii/encore/record/C__R" + bib + "?utm_source=blog&utm_medium=online&utm_campaign=" + postTitle + "'>Get It</a></p></div>";
+          var $bookcover = "<img src='https://secure.syndetics.com/index.aspx?isbn=" + isbn + "/mc.gif&ampupc=&ampclient=sutherland&amptype=unbound' alt='" + title + "' />";
+          var $bookinfo = "<div class='carousel-cell book-detail'><h4>" + title + "</h4><p>" + description + "</p><p><a class='btn btn-success' target='_blank' href='https://suth.ap.iiivega.com/search/card?recordId=" + bib + "'>Get It</a></p></div>";
           $carouselnav.append($bookcover);
           $carouselinfo.append($bookinfo);   
         }
