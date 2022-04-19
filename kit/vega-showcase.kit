@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Library - Sutherland Shire Council</title>
+  <!-- Bootstrap -->
+  <!-- @import components/_head-content.htm -->
+</head>
+
+<body>
+
+  <div class="container-fluid page-wrap">
+
+    <!-- @import components/_header.htm -->
+
+    <!-- @import components/_navbar.htm -->
+
+    <!-- @import components/_breadcrumbs.htm -->
+
+    <section id="main" class="main row" role="main">
+
+      <div id="content" class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 content">
+
+        <h1>Vega Showcase</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dictum enim, et dapibus
+          est semper ac. Nunc sit amet fringilla felis, eu feugiat augue.</p>
+
+        <!-- #showcase embed code from Vega - replace showcase-id with CMS field template -->
+        <style>
+          .showcase-widget__description,
+          .showcase-widget__title {
+            display: none;
+          }
+        </style>
+        <vega-showcase-widget showcase-id="52050a27-f50c-4aa6-b616-0cec4f79bbac" vega-host="suth.ap.iiivega.com"
+          display-amount="4" max-amount="12" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dictum enim, et dapibus
+          est semper ac. Nunc sit amet fringilla felis, eu feugiat augue.">
+        </vega-showcase-widget>
+        <!-- /end vega-showcase -->
+
+      </div><!-- /content -->
+
+
+  </div><!-- /row -->
+
+  </section>
+  <!--/main-->
+  </div>
+  <!--/container-->
+
+  <!-- @import components/_social.htm -->
+
+  <!-- @import components/_footer.htm -->
+
+  <script src="js/production/global-min.js"></script>
+  <script type="text/javascript" defer
+    src="https://vega-widgets.s3.us-east-2.amazonaws.com/vega-showcase-widget/prod/showcase-widget.js"></script>
+
+</body>
+
+</html>
