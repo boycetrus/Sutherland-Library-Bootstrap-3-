@@ -3,7 +3,7 @@ function searchCatalogue() {
   var searchTerm = $('#catalog-search-textbox').val();
   var destination = baseUrl + searchTerm;
   //when catalogue search is submitted fetch the new url
-  window.location.href = destination;
+  window.open(destination, "_top");
 }
 
 $(document).ready(function () {
