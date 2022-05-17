@@ -5937,3 +5937,14 @@ a.opac-tile {
 
 .opac-tile.blue:hover {
   color: #00BFDF; }
+
+.branch-chooser {
+  padding: 0 10px; }
+
+a.branch {
+  border: 10px solid #fff;
+  background-color: #093569;
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 100px;
+  text-align: center; }
