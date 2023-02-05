@@ -1,6 +1,6 @@
 //@codekit-prepend "mixitup.js";
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('.storytime-list .mix').each(function () {
     var entryDate = $(this).find('.event-date > .entry').text();
     var session = $(this).find('.event-storytime').text();
@@ -15,7 +15,9 @@ $(document).ready(function() {
       $(this).attr('data-age', '2');
     } else if (session === 'Rhymetime') {
       $(this).attr('data-age', '1');
-    } 
+    } else {
+      $(this).attr('data-age', '4');
+    }
   });
 
   $('#sessionChooser').on('click', function () {
